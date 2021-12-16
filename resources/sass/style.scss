@@ -1,24 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
 * {
   list-style: none;
-}
-/* .col .row {
-  display: inline-block;
-} */
 
-.grid-container {
-  display: inline-block;
-/* display: grid;
-  grid-template-columns: 200px 600px; */
-}
-.awa {
-  display: inline-block;
+
+  background-color: $base-bgc;
+  color: $base-font-color;
+
+  footer {
+    background-color:$footer-bgc;
+  }
+
+  .btn {
+    background-color: $btn-bgc;
+    color: $btn-font-color;
+  }
 }
 
-/* .grid-item-A {
-  grid-row: 1/4;
-  grid-column: 1/3;
+//mypage
+
+a:link, a:visited, a:hover, a:active {
+  color: $base-font-color;
 }
-.grid-item-B {
-  grid-row: 1/4;
-  grid-column: 2/3;
-} */
+
+.product-list {
+  margin: 0 20px;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
