@@ -26,3 +26,23 @@ Route::get
 ('/cart',function() {
     return view('cart');
 });
+
+Route::get
+('/favorite',function() {
+    return view('favorite');
+});
+
+// Route::get
+// ('/product/{id}',function() {
+//     return view('show');
+// });
+
+Route::get
+('/product',function() {
+    return view('product_details');
+});
+
+Route::get
+('/freight',function() {
+    return view('freight');
+});
