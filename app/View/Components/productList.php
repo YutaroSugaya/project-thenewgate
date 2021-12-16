@@ -27,7 +27,7 @@ class productList extends Component
     public function render()
     {
       
-        return view('components.product-list');
+        return view('components.mypage.product-list');
     }
 
     //テストデータ
@@ -43,6 +43,9 @@ class productList extends Component
         [ 'name' => '饅頭',
           'price' => '2000yen',
           'prefecture' => 'mie',],
+        [ 'name' => 'アイス',
+        'price' => '400yen',
+        'prefecture' => 'hokkaido',],
       ];
       return $products;
     }
