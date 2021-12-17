@@ -12,7 +12,7 @@
         <a href="#!" class="nav-link active">お気に入り</a>
       </li>
       <li class="nav-list">
-        <a href="{{ route('editMypage') }}" class="nav-link active">会員情報</a>
+        <a href="{{ route('showEdit') }}" class="nav-link active">会員情報</a>
       </li>
       <li class="nav-list">
         <a href="#!" class="nav-link active">会員規約</a>

@@ -13,7 +13,7 @@ class HomeController extends Controller
     return view('mypage.top');
   }
   //mypage編集表示  
-  public function editMypage() {
+  public function showEdit() {
     return view('mypage.edit');
   }
 }

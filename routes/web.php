@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/mypage',[HomeController::class, 'showMypage'])->name('showMypage');
-Route::get('/mypage/edit',[HomeController::class, 'editMypage'])->name('editMypage');
+Route::get('/mypage/edit',[HomeController::class, 'showEdit'])->name('showEdit');

@@ -34,8 +34,9 @@ main {
 }
 
 .mypage-left {
-  //border-right: 2px solid white;
+  
   .nav-container {
+    margin: 0 auto;
     padding-top: 15px;
     max-width: 180px;
   }
@@ -84,6 +85,9 @@ main {
     }
   }
   //edit
+  :disabled {
+    background-color:black;
+  }
   .btn-row{
     text-align: center;
     .btn {

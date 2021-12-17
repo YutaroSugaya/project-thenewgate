@@ -12,7 +12,7 @@
         <x-mypage-nav/>
       </div>
 
-      <div class="col-9 mypage-right">
+      <div class="col-8 mypage-right">
         <div class="row">
           <div class="col">
             <div class="mypage-title">
