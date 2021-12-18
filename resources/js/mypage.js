@@ -9,7 +9,8 @@ $(function() {
 
   //会員情報編集→確認→更新
   $('#mypage-edit').on('click',function() {
-    $('input').prop('disabled',false);
+    //入力可能モード
+    $('input').prop('readOnly',false);
     let html = 
     `
     <button type="button" id="cancel"class="btn">キャンセル</button>
@@ -18,26 +19,28 @@ $(function() {
     $(this).parent().append(html);
     $(this).hide();
     
-    let email = $('#email').val();
-    let last_name = $('#last_name').val();
-    let first_name = $('#first_name').val();
-    let last_name_kana = $('#last_name_kana').val();
-    let first_name_kana = $('#first_name_kana').val();
-    let post_code = $('#post_code').val();
-    let address = $('#address').val();
-    let phone_number = $('#phone_number').val();
-    let modal = $('#exampleModal');
-
+    //確認
     $('#confirm').on('click',function(){
+      //入力値取得
+      let email = $('#email').val();
+      let last_name = $('#last_name').val();
+      let first_name = $('#first_name').val();
+      let last_name_kana = $('#last_name_kana').val();
+      let first_name_kana = $('#first_name_kana').val();
+      let post_code = $('#post_code').val();
+      let address = $('#address').val();
+      let phone_number = $('#phone_number').val();
+      let modal = $('#exampleModal');
+      //入力値モーダルに表示
       console.log(last_name);
       modal.find('#modal_email').text(email);
       modal.find('#modal_last_name').text(last_name);
-      modal.find('#first_name').text(first_name);
-      modal.find('#last_name_kana').text(last_name_kana);
-      modal.find('#first_name_kana').text(first_name_kana);
-      modal.find('#post_code').text(post_code);
-      modal.find('#address').text(address);
-      modal.find('#phone_number').text(phone_number);
+      modal.find('#modal_first_name').text(first_name);
+      modal.find('#modal_last_name_kana').text(last_name_kana);
+      modal.find('#modal_first_name_kana').text(first_name_kana);
+      modal.find('#modal_post_code').text(post_code);
+      modal.find('#modal_address').text(address);
+      modal.find('#modal_phone_number').text(phone_number);
 
     /*  $.ajax({
         type: '',
