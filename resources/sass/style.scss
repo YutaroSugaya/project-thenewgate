@@ -8,6 +8,7 @@
   list-style: none;
   color: $base-font-color;
   box-sizing: content-box;
+  //align-items: center;
   footer {
     background-color:$footer-bgc;
   }
@@ -21,6 +22,16 @@ main {
     .row {
       margin: 0 auto;
     }
+    input {
+      &:read-only {
+        background-color:white;
+      }
+      &:focus {
+        border: 1px solid rgb(247, 189, 199);
+        outline: none;
+        box-shadow: none;
+      }
+    }
   }
   .block {
     background-color: white;
@@ -31,19 +42,29 @@ main {
   a:link, a:visited, a:hover, a:active {
     color: inherit;
   }
+  .label {
+    margin: 5px;
+  }
+  .btn-row{
+    text-align: center;
+    .btn {
+      background-color: $btn-bgc;
+      color: $btn-font-color;
+      margin: 20px;
+    }
+  }
 }
 
+//マイページ
 .mypage-left {
-  
   .nav-container {
     margin: 0 auto;
     padding-top: 15px;
     max-width: 180px;
   }
 }
-
 .mypage-right {
-  //product
+  //マイページ商品一覧
   .col {
     .mypage-title {
       background-color: rgb(247, 189, 199);
@@ -64,8 +85,6 @@ main {
       padding: 10px;
       margin: 0px;
       text-align: center;
-      
-  
     }
     .product-lists {
       padding: 15px 10px;
@@ -84,16 +103,21 @@ main {
       }
     }
   }
-  //edit
-  :disabled {
-    background-color:black;
-  }
-  .btn-row{
-    text-align: center;
-    .btn {
-      background-color: $btn-bgc;
-      color: $btn-font-color;
-      margin: 20px;
-    }
+}
+
+//購入画面
+.buy-title {
+  display: flex;
+  background-color: rgb(247, 189, 199);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  align-items: center; 
+  justify-content: center;
+  h5{
+    margin: 0px;
   }
 }

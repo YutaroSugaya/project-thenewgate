@@ -17,7 +17,7 @@ $(function() {
     <button type="button" id="confirm" class="btn" data-toggle="modal" data-target="#exampleModal">確認する</button>
     `;
     $(this).parent().append(html);
-    $(this).hide();
+    $(this).hide();   
     
     //確認
     $('#confirm').on('click',function(){
@@ -63,7 +63,6 @@ $(function() {
     //中止
     $('#cancel').on('click',function() {
       location.reload();
-      //$('input').prop('disabled',true);
     });
   });
 })
