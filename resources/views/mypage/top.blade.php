@@ -21,13 +21,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col  block">
+          <div class="col block">
             <h4 class="mypage-section">お気に入り</h4>
             <x-product-list/>
           </div>  
         </div>
         <div class="row">
-          <div class="col  block">
+          <div class="col block">
             <h4 class="mypage-section">購入履歴</h4>
             <x-product-list/>
           </div>  

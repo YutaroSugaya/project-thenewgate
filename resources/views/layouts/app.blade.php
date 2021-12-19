@@ -11,6 +11,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/mypage.js') }}" defer></script>
+  <script src="{{ asset('js/buy.js') }}" defer></script>
 
   {{-- アイコンスクリプト --}}
   <script src="https://kit.fontawesome.com/8f09fca690.js" crossorigin="anonymous"></script>

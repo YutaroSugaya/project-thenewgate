@@ -8,13 +8,13 @@
 <div class="wrapper">
   <div class="container-fluid">
     <div class="row border-bottom pb-2 mb-3">
-      <div class="buy-title">
-        <h5 class="text-center"><i class="fas fa-shopping-cart"></i>注文情報入力</h5>
+      <div class="buy-title mt-3 mb-3">
+        <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文情報入力</h5>
       </div>
     </div>
     <div class="row border-bottom pb-2 mb-3">
       <div class="col-12">
-        <p><i class="far fa-user"></i> 注文者情報</p>
+        <p><i class="far fa-user mr-1"></i> 注文者情報</p>
         <div class="user_detail">
           <span class="label">会員名：</span>
           <span>DBから会員名</span><br>
@@ -32,7 +32,7 @@
 
     <div class="row pb-5">
       <div class="col-12">
-        <p><i class="fas fa-truck"></i>お届け・お支払いの指定</p>
+        <p><i class="fas fa-truck mr-1"></i>お届け・お支払いの指定</p>
         <div class="card product_buy_lists">
           <!-- DBから繰り返し処理 -->
           <div class="card-body product_buy_list">
@@ -67,9 +67,9 @@
                     <span class="label">配送先</span>
                     <!-- 繰り返し処理 -->
                     <div class="pt-1 pt-1">
-                      <select name="" id="shipping_adress">
-                        <option value="">注文者情報の住所に送る</option>
-                        <option id="add_address" value="">新たな配送先指定</option>
+                      <select name="" id="shipping_address">
+                        <option id="user_address" value="user_address">注文者情報の住所に送る</option>
+                        <option id="other_address" value="other_address">新たな配送先指定</option>
                       </select>
                     </div>
                   </div>
@@ -85,8 +85,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-7 d-flex add_address">
-
+                  <div class="col-7 shipping_form">
                   </div>
                 </div>
               </form>
