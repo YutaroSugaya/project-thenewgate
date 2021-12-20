@@ -4,7 +4,7 @@
 }
 
 .shopping-cart.dark{
-	background-color: #f6f6f6;
+	background-color: #fff3e8;
 }
 
 .shopping-cart .content{
@@ -33,7 +33,7 @@
 .shopping-cart .block-heading h2,
 .shopping-cart .block-heading h3 {
 	margin-bottom:1.2rem;
-	color: #3b99e0;
+	color: #000000;
 }
 
 .shopping-cart .items{
@@ -44,6 +44,7 @@
 	margin-bottom: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .shopping-cart .items .product .info{

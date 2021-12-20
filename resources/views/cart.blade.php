@@ -27,7 +27,7 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" src="assets/img/image.jpg">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">
@@ -47,7 +47,7 @@
 							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
 							 						</div>
 							 						<div class="col-md-3 price">
-							 							<span>????円　</span>
+							 							<span>????円</span>
 							 						</div>
 							 					</div>
 							 				</div>
@@ -57,23 +57,23 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" src="assets/img/image.jpg">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">
 						 						<div class="row">
 							 						<div class="col-md-5 product-name">
 							 							<div class="product-name">
-								 							<a href="#">Lorem Ipsum dolor</a>
+								 							<a href="#">商品</a>
 								 							<div class="product-info">
-									 							<div>Display: <span class="value">5 inch</span></div>
-									 							<div>RAM: <span class="value">4GB</span></div>
-									 							<div>Memory: <span class="value">32GB</span></div>
+									 							<div>テスト: <span class="value">○○○</span></div>
+									 							<div>テスト: <span class="value">○○</span></div>
+									 							<div>テスト: <span class="value">○○○</span></div>
 									 						</div>
 									 					</div>
 							 						</div>
 							 						<div class="col-md-4 quantity">
-							 							<label for="quantity">Quantity:</label>
+							 							<label for="quantity">注文数:</label>
 							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
 							 						</div>
 							 						<div class="col-md-3 price">
@@ -87,27 +87,27 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" src="assets/img/image.jpg">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">
 						 						<div class="row">
 							 						<div class="col-md-5 product-name">
 							 							<div class="product-name">
-								 							<a href="#">Lorem Ipsum dolor</a>
+								 							<a href="#">商品</a>
 								 							<div class="product-info">
-									 							<div>Display: <span class="value">5 inch</span></div>
-									 							<div>RAM: <span class="value">4GB</span></div>
-									 							<div>Memory: <span class="value">32GB</span></div>
+									 							<div>テスト: <span class="value">○○○</span></div>
+									 							<div>テスト: <span class="value">○○○</span></div>
+									 							<div>テスト: <span class="value">○○○</span></div>
 									 						</div>
 									 					</div>
 							 						</div>
 							 						<div class="col-md-4 quantity">
-							 							<label for="quantity">Quantity:</label>
+							 							<label for="quantity">注文数:</label>
 							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
 							 						</div>
 							 						<div class="col-md-3 price">
-							 							<span>$120</span>
+							 							<span>金額</span>
 							 						</div>
 							 					</div>
 							 				</div>

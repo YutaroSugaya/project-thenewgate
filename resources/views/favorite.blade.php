@@ -18,7 +18,7 @@
             <div class="col-md-10">
                 <div class="card card-body">
                     <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
-                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://i.imgur.com/5Aqgz7o.jpg" width="150" height="150" alt=""> </div>
+                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://via.placeholder.com/550x600/00CED1/000000" width="150" height="150" alt=""> </div>
                         <div class="media-body">
 
                             <h6 class="media-title font-weight-semibold"> <a href="#" data-abc="true">商品名</a> </h6>
@@ -41,17 +41,17 @@
                 </div>
                 <div class="card card-body mt-3">
                     <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
-                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://i.imgur.com/Aj0L4Wa.jpg" width="150" height="150" alt=""> </div>
+                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://via.placeholder.com/550x600/00CED1/000000" width="150" height="150" alt=""> </div>
                         <div class="media-body">
-                            <h6 class="media-title font-weight-semibold"> <a href="#" data-abc="true">Apple iPhone XS Max (Gold, 64 GB)</a> </h6>
+                            <h6 class="media-title font-weight-semibold"> <a href="#" data-abc="true">商品名２</a> </h6>
                             <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                                <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
-                                <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
+                                <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">タグ１</a></li>
+                                <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">タグ２</a></li>
                             </ul>
-                            <p class="mb-3">256 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 15MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+                            <p class="mb-3">商品説明など〜〜 </p>
                             <ul class="list-inline list-inline-dotted mb-0">
-                                <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile junction</a></li>
-                                <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                <li class="list-inline-item">メーカー名 <a href="#" data-abc="true">産地</a></li>
+                                <li class="list-inline-item">丸紅食品 <a href="#" data-abc="true">北海道</a></li>
                             </ul>
                         </div>
                         <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="card card-body mt-3">
                     <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
-                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://i.imgur.com/5Aqgz7o.jpg" width="150" height="150" alt=""> </div>
+                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://via.placeholder.com/550x600/00CED1/000000" width="150" height="150" alt=""> </div>
                         <div class="media-body">
                             <h6 class="media-title font-weight-semibold"> <a href="#" data-abc="true">Apple iPhone XR (Red, 128 GB)</a> </h6>
                             <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
@@ -85,7 +85,7 @@
                 </div>
                 <div class="card card-body mt-3">
                     <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
-                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://i.imgur.com/Aj0L4Wa.jpg" width="150" height="150" alt=""> </div>
+                        <div class="mr-2 mb-3 mb-lg-0"> <img src="https://via.placeholder.com/550x600/00CED1/000000" width="150" height="150" alt=""> </div>
                         <div class="media-body">
                             <h6 class="media-title font-weight-semibold"> <a href="#" data-abc="true">Apple iPhone XS Max (Gold, 64 GB)</a> </h6>
                             <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
