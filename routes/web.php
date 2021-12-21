@@ -23,4 +23,4 @@ Route::get('/buy',[HomeController::class, 'showBuy'])->name('showBuy');
 Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck');
 Route::get('/buy/thanks',[HomeController::class, 'showThanks'])->name('showThanks');
 Route::get('/privacypolicy',[HomeController::class, 'showPrivacypolicy'])->name('showPrivacypolicy');
-Route::get('/nopage',[HomeController::class, 'nopage'])->name('nopage');
+Route::get('/nopage',[HomeController::class, 'nopage404'])->name('nopage');

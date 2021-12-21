@@ -85,7 +85,21 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-7 shipping_form">
+                  <div class="col-7 shipping">
+                    <div id="shipping_form" style="display: none;">
+                      <div class="row">
+                        <label class="label">お名前</label>
+                        <input id="shipping_name" type="text" class="form-control" placeholder="お名前" name="shipping_name" required>
+                      </div>
+                      <div class="row">
+                        <label class="label">郵便番号</label>
+                        <input id="shipping_post_code" type="text" class="form-control" placeholder="●◆▲-○□▶︎☆" name="shipping_post_code" required>
+                      </div>
+                      <div class="row">
+                        <label class="label">住所</label>
+                        <input id="shipping_address" type="text" class="form-control" placeholder="◯◯県×x市▶︎◆" name="shipping_address" required>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </form>
