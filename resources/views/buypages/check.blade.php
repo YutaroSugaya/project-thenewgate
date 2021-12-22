@@ -7,11 +7,16 @@
 <br>
 <div class="wrapper">
   <div class="container-fluid">
-    <div class="row border-bottom pb-2 mb-3">
+    <div class="row">
       <div class="buy-title mt-3 mb-3">
-        <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文情報入力</h5>
+        <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文情報確認</h5>
       </div>
     </div>
+    <ul class="progressbar border-bottom pb-2 mb-3">
+      <li class="complete">ご入力</li>
+      <li class="active">ご確認</li>
+      <li>完了</li>
+    </ul>
     <div class="row border-bottom pb-2 mb-3">
       <div class="col-12">
         <p><i class="far fa-user mr-1"></i> 注文者情報</p>
@@ -29,10 +34,9 @@
         </div>
       </div>
     </div>
-
-    <div class="row pb-5">
+    <div class="row pb-3">
       <div class="col-12">
-        <p><i class="fas fa-truck mr-1"></i>お届け・お支払いの指定</p>
+        <p><i class="fas fa-truck mr-1"></i>お届け・お支払い先</p>
         <div class="card product_buy_lists">
           <!-- DBから繰り返し処理 -->
           <div class="card-body product_buy_list">
@@ -41,7 +45,7 @@
               <div class="col-8">
                 <h4 class="card-title">DBから商品名</h4>
                 <div class="row">
-                  <h6 class="card-subtitle mb-2 text-muted col-12">DBから会社名<span>  </span>DBから商品アピールポイント</h6>
+                  <h6 class="card-subtitle mb-2 text-muted col-12">DBから会社名<span></span>DBから商品アピールポイント</h6>
                   <p class="card-text col-12">¥DBから値段<span>  </span>DBから生産地</p>
               </div>
               </div>
@@ -50,54 +54,44 @@
               <form action="" class="col-12">
                 @csrf
                 <div class="row">
-                  <div class="col-5 d-flex">
-                    <span class="label">数量</span>
+                  <div class="col-6 d-flex">
+                    <span class="label col-3">数量</span>
                     <!-- 繰り返し処理 -->
-                    <div class="pt-1 pb-1">
-                      <select name="" id="">
-                        <option value="">DBからカート入力値</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="...">...</option>
-                        <option value="10">10</option>
-                      </select>
+                    <div class="col-9 pt-1 pb-1">
+                      
+                        <span class="" value="">フォームの入力値</span>
                     </div>
                   </div>
-                  <div class="col-7 d-flex">
-                    <span class="label">配送先</span>
-                    <!-- 繰り返し処理 -->
-                    <div class="pt-1 pt-1">
-                      <select name="" id="shipping_address">
-                        <option id="user_address" value="user_address">注文者情報の住所に送る</option>
-                        <option id="other_address" value="other_address">新たな配送先指定</option>
-                      </select>
+                  <div class="col-6 d-flex">
+                    <span class="label col-4">支払い方法</span>
+                    <div class="col-8 pt-1 pb-1">
+                        <span value="">フォームの入力値</span>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-5 d-flex">
-                    <span class="label">支払い方法</span>
-                    <div class="pt-1 pt-1">
-                      <select name="" id="">
-                        <option value="">クレジットカード</option>
-                        <option value="1">paypal</option>
-                        <option value="1">代金引換</option>
-                      </select>
+                  <div class="col-6 d-flex">
+                    <span class="label col-3" style="padding-right: 0px;">配送先</span>
+                    <!-- 繰り返し処理 -->
+                    <div class="col-8 pt-1 pb-1">
+                      <span class="" id="" value="">フォームの入力値</span>
                     </div>
                   </div>
-                  <div class="col-7 shipping">
-                    <div id="shipping_form" style="display: none;">
+                </div>
+                <div class="row">
+                  <div class="col-10 shipping border" style="margin: 0 auto; max-width: 600px;">
+                    <div id="shipping_form">
                       <div class="row">
-                        <label class="label">お名前</label>
-                        <input id="shipping_name" type="text" class="form-control" placeholder="お名前" name="shipping_name" required>
+                        <span class="col-3 label">お名前</span>
+                        <span id="shipping_name" type="text" class="label col-8" placeholder="お名前" name="shipping_name">フォームの入力値orユーザDB値</span>
                       </div>
                       <div class="row">
-                        <label class="label">郵便番号</label>
-                        <input id="shipping_post_code" type="text" class="form-control" placeholder="●◆▲-○□▶︎☆" name="shipping_post_code" required>
+                        <span class="col-3 label">郵便番号</span>
+                        <span id="shipping_post_code" type="text" class="label col-8" placeholder="●◆▲-○□▶︎☆" name="shipping_post_code">フォームの入力値orユーザDB値</span>
                       </div>
                       <div class="row">
-                        <label class="label">住所</label>
-                        <input id="shipping_address" type="text" class="form-control" placeholder="◯◯県×x市▶︎◆" name="shipping_address" required>
+                        <span class="col-3 label">住所</span>
+                        <span id="shipping_address" type="text" class="label col-8" placeholder="◯◯県×x市▶︎◆" name="shipping_address">フォームの入力値orユーザDB値</span>
                       </div>
                     </div>
                   </div>
@@ -128,10 +122,14 @@
           </div>
         </div>
       </div>
+      <div class="row btn-row">
+        <div class="col col-12">
+          <button type="" onclick="location.href=" class="btn buy-confirm center">キャンセルする</button>
+          <button type="" onclick="location.href='{{ route('showThanks') }}'" class="btn buy-confirm center">この内容で購入する</button>
+        </div>
+      </div>
     </div>
   </div>
-
 </div>
-
 
 @endsection

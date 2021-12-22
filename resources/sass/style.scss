@@ -50,7 +50,7 @@ main {
     .btn {
       background-color: $btn-bgc;
       color: $btn-font-color;
-      margin: 20px;
+      
     }
   }
 }
@@ -67,7 +67,7 @@ main {
   //マイページ商品一覧
   .col {
     .mypage-title {
-      background-color: rgb(247, 189, 199);
+      background-color: $dullpink;
       border-radius: 1rem;
       width: 100%;
       max-width: 300px;
@@ -108,7 +108,7 @@ main {
 //購入画面
 .buy-title {
   display: flex;
-  background-color: rgb(247, 189, 199);
+  background-color: $dullpink;
   border-radius: 1rem;
   padding-right: 10px;
   padding-left: 10px;
@@ -120,4 +120,65 @@ main {
   h5{
     margin: 0px;
   }
+}
+.row {
+  .btn-row {
+    .buy-confirm {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+}
+.progressbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.progressbar li {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33.333%;
+  color: $palegray;
+  font-weight: bold;
+}
+.progressbar li:before {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 7px auto 20px auto;
+  content: '';
+  text-align: center;
+  border-radius: 50%;
+  background-color: $palegray;
+}
+.progressbar li:after {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  left: -46.5%;
+  width: 97%;
+  height: 2px;
+  content: '';
+  background-color: $palegray;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active,
+.progressbar li.complete{
+  color: $section-title-color;
+}
+.progressbar li.active:before,
+.progressbar li.complete:before {
+  background-color: $dullpink;
+}
+.progressbar li.active:after,
+.progressbar li.complete:after {
+  background-color: $dullpink;
 }

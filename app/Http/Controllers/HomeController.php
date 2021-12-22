@@ -18,19 +18,19 @@ class HomeController extends Controller
   }
 
   public function showBuy() {
-    return view('buy');
+    return view('buypages.buy');
   }
-  public function showBuyCheck() {
-    return view('check');
+  public function showCheck() {
+    return view('buypages.check');
   }
   public function showThanks() {
-    return view('thanks');
+    return view('buypages.thanks');
   }
   public function showPrivacypolicy() {
-    return view('privacypolicy');
+    return view('others.privacypolicy');
   }
   public function nopage404() {
-    return view('nopage');
+    return view('others.nopage');
   }
 
 }

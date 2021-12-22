@@ -134,4 +134,69 @@ main .btn-row .btn {
 .buy-title h5 {
   margin: 0px;
 }
+
+.progressbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progressbar li {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33.333%;
+  color: #c7c7c7;
+  font-weight: bold;
+}
+
+.progressbar li:before {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 7px auto 20px auto;
+  content: '';
+  text-align: center;
+  border-radius: 50%;
+  background-color: #c7c7c7;
+}
+
+.progressbar li:after {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  left: -46.5%;
+  width: 97%;
+  height: 2px;
+  content: '';
+  background-color: #c7c7c7;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active,
+.progressbar li.complete {
+  color: #a68a72;
+}
+
+.progressbar li.active:before,
+.progressbar li.complete:before {
+  background-color: #f7bdc7;
+}
+
+.progressbar li.active:after,
+.progressbar li.complete:after {
+  background-color: #f7bdc7;
+}
 /*# sourceMappingURL=style.css.map */
