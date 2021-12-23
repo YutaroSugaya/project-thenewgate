@@ -27,7 +27,7 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://i.imgur.com/bV1xmG5.jpg">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">
@@ -57,7 +57,7 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://i.imgur.com/vgMi4nw.jpg">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">
@@ -87,7 +87,7 @@
 				 				<div class="product">
 				 					<div class="row">
 					 					<div class="col-md-3">
-					 						<img class="img-fluid mx-auto d-block image" img src="https://via.placeholder.com/550x600/00CED1/000000">
+					 						<img class="img-fluid mx-auto d-block image" img src="https://i.imgur.com/hRlGe10.jpg">
 					 					</div>
 					 					<div class="col-md-8">
 					 						<div class="info">

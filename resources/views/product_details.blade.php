@@ -27,6 +27,7 @@
                  <h6 class="card-subtitle">サブタイトル？</h6>
                  <div class="row">
 
+                     {{-- カルーセルのスライド --}}
                      <div class="container-sm">
                          <div class="row">
                              <div class="col-md-8 mx-auto">
@@ -74,7 +75,47 @@
                              data-original-title="Add to cart">
                              <i class="fa fa-shopping-cart"></i>
                          </button>
-                         <button class="btn btn-primary btn-rounded">Buy Now</button>
+                         <button class="btn btn-primary btn-rounded">購入する</button>
+
+
+                         {{-- 送料一覧　モーダル画面 --}}
+                         <button type="button" class="btn btn-primary launch" data-toggle="modal"
+                             data-target="#staticBackdrop"> <i class="fa fa-info"></i> 送料を確認
+                         </button>
+                         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                                 <div class="modal-content">
+                                     <div class="modal-body ">
+                                         <div class="text-right"> <i class="fa fa-close close"
+                                                 data-dismiss="modal"></i> </div>
+                                         <div class="px-4 py-5">
+                                             <h5 class="text-uppercase">送料一覧</h5>
+                                             <h4 class="mt-5 theme-color mb-5"></h4>
+                                             <span
+                                                 class="theme-color">送料</span>
+                                             <div class="mb-3">
+                                                 <hr class="new1">
+                                             </div>
+                                             <div class="d-flex justify-content-between"> <span
+                                                     class="font-weight-bold"></span>全国一律<span
+                                                     class="text-muted">¥1100</span> </div>
+                                             <div class="d-flex justify-content-between"> <small></small>
+                                                 <small></small> </div>
+                                             <div class="d-flex justify-content-between"> <small></small>
+                                                 <small></small> </div>
+                                             <div class="d-flex justify-content-between mt-3"> <span
+                                                     class="font-weight-bold"></span> <span
+                                                     class="font-weight-bold theme-color"></span> </div>
+                                             <div class="text-center mt-5"> <button class="btn btn-primary">お届け状況
+                                                     </button> </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+
                          <h3 class="box-title mt-5">Key Highlights</h3>
                          <ul class="list-unstyled">
                              <li><i class="fa fa-check text-success"></i>Sturdy structure</li>
