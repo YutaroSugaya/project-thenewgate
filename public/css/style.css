@@ -4,6 +4,9 @@
   color: #685647;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * footer {
@@ -11,7 +14,7 @@
 }
 
 main {
-  background-color: #fff3e8;
+  background-color: white;
 }
 
 main .container-fluid {
@@ -59,7 +62,6 @@ main .btn-row {
 main .btn-row .btn {
   background-color: #a68a72;
   color: #ffffff;
-  margin: 20px;
 }
 
 .mypage-left .nav-container {
@@ -135,6 +137,11 @@ main .btn-row .btn {
   margin: 0px;
 }
 
+.row .btn-row .buy-confirm {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .progressbar {
   position: relative;
   margin: 0;
@@ -198,5 +205,10 @@ main .btn-row .btn {
 .progressbar li.active:after,
 .progressbar li.complete:after {
   background-color: #f7bdc7;
+}
+
+.privacy-text {
+  margin: 0 auto;
+  max-width: 70%;
 }
 /*# sourceMappingURL=style.css.map */

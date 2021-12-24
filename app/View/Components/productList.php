@@ -43,9 +43,9 @@ class productList extends Component
         [ 'name' => '饅頭',
           'price' => '2000yen',
           'prefecture' => 'mie',],
-        [ 'name' => 'アイス',
+/*         [ 'name' => 'アイス',
         'price' => '400yen',
-        'prefecture' => 'hokkaido',],
+        'prefecture' => 'hokkaido',], */
       ];
       return $products;
     }

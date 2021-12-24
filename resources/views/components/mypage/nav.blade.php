@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="nav-container">
     <!-- Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie -->
     <h4 class=""><i class="far fa-user">マイページ</i></h4>

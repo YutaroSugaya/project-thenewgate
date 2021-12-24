@@ -7,6 +7,13 @@ $(function() {
     }
   });
 
+  $(document).ready(function() {
+    $("#sidebarCollapse").on("click", function() {
+      $("#sidebar").toggleClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+
   //会員情報編集→確認→更新
   $('#mypage-edit').on('click',function() {
     //入力可能モード

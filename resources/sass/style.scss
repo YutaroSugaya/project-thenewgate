@@ -8,14 +8,14 @@
   list-style: none;
   color: $base-font-color;
   box-sizing: content-box;
-  //align-items: center;
+  align-items: center;
   footer {
     background-color:$footer-bgc;
   }
 }
 
 main {
-  background-color: $base-bgc;
+  background-color: white;
   .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
@@ -181,4 +181,10 @@ main {
 .progressbar li.active:after,
 .progressbar li.complete:after {
   background-color: $dullpink;
+}
+
+//プライバシーポリシー
+.privacy-text {
+  margin: 0 auto;
+  max-width: 70%;
 }
