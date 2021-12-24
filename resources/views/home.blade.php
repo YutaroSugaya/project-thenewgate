@@ -9,6 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/swiper.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/content.css') }}" rel="stylesheet">
         <!-- Styles -->
@@ -16,10 +17,47 @@
     <body class="antialiased">
 
 
+        <header>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center text_middle">
+                    <h1>
+                        <a href="">
+                            <span class="text-594838 font-weight-bold text_middle">タカハシ商事</span>
+                        </a>
+                    </h1>
+                    <div>
+                        <select class="custom-select text-white font-weight-bold bg-a68a72 ml-3 border border-a68a72">
+                        <option selected>商品カテゴリー</option>
+                        <option value="1">テスト</option>
+                        <option value="2">テスト</option>
+                        <option value="3">テスト</option>
+                        </select>
+                    </div>
+                    <div class="ml-4">
+                        <input type="text" placeholder="何をお探しですか？" class="text_normal border border-a68a72">
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </header>
 
         <div class="mw-100">
-            <div>
-                <img src="{{ asset('images/home/demo_main01.jpg') }}" alt="" width="100%" height="auto" class="img-fluid">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ asset('images/home/demo_main01.jpg') }}" alt="" width="100%" height="auto" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('images/home/demo_main01.jpg') }}" alt="" width="100%" height="auto" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('images/home/demo_main01.jpg') }}" alt="" width="100%" height="auto" class="img-fluid">
+                    </div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
 
@@ -29,7 +67,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="text-a68a72 font-weight-bold py-6">お知らせ</h2>
                     <div>
-                        <a href="">
+                        <a href="{{ route('notice') }}">
                             <span class="text_medium font-weight-bold">お知らせ一覧</span>
                         </a>
                     </div>
@@ -104,6 +142,7 @@
         <section class="mw-100 bg-white">
             <div class="container py-4 py-md-5">
                 <div class="">
+                    <div class="text-d73d3d font-weight-bold text-center text_medium">＼ 2021年12月31日 23：00まで ／</div>
                     <h2 class="text-d73d3d font-weight-bold py-6 text-center">タイムセール開催中</h2>
                 </div>
                 <ul class="list-unstyled row">
@@ -222,6 +261,6 @@
         </section>
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     </body>
 </html>

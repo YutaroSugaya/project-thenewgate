@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/notice', function () {
+    return view('notice');
+})->name('notice');
+
+Route::get('/sale', function () {
+    return view('sale');
+})->name('sale');
