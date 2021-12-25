@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -46,3 +47,15 @@ Route::get
 ('/freight',function() {
     return view('freight');
 });
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/notice', function () {
+    return view('notice');
+})->name('notice');
+
+Route::get('/sale', function () {
+    return view('sale');
+})->name('sale');
