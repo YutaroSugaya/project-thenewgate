@@ -8,7 +8,6 @@
   list-style: none;
   color: $base-font-color;
   box-sizing: content-box;
-  align-items: center;
   footer {
     background-color:$footer-bgc;
   }
@@ -97,8 +96,14 @@ main {
           max-width: 100%;
           height:  auto;
         }
-        p {
-          margin: 0px;
+        .card-body {
+          h5,p {
+            margin: 0px;
+            word-wrap: break-word;
+          }
+          .text {
+            display: inline-block;
+          }
         }
       }
     }
@@ -187,4 +192,28 @@ main {
 .privacy-text {
   margin: 0 auto;
   max-width: 70%;
+}
+
+//商品カルーセル
+#carousel-card {
+  position: abusolute;
+  .carousel-indicators {
+    position: lerative;
+    bottom : -35px;
+    
+  }
+}
+.carousel-indicators li {
+  background-color: $section-title-color !important;
+}
+.carousel-indicators .active {
+  background-color: $section-title-color !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: $section-title-color;
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
 }

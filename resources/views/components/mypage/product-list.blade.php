@@ -1,5 +1,5 @@
 
- <div class="container mb-5">
+ <div class="container PB-5 p-3">
   <div id="carousel-card" class="carousel slide" data-interval="5000">
     <ol class="carousel-indicators">
       <li data-target="#carousel-card" data-slide-to="0" class="active">
@@ -9,6 +9,7 @@
         <img src="https://placehold.it/100x50" alt="img">
       </li>
     </ol>
+
     <div class="carousel-inner">
       <div class="carousel-item px-5 active">
         <div class="row">
@@ -16,13 +17,13 @@
           <div class="col-4">
             <div class="card product-list">
               <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
-              <div class="card-body">
+              <div class="card-body p-2">
                 <h5 class="card-title">
-                  <span class="float-left-left">{{ $product['name'] }}</span><br>
-                  <span class="float-right">{{ $product['prefecture'] }}</span>
+                  <span class="text">{{ $product['name'] }}</span>
                 </h5>
-                <p>
-                  <span class="float-right">{{ $product['price'] }}</span>
+                <p class="small">
+                  <span class="text">{{ $product['prefecture'] }}</span><br>
+                  <span class="text">{{ $product['price'] }}</span>
                 </p>
               </div>
             </div>
@@ -37,13 +38,13 @@
           <div class="col-4">
             <div class="card product-list">
               <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
-              <div class="card-body">
+              <div class="card-body p-2">
                 <h5 class="card-title">
-                  <span class="float-left-left">{{ $product['name'] }}</span><br>
-                  <span class="float-right">{{ $product['prefecture'] }}</span>
+                  <span class="">{{ $product['name'] }}</span>
                 </h5>
-                <p>
-                  <span class="float-right">{{ $product['price'] }}</span>
+                <p class="small">
+                  <span class="">{{ $product['prefecture'] }}</span><br>
+                  <span class="">{{ $product['price'] }}</span>
                 </p>
               </div>
             </div>
@@ -65,13 +66,3 @@
 
 </div>
 
-<hr>
- 
-</div>
-
-<hr>
-
-
-
-
-</div>
