@@ -24,3 +24,37 @@ Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck')
 Route::get('/buy/thanks',[HomeController::class, 'showThanks'])->name('showThanks');
 Route::get('/privacypolicy',[HomeController::class, 'showPrivacypolicy'])->name('showPrivacypolicy');
 Route::get('/nopage',[HomeController::class, 'nopage404'])->name('nopage');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get
+('/cart',function() {
+    return view('cart');
+});
+
+Route::get
+('/favorite',function() {
+    return view('favorite');
+});
+
+Route::get
+('/product',function() {
+    return view('product_details');
+});
+
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/notice', function () {
+    return view('notice');
+})->name('notice');
+
+Route::get('/sale', function () {
+    return view('sale');
+})->name('sale');

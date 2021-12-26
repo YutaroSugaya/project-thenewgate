@@ -8,11 +8,11 @@ class HomeController extends Controller
 {
   //mypage_top表示
   public function showMypage () {
-    
+
     //dd($products[0]['name']);
     return view('mypage.top');
   }
-  //mypage編集表示  
+  //mypage編集表示
   public function showEdit() {
     return view('mypage.edit');
   }
@@ -33,4 +33,23 @@ class HomeController extends Controller
     return view('others.nopage');
   }
 
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('home');
+    }
 }
