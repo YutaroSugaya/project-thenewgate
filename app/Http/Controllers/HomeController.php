@@ -33,15 +33,12 @@ class HomeController extends Controller
     return view('others.nopage');
   }
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
+//   自動ログイン認証が勝手に発動するので、今はコメントアウトにしてますが、そのうち使います
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.

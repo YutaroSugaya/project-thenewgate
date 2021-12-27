@@ -17,6 +17,9 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//宮本さんのコード
+
 Route::get('/mypage',[HomeController::class, 'showMypage'])->name('showMypage');
 Route::get('/mypage/edit',[HomeController::class, 'showEdit'])->name('showEdit');
 Route::get('/buy',[HomeController::class, 'showBuy'])->name('showBuy');
@@ -30,6 +33,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//菅谷のコード
 
 Route::get
 ('/cart',function() {
@@ -46,6 +50,7 @@ Route::get
     return view('product_details');
 });
 
+//志保さんのコード
 
 Route::get('/home', function () {
     return view('home');
