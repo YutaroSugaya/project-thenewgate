@@ -35,18 +35,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //菅谷のコード
 
-Route::get
-('/cart',function() {
+Route::get('/cart',function() {
     return view('cart');
 });
 
-Route::get
-('/favorite',function() {
+Route::get('/favorite',function() {
     return view('favorite');
 });
 
-Route::get
-('/product',function() {
+Route::get('/product',function() {
     return view('product_details');
 });
 
