@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+p, a, h1, h2, h3, h4, h5, h6 {
+  color: !important;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+#carousel-card {
+  position: abusolute;
+}
+
+#carousel-card .carousel-indicators {
+  position: lerative;
+  bottom: -35px;
+}
+
+.carousel-indicators li {
+  background-color: #a68a72 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #a68a72 !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: #a68a72;
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
+}
+
+/* * {
+  list-style: none;
+  color: $base-font-color;
+  box-sizing: content-box;
+  background-color: map-get($theme-colors,fff3e8);
+  footer {
+    background-color:$footer-bgc;
+  }
+}
+
+main {
+  background-color: white;
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    .row {
+      margin: 0 auto;
+    }
+    input {
+      &:read-only {
+        background-color:white;
+      }
+      &:focus {
+        border: 1px solid rgb(247, 189, 199);
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .block {
+    background-color: white;
+    padding: 10px;
+    //border-radius: 1.5rem;
+    margin-bottom: 20px;
+  }
+  a:link, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  .label {
+    margin: 5px;
+  }
+  .btn-row{
+    text-align: center;
+    .btn {
+      background-color: $btn-bgc;
+      color: $btn-font-color;
+      
+    }
+  }
+}
+
+
+//購入画面
+.buy-title {
+  display: flex;
+  background-color: $dullpink;
+  border-radius: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  align-items: center; 
+  justify-content: center;
+  h5{
+    margin: 0px;
+  }
+}
+.row {
+  .btn-row {
+    .buy-confirm {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+}
+.progressbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.progressbar li {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33.333%;
+  color: $palegray;
+  font-weight: bold;
+}
+.progressbar li:before {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 7px auto 20px auto;
+  content: '';
+  text-align: center;
+  border-radius: 50%;
+  background-color: $palegray;
+}
+.progressbar li:after {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  left: -46.5%;
+  width: 97%;
+  height: 2px;
+  content: '';
+  background-color: $palegray;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active,
+.progressbar li.complete{
+  color: $section-title-color;
+}
+.progressbar li.active:before,
+.progressbar li.complete:before {
+  background-color: $dullpink;
+}
+.progressbar li.active:after,
+.progressbar li.complete:after {
+  background-color: $dullpink;
+}
+
+//プライバシーポリシー
+.privacy-text {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+//商品カルーセル
+#carousel-card {
+  position: abusolute;
+  .carousel-indicators {
+    position: lerative;
+    bottom : -35px;
+    
+  }
+}
+.carousel-indicators li {
+  background-color: $section-title-color !important;
+}
+.carousel-indicators .active {
+  background-color: $section-title-color !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: $section-title-color;
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
+}
+ */
+/*# sourceMappingURL=style.css.map */

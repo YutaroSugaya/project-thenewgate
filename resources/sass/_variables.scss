@@ -1,10 +1,11 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff3e8;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
 
 // Colors
 $blue: #3490dc;
@@ -17,3 +18,32 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$palegray: #c7c7c7;
+$dullpink:rgb(247, 189, 199);
+
+//ベース背景
+$base-bgc: #fff3e8;
+//ベース文字色
+$base-font-color: #685647;
+//セクションタイトル文字色
+$section-title-color: #a68a72;
+//フッター背景
+$footer-bgc: #594838;
+//ボタン背景色
+$btn-bgc: #a68a72;
+//ボタン文字色
+$btn-font-color: #ffffff;
+
+
+$theme-colors: (
+  "a68a72": #a68a72, // ボタン、セクションタイトルカラー
+  "594838": #594838, // フッター背景
+  "e4d3c4": #e4d3c4, // ボーダーカラー
+  "685647": #685647, // ベース文字色
+  "d73d3d": #d73d3d, // タイムセールヵラー
+  "6f2c2c": #6f2c2c, // ヘッダー新規登録ボタン
+  "a64444": #a64444, // ヘッダーログインボタン
+  "fff3e8": #fff3e8, // メインバックグラウンドカラー
+)
+

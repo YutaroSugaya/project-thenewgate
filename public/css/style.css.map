@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AACA,OAAO,CAAC,qDAAI;AAQZ,AAAA,CAAC,EAAE,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EAC3B,KAAK,EAAiC,UAAU;CACjD;;AACD,AAAA,CAAC,AAAA,KAAK,EAAE,CAAC,AAAA,QAAQ,EAAE,CAAC,AAAA,MAAM,EAAE,CAAC,AAAA,OAAO,CAAC;EACnC,KAAK,EAAE,kBAAkB;EACzB,eAAe,EAAE,eAAe;CACjC;;AAGD,AAAA,cAAc,CAAC;EACb,QAAQ,EAAE,SAAS;CAMpB;;AAPD,AAEE,cAFY,CAEZ,oBAAoB,CAAC;EACnB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAG,KAAK;CAEf;;AAEH,AAAA,oBAAoB,CAAC,EAAE,CAAC;EACtB,gBAAgB,ECEI,OAAO,CDFY,UAAU;CAClD;;AACD,AAAA,oBAAoB,CAAC,OAAO,CAAC;EAC3B,gBAAgB,ECDI,OAAO,CDCY,UAAU;CAClD;;AAED,AAAA,sBAAsB,EAAE,sBAAsB,CAAC;EAC7C,gBAAgB,ECLI,OAAO;EDM3B,KAAK,EAAE,eAAe;EACtB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,MAAM;CACtB;;AAKD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA+JG",
+    "sources": [
+        "../../resources/sass/style.scss",
+        "../../resources/sass/_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

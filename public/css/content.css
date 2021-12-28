@@ -1,0 +1,46 @@
+a {
+  color: #685647;
+}
+
+.arrow_685647_16::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #685647;
+  border-right: 2px solid #685647;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  bottom: 10px;
+  right: 32px;
+}
+
+.dot_omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text_large {
+  font-size: 1.8rem;
+}
+
+.text_middle {
+  font-size: 1.5rem;
+}
+
+.text_medium {
+  font-size: 1.2rem;
+}
+
+.text_normal {
+  font-size: 0.9rem;
+}
+
+.text_small {
+  font-size: 0.7rem;
+}
+/*# sourceMappingURL=content.css.map */
