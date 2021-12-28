@@ -2,9 +2,6 @@
 
 @section('content')
 
-
-<br><br>
-
 <div class="main-wrapper">
   <div class="container-fluid">
     <div class="row border-top">
@@ -13,7 +10,6 @@
 
     <div class="row">
       <div class="main-left sidebar col-3 d-none d-sm-block">
-        <!-- <div class="header"></div> -->
         <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
           <label for="openSidebarMenu" class="sidebarIconToggle">
             <div class="spinner diagonal part-1"></div>
@@ -22,36 +18,19 @@
           </label>
         <x-mypage.mypage_nav/>
       </div>
-      <div class="main-right col-9 col-xs-12">
-     
-          <div class="row">
-            <div class="block">
-              <h3 class="page-title mb-0">マイページへようこそ</h3>
-            </div>
-          </div>
-
       
-        <div class="row mb-3">
-          <div class="section card product-cards">
-            <h5 class="card-title section-title m-2">閲覧履歴</h5>
-            <x-product-list/> 
-          </div>
+      <div class="main-right col-9 col-xs-12">
+        <h3 class="page-title mb-3">マイページへようこそ</h3>
+        <div class="section card product-cards">
+          <h5 class="m-2">閲覧履歴</h5>
+          <x-product-list/> 
         </div>
-        
+      </div>
 
     </div>
-
-    </div>
-
-  
-  
   </div>
-
 </div>
 
-
-  
-  </div>
 
 
 @endsection

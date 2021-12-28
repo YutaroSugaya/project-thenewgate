@@ -1,7 +1,7 @@
 
- <div class="container PB-5 p-3">
+<div class="container PB-5 p-4 pb-5">
   <div id="carousel-card" class="carousel slide" data-interval="5000">
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators m-0">
       <li data-target="#carousel-card" data-slide-to="0" class="active">
         <img src="https://placehold.it/100x50" alt="img">
       </li>
@@ -15,18 +15,20 @@
         <div class="row">
           @foreach($products as $product)
           <div class="col-4">
-            <div class="card product-list">
-              <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
-              <div class="card-body p-2">
-                <h5 class="card-title">
-                  <span class="text">{{ $product['name'] }}</span>
-                </h5>
-                <p class="small">
-                  <span class="text">{{ $product['prefecture'] }}</span><br>
-                  <span class="text">{{ $product['price'] }}</span>
-                </p>
+            <a href="#">
+              <div class="card product-list">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
+                <div class="card-body p-2">
+                  <h5 class="card-title">
+                    <span class="text">{{ $product['name'] }}</span>
+                  </h5>
+                  <p class="small">
+                    <span class="text">{{ $product['prefecture'] }}</span><br>
+                    <span class="text">{{ $product['price'] }}</span>
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           @endforeach          
         </div>
@@ -36,18 +38,20 @@
         <div class="row">
         @foreach($products as $product)
           <div class="col-4">
-            <div class="card product-list">
-              <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
-              <div class="card-body p-2">
-                <h5 class="card-title">
-                  <span class="">{{ $product['name'] }}</span>
-                </h5>
-                <p class="small">
-                  <span class="">{{ $product['prefecture'] }}</span><br>
-                  <span class="">{{ $product['price'] }}</span>
-                </p>
+            <a href="#">
+              <div class="card product-list">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/710S7WpBL+L._AC_SX679_.jpg" alt="Card image cap">
+                <div class="card-body p-2">
+                  <h5 class="card-title">
+                    <span class="text">{{ $product['name'] }}</span>
+                  </h5>
+                  <p class="small">
+                    <span class="text">{{ $product['prefecture'] }}</span><br>
+                    <span class="text">{{ $product['price'] }}</span>
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           @endforeach
         </div>

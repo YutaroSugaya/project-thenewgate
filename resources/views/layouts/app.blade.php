@@ -37,8 +37,8 @@
 </head>
 
 <body>
-  <header>
-
+  <header class="bg-fff3e8">
+  @include('layouts.header')
   </header>
   <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -79,8 +79,8 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
+                                  onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
@@ -99,13 +99,13 @@
 </div>
 
 
-    <main class="py-4">
-        @yield('content')
+    <main class="py-4 bg-fff3e8">
+      @yield('content')
     </main>
 
 
-  <footer>
-
+  <footer class="bg-594838">
+    @include('layouts.footer')
   </footer>
 
 </body>

@@ -4,10 +4,49 @@
 // Variables
 @import 'variables';
 
-* {
+//ヘッダー
+
+//文字やリンク
+p, a, h1, h2, h3, h4, h5, h6 {
+  color: map-get($theme-colors, 685647) !important;
+}
+a:link, a:visited, a:hover, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+//商品カルーセル
+#carousel-card {
+  position: abusolute;
+  .carousel-indicators {
+    position: lerative;
+    bottom : -35px;
+    
+  }
+}
+.carousel-indicators li {
+  background-color: $section-title-color !important;
+}
+.carousel-indicators .active {
+  background-color: $section-title-color !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: $section-title-color;
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
+}
+
+//フッター
+
+
+/* * {
   list-style: none;
   color: $base-font-color;
   box-sizing: content-box;
+  background-color: map-get($theme-colors,fff3e8);
   footer {
     background-color:$footer-bgc;
   }
@@ -54,61 +93,6 @@ main {
   }
 }
 
-//マイページ
-.mypage-left {
-  .nav-container {
-    margin: 0 auto;
-    padding-top: 15px;
-    max-width: 180px;
-  }
-}
-.mypage-right {
-  //マイページ商品一覧
-  .col {
-    .mypage-title {
-      background-color: $dullpink;
-      border-radius: 1rem;
-      width: 100%;
-      max-width: 300px;
-      height: 50px;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      vertical-align: middle;
-      p {
-        font-size: 18px;
-        font-weight: normal;
-        line-height: 50px;
-      }
-    }
-    .mypage-section {
-      padding: 10px;
-      margin: 0px;
-      text-align: center;
-    }
-    .product-lists {
-      padding: 15px 10px;
-      .product-list {
-        display: flex;
-        width: 100%;
-        //margin: 0 20px;
-        img {
-          width: 100%;
-          max-width: 100%;
-          height:  auto;
-        }
-        .card-body {
-          h5,p {
-            margin: 0px;
-            word-wrap: break-word;
-          }
-          .text {
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
-}
 
 //購入画面
 .buy-title {
@@ -217,3 +201,4 @@ main {
   padding: 0px;
   border-radius: 0.3rem;
 }
+ */
