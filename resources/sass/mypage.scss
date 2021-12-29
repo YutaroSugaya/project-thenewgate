@@ -8,81 +8,57 @@
 
 
 html, body {
-    overflow-x: hidden;
-    height: 100%;
-    
+  overflow-x: hidden;
+  height: 100%;
 }
 body {
-    background: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Varela Round', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.main-right {
+  h3, h5, p {
+    color: map-get($theme-colors, 685647) !important;
+  }
+  
 }
 
-.header {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background-color: $section-title-color;
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 10;
-}
-.main {
-    margin: 0 auto;
-    display: block;
-    height: 100%;
-    margin-top: 60px;
-}
-.mainInner{
-    display: table;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-.mainInner div{
-    display:table-cell;
-    vertical-align: middle;
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1.25px;
-}
 #sidebarMenu {
-    height: 100%;
-    left: 0;
-    /* width: 200px; */
-    margin-top: 60px;
-    transform: translateX(-1000px);
-    transition: transform 250ms ease-in-out;
-    background-color: white;
+  height: 100%;
+  left: 0;
+  transform: translateX(-1000px);
+  transition: transform 250ms ease-in-out;
+  background-color: white;
 }
 .sidebarMenuInner{
-    margin:0;
-    padding:0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
-    .nav-title {
-      background-color: $section-title-color;
-      color: white;
-      &:active, &:focus, &:hover {
-        display: inherit;
-      }
-    }
-}
-.sidebarMenuInner li{
+  margin:0;
+  padding:0;
+  li{
     list-style: none;
-    color: $base-font-color;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
     &:active, &:focus, &:hover {
-      background-color: $palegray;
+      background-color: map-get($theme-colors, a68a72);
       transition: all  0.3s ease;
+      a {
+        color: white;
+      }
     }
+  }
+  .nav-title {
+    background-color: map-get($theme-colors, a64444);
+    color: white;
+    &:active, &:focus, &:hover {
+      background-color: map-get($theme-colors, a64444);
+    }
+    a {
+      color: map-get($theme-colors, 685647) !important;
+    }
+  }
 }
 
 
@@ -90,7 +66,7 @@ body {
 .sidebarMenuInner li span{
     display: block;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.50);
+    color: map-get($theme-colors, e4d3c4);
 }
 .sidebarMenuInner li a{
     color: $base-font-color;
@@ -116,8 +92,8 @@ input[type=checkbox] {
     z-index: 99;
     height: 100%;
     width: 100%;
-    top: 22px;
-    left: 15px;
+    top: 6px;
+    left: 18px;
     height: 22px;
     width: 22px;
 }

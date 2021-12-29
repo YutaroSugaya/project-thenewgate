@@ -6,53 +6,18 @@ html, body {
 }
 
 body {
-  background: #fff;
   padding: 0;
   margin: 0;
   font-family: 'Varela Round', sans-serif;
 }
 
-.header {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: #a68a72;
-  position: fixed;
-  height: 60px !important;
-  overflow: hidden;
-  z-index: 10;
-}
-
-.main {
-  margin: 0 auto;
-  display: block;
-  height: 100%;
-  margin-top: 60px;
-}
-
-.mainInner {
-  display: table;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.mainInner div {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 1.25px;
+.main-right h3, .main-right h5, .main-right p {
+  color: !important;
 }
 
 #sidebarMenu {
   height: 100%;
   left: 0;
-  /* width: 200px; */
-  margin-top: 60px;
   -webkit-transform: translateX(-1000px);
           transform: translateX(-1000px);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -65,21 +30,10 @@ body {
 .sidebarMenuInner {
   margin: 0;
   padding: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sidebarMenuInner .nav-title {
-  background-color: #a68a72;
-  color: white;
-}
-
-.sidebarMenuInner .nav-title:active, .sidebarMenuInner .nav-title:focus, .sidebarMenuInner .nav-title:hover {
-  display: inherit;
 }
 
 .sidebarMenuInner li {
   list-style: none;
-  color: #685647;
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
@@ -88,15 +42,32 @@ body {
 }
 
 .sidebarMenuInner li:active, .sidebarMenuInner li:focus, .sidebarMenuInner li:hover {
-  background-color: #c7c7c7;
+  background-color: #a68a72;
   -webkit-transition: all  0.3s ease;
   transition: all  0.3s ease;
+}
+
+.sidebarMenuInner li:active a, .sidebarMenuInner li:focus a, .sidebarMenuInner li:hover a {
+  color: white;
+}
+
+.sidebarMenuInner .nav-title {
+  background-color: #a64444;
+  color: white;
+}
+
+.sidebarMenuInner .nav-title:active, .sidebarMenuInner .nav-title:focus, .sidebarMenuInner .nav-title:hover {
+  background-color: #a64444;
+}
+
+.sidebarMenuInner .nav-title a {
+  color: !important;
 }
 
 .sidebarMenuInner li span {
   display: block;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #e4d3c4;
 }
 
 .sidebarMenuInner li a {
@@ -130,8 +101,8 @@ input[type=checkbox] {
   z-index: 99;
   height: 100%;
   width: 100%;
-  top: 22px;
-  left: 15px;
+  top: 6px;
+  left: 18px;
   height: 22px;
   width: 22px;
 }
@@ -222,4 +193,4 @@ div, input[type=checkbox]:checked ~ div {
 input[type=checkbox]:checked ~ .box {
   left: 250px;
 }
-/*# sourceMappingURL=mypage_nav.css.map */
+/*# sourceMappingURL=mypage.css.map */

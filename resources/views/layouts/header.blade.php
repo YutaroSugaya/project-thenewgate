@@ -1,6 +1,5 @@
 
-
-<div class="d-flex justify-content-between align-items-center">
+<div class="d-flex justify-content-between align-items-center header_bar">
   <div class="d-flex align-items-center text_middle">
       <h1>
           <a href="">

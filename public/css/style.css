@@ -1,12 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+.header_bar {
+  border-bottom: 1px solid #e4d3c4;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
 p, a, h1, h2, h3, h4, h5, h6 {
   color: !important;
 }
 
 a:link, a:visited, a:hover, a:active {
-  color: inherit !important;
+  color: inherit;
   text-decoration: none !important;
+}
+
+.border, .border-bottom .border-top {
+  border-color: #e4d3c4 !important;
+}
+
+.main-section {
+  max-width: 1200px !important;
 }
 
 #carousel-card {
@@ -170,28 +184,5 @@ main {
   max-width: 70%;
 }
 
-//商品カルーセル
-#carousel-card {
-  position: abusolute;
-  .carousel-indicators {
-    position: lerative;
-    bottom : -35px;
-    
-  }
-}
-.carousel-indicators li {
-  background-color: $section-title-color !important;
-}
-.carousel-indicators .active {
-  background-color: $section-title-color !important;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  background-color: $section-title-color;
-  width: 30px !important;
-  height: 100%;
-  padding: 0px;
-  border-radius: 0.3rem;
-}
  */
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,10 @@
 
+
 <div class="container PB-5 p-4 pb-5">
   <div id="carousel-card" class="carousel slide" data-interval="5000">
     <ol class="carousel-indicators m-0">
-      <li data-target="#carousel-card" data-slide-to="0" class="active">
-        <img src="https://placehold.it/100x50" alt="img">
-      </li>
-      <li data-target="#carousel-card" data-slide-to="1">
-        <img src="https://placehold.it/100x50" alt="img">
-      </li>
+      <li data-target="#carousel-card" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-card" data-slide-to="1"></li>
     </ol>
 
     <div class="carousel-inner">
