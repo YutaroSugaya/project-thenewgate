@@ -23,31 +23,6 @@ a:link, a:visited, a:hover, a:active {
   max-width: 1200px !important;
 }
 
-#carousel-card {
-  position: abusolute;
-}
-
-#carousel-card .carousel-indicators {
-  position: lerative;
-  bottom: -35px;
-}
-
-.carousel-indicators li {
-  background-color: #a68a72 !important;
-}
-
-.carousel-indicators .active {
-  background-color: #a68a72 !important;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  background-color: #a68a72;
-  width: 30px !important;
-  height: 100%;
-  padding: 0px;
-  border-radius: 0.3rem;
-}
-
 /* * {
   list-style: none;
   color: $base-font-color;

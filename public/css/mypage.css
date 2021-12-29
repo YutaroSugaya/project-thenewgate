@@ -11,6 +11,10 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
+.main-right {
+  width: 100%;
+}
+
 .main-right h3, .main-right h5, .main-right p {
   color: !important;
 }
@@ -71,9 +75,8 @@ body {
 }
 
 .sidebarMenuInner li a {
-  color: #685647;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
   cursor: pointer;
   text-decoration: none;
 }
@@ -175,14 +178,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -9px;
 }
 
-.box {
-  position: absolute;
-  left: 0;
-  border: 2px solid black;
-  width: 200px;
-  height: 200px;
-}
-
 div, input[type=checkbox]:checked ~ div {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -192,5 +187,34 @@ div, input[type=checkbox]:checked ~ div {
 
 input[type=checkbox]:checked ~ .box {
   left: 250px;
+}
+
+#carousel-card {
+  position: abusolute;
+}
+
+#carousel-card .carousel-indicators {
+  position: lerative;
+  bottom: -35px;
+}
+
+.carousel-indicators li {
+  background-color: #a68a72 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #a68a72 !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: #a68a72;
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
+}
+
+.card {
+  border-color: #e4d3c4;
 }
 /*# sourceMappingURL=mypage.css.map */

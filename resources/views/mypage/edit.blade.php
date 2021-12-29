@@ -60,23 +60,31 @@
   </div>
 </div>
 
+<!-- メイン -->
 
-<br>
-<br>
-<div class="wrapper">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-3 mypage-left">
-        <x-mypage-nav/>
-      </div>
-      <div class="col-9 mypage-right">
-        <div class="row">
-          <div class="col">
-            <div class="mypage-title">
-              <p class="text-center">会員情報</p>
-            </div>
-          </div>
-        </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 .justify-content-center">
+      <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showMypage') }}">マイページトップ</a></span></p>
+    </div>
+  </div>
+
+  <div class="main-left sidebar col-3 d-none d-sm-block">
+    <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+    <x-mypage.mypage_nav/>
+  </div>
+    
+  <div class="main-right col-9 col-xs-12">
+    <h3 class="page-title mb-3">会員情報</h3>
+    <div class="section card product-cards">
+      <h5 class="m-2">閲覧履歴</h5>
+    </div>
+  </div>
         <div class="row block">
           <form id="user_edit_form" class="col-12">
             <div class="form-group">
@@ -118,7 +126,6 @@
 
         </div>
       </div>
-    </div>
   </div>
-</div>
+
 @endsection

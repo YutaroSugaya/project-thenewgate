@@ -8,6 +8,7 @@
 .header_bar {
   border-bottom: 1px solid map-get($theme-colors, e4d3c4);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+
 }
 //文字やリンクや装飾
 p, a, h1, h2, h3, h4, h5, h6 {
@@ -25,31 +26,6 @@ a:link, a:visited, a:hover, a:active {
 //メインセクションの幅
 .main-section {
   max-width: 1200px !important;
-}
-
-
-//商品カルーセル
-#carousel-card {
-  position: abusolute;
-  .carousel-indicators {
-    position: lerative;
-    bottom : -35px;
-    
-  }
-}
-.carousel-indicators li {
-  background-color: map-get($theme-colors, a68a72) !important;
-}
-.carousel-indicators .active {
-  background-color: map-get($theme-colors, a68a72) !important;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  background-color: map-get($theme-colors, a68a72);
-  width: 30px !important;
-  height: 100%;
-  padding: 0px;
-  border-radius: 0.3rem;
 }
 
 //フッター

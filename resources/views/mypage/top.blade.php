@@ -5,9 +5,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 .justify-content-center">
-      <p class="small m-0 p-2">高橋商事：<span><a href="#">ホーム</a></span><span> > </span><span><a href="{{ route('showMypage') }}">マイページトップ</a></span></p>
+      <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showMypage') }}">マイページトップ</a></span></p>
     </div>
   </div>
+  
   <div class="col-12 main-section mx-auto">
     <div class="row">
       <div class="main-left sidebar col-3 d-none d-sm-block">
