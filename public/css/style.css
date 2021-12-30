@@ -15,6 +15,26 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none !important;
 }
 
+input:-moz-read-only {
+  background-color: white !important;
+}
+
+input:read-only {
+  background-color: white !important;
+}
+
+input:focus {
+  border: 1px solid #f7bdc7 !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn {
+  background-color: #a68a72;
+  color: white;
+}
+
 .border, .border-bottom .border-top {
   border-color: #e4d3c4 !important;
 }

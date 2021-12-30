@@ -60,72 +60,74 @@
   </div>
 </div>
 
-<!-- メイン -->
 
+<!-- メイン -->
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 .justify-content-center">
       <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showMypage') }}">マイページトップ</a></span></p>
     </div>
   </div>
+  <div class="col-12 main-section mx-auto">
+    <div class="row">
+      <div class="main-left sidebar col-3 d-none d-sm-block">
+        <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+        <x-mypage.mypage_nav/>
+      </div>
 
-  <div class="main-left sidebar col-3 d-none d-sm-block">
-    <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
-    <x-mypage.mypage_nav/>
-  </div>
-    
-  <div class="main-right col-9 col-xs-12">
-    <h3 class="page-title mb-3">会員情報</h3>
-    <div class="section card product-cards">
-      <h5 class="m-2">閲覧履歴</h5>
-    </div>
-  </div>
-        <div class="row block">
-          <form id="user_edit_form" class="col-12">
-            <div class="form-group">
-              <label id="label_email">メールアドレス（会員ID）</label>
-              <input id="email" type="text" class="form-control col-12" placeholder="mail@sample.com" name="email" readonly required>
-            </div>
-            <div class="form-group">
-              <label>お名前</label>
-              <div class="form-inline">
-                <input id="last_name" type="text" class="form-control col-4" placeholder="姓" name="last_name" readonly>
-                <span class="col-1"></span>
-                <input id="first_name" type="text" class="form-control col-4" placeholder="名" name="first_name" readonly>
+      <div class="main-right col-9">
+        <h3 class="page-title mb-3">会員情報</h3>
+        <div class="section card">
+          <h5 class="m-2">会員情報編集</h5>
+          <div class="container PB-5 p-4 pb-5">
+            <form id="user_edit_form" class="col-12">
+              <div class="form-group">
+                <label id="label_email">メールアドレス（会員ID）</label>
+                <input id="email" type="text" class="form-control col-12" placeholder="mail@sample.com" name="email" readonly required>
               </div>
-            </div>
-            <div class="form-group">
-              <label>オナマエ（フリガナ）</label>
-              <div class="form-inline">
-                <input id="last_name_kana" type="text" class="form-control col-4" placeholder="セイ" name="last_name_kana" readonly>
-                <span class="col-1"></span>
-                <input id="first_name_kana" type="text" class="form-control col-4" placeholder="メイ" name="first_name_kana" readonly>
+              <div class="form-group">
+                <label>お名前</label>
+                <div class="form-inline">
+                  <input id="last_name" type="text" class="form-control col-4" placeholder="姓" name="last_name" readonly>
+                  <span class="col-1"></span>
+                  <input id="first_name" type="text" class="form-control col-4" placeholder="名" name="first_name" readonly>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label>郵便番号</label>
-              <input id="post_code" type="text" class="form-control col-4" placeholder="" name="post_code" readonly required>
-            </div>
-            <div class="form-group">
-              <label>住所</label>
-              <input id="address" type="text" class="form-control" placeholder="◯◯県×x市▶︎◆" name="address" readonly>
-            </div>
-            <div class="form-group">
-              <label>電話番号</label>
-              <input id="phone_number" type="text" class="form-control col-4" placeholder="XXX-XXXX-XXXX" name="phone_number" readonly>
-            </div>
-          </form>
+              <div class="form-group">
+                <label>オナマエ（フリガナ）</label>
+                <div class="form-inline">
+                  <input id="last_name_kana" type="text" class="form-control col-4" placeholder="セイ" name="last_name_kana" readonly>
+                  <span class="col-1"></span>
+                  <input id="first_name_kana" type="text" class="form-control col-4" placeholder="メイ" name="first_name_kana" readonly>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>郵便番号</label>
+                <input id="post_code" type="text" class="form-control col-4" placeholder="" name="post_code" readonly required>
+              </div>
+              <div class="form-group">
+                <label>住所</label>
+                <input id="address" type="text" class="form-control" placeholder="◯◯県×x市▶︎◆" name="address" readonly>
+              </div>
+              <div class="form-group">
+                <label>電話番号</label>
+                <input id="phone_number" type="text" class="form-control col-4" placeholder="XXX-XXXX-XXXX" name="phone_number" readonly>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="btn-row">
-          <button type="button" id="mypage-edit" class="btn edit">編集する</button>
-
+        <div class="btn-row text-center my-2">
+          <button type="button" id="mypage-edit" class="btn w-100">編集する</button>
         </div>
       </div>
+    </div>
   </div>
+    
+</div>
 
 @endsection
