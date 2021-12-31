@@ -1,12 +1,10 @@
 @extends('layouts.app')
-
+  @push('css')
+  <link href="{{ asset('css/buy.css') }}" rel="stylesheet">
+  @endpush
 @section('content')
 
-
-
-<br>
-<br>
-<div class="wrapper">
+<div class="wrapper main-section mx-auto">
   <div class="container-fluid">
     
     <div class="row">
@@ -14,14 +12,17 @@
         <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文手続き</h5>
       </div>
     </div>
-    <ul class="progressbar border-bottom  pb-2 mb-3">
-      <li class="active">ご入力</li>
-      <li>ご確認</li>
-      <li>完了</li>
-    </ul>
-    <div class="row border-bottom pb-2 mb-3">
+    <div class="row border-bottom mx-5 py-3">
+      <ul class="progressbar mx-auto">
+        <li class="active">ご入力</li>
+        <li>ご確認</li>
+        <li>完了</li>
+      </ul>
+    </div>
+
+    <div class="row border-bottom mx-5 my-4 pb-3">
       <div class="col-12">
-        <p><i class="far fa-user mr-1"></i> 注文者情報</p>
+        <h5 class=""><i class="far fa-user mr-1 mb-3"></i>注文者情報</h5>
         <div class="user_detail">
           <span class="label">会員名：</span>
           <span>DBから会員名</span><br>
@@ -37,9 +38,9 @@
       </div>
     </div>
 
-    <div class="row pb-5">
+    <div class="row mx-5 my-4">
       <div class="col-12">
-        <p><i class="fas fa-truck mr-1"></i>お届け・お支払いの指定</p>
+        <h5><i class="fas fa-truck mr-1 mb-3"></i>お届け・お支払いの指定</h5>
         <div class="card product_buy_lists">
           <!-- DBから繰り返し処理 -->
           <div class="card-body product_buy_list">
@@ -92,7 +93,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-6 shipping">
+                  <div class="col-6 shipping d-flex">
                     <div id="shipping_form" style="display: none;">
                       <div class="row">
                         <span class="col-4 label">お名前</span>
@@ -135,15 +136,15 @@
           </div>
         </div>
       </div>
-      <div class="row pt-4 pb-4 block">
+      <div class="row mx-5">
         <div class="col text-right price_detail">
           <span class="label">◯点の総合計（税込）：</span>
           <span class="font-weight-bold">DBから総合計（円）</span>
         </div>
       </div>
-      <div class="row btn-row">
-        <div class="col col-12">
-          <button type="" onclick="location.href='{{ route('showCheck') }}'" class="btn buy-confirm center">この内容で確認する</button>
+      <div class="container-fluid">
+        <div class="row my-5 mx-5">
+          <button type="" onclick="location.href='{{ route('showCheck') }}'" class="btn col-12">この内容で確認する</button>
         </div>
       </div>
 

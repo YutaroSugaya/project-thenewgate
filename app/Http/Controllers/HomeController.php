@@ -18,13 +18,13 @@ class HomeController extends Controller
   }
 
   public function showBuy() {
-    return view('buypages.buy');
+    return view('buypage.buy');
   }
   public function showCheck() {
-    return view('buypages.check');
+    return view('buypage.check');
   }
   public function showThanks() {
-    return view('buypages.thanks');
+    return view('buypage.thanks');
   }
   public function showPrivacypolicy() {
     return view('others.privacypolicy');

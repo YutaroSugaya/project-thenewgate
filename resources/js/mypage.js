@@ -7,21 +7,15 @@ $(function() {
     }
   });
 
-  $(document).ready(function() {
-    $("#sidebarCollapse").on("click", function() {
-      $("#sidebar").toggleClass("active");
-      $(this).toggleClass("active");
-    });
-  });
-
   //会員情報編集→確認→更新
   $('#mypage-edit').on('click',function() {
     //入力可能モード
     $('input').prop('readOnly',false);
     let html = 
     `
-    <button type="button" id="cancel"class="btn">キャンセル</button>
-    <button type="button" id="confirm" class="btn" data-toggle="modal" data-target="#exampleModal">確認する</button>
+    <button type="button" id="cancel" class="btn col-5">キャンセル</button>
+    <span class="col-2"></span>
+    <button type="button" id="confirm" class="btn col-5" data-toggle="modal" data-target="#exampleModal">確認する</button>
     `;
     $(this).parent().append(html);
     $(this).hide();   

@@ -60,32 +60,37 @@
   </div>
 </div>
 
+
 <!-- メイン -->
-
-<div class="container-fluid">
+<div class="main-section container-fluid">
   <div class="row">
-    <div class="col-12 .justify-content-center">
-      <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showMypage') }}">マイページトップ</a></span></p>
+    <div class="col-12 justify-content-center">
+      <p class="small m-0 p-2">
+        高橋商事：<span><a href="/home">ホーム</a></span>
+        <span> > </span>
+        <span><a href="{{ route('showMypage') }}">マイページトップ</a></span>
+        <span> > </span>
+        <span><a href="{{ route('showEdit') }}">会員情報</a></span>
+      </p>
     </div>
   </div>
 
-  <div class="main-left sidebar col-3 d-none d-sm-block">
-    <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
-    <x-mypage.mypage_nav/>
-  </div>
-    
-  <div class="main-right col-9 col-xs-12">
-    <h3 class="page-title mb-3">会員情報</h3>
-    <div class="section card product-cards">
-      <h5 class="m-2">閲覧履歴</h5>
+
+  <div class="row mx-auto my-4">
+    <div class="main-left col-3">
+      <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+      <x-mypage.mypage_nav/>
     </div>
-  </div>
-        <div class="row block">
+
+    <div class="main-right col-9 col-xs-12">
+      <h3 class="page-title mb-3">会員情報</h3>
+      <div class="section card py-3 container-fluid">
+        <div class="row">
           <form id="user_edit_form" class="col-12">
             <div class="form-group">
               <label id="label_email">メールアドレス（会員ID）</label>
@@ -119,13 +124,19 @@
               <label>電話番号</label>
               <input id="phone_number" type="text" class="form-control col-4" placeholder="XXX-XXXX-XXXX" name="phone_number" readonly>
             </div>
-          </form>
-        </div>
-        <div class="btn-row">
-          <button type="button" id="mypage-edit" class="btn edit">編集する</button>
-
+          </form>  
         </div>
       </div>
-  </div>
+      <div class="container-fluid"> 
 
+        <div class="row my-2 mt-3">
+          <button type="button" id="mypage-edit" class="btn col-12">編集する</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
 @endsection
