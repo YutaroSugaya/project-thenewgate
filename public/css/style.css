@@ -39,7 +39,7 @@ input:focus {
   background-color: #f7bdc7;
 }
 
-.border, .border-bottom .border-top {
+.border, .border-bottom, .border-top {
   border-color: #e4d3c4 !important;
 }
 

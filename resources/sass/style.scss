@@ -42,7 +42,7 @@ input {
 }
 
 //線
-.border, .border-bottom .border-top {
+.border, .border-bottom, .border-top {
   border-color: map-get($theme-colors, e4d3c4) !important;
 }
 

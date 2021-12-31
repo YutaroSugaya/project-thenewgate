@@ -76,7 +76,7 @@
 }
 .progressbar li.active,
 .progressbar li.complete{
-  color: $section-title-color;
+  color: map-get($theme-colors, a68a72);
 }
 .progressbar li.active:before,
 .progressbar li.complete:before {
