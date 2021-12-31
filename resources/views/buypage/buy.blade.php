@@ -1,12 +1,10 @@
 @extends('layouts.app')
-
+  @push('css')
+  <link href="{{ asset('css/buy.css') }}" rel="stylesheet">
+  @endpush
 @section('content')
 
-
-
-<br>
-<br>
-<div class="wrapper">
+<div class="wrapper main-section mx-auto">
   <div class="container-fluid">
     
     <div class="row">
@@ -14,11 +12,12 @@
         <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文手続き</h5>
       </div>
     </div>
-    <ul class="progressbar border-bottom  pb-2 mb-3">
+    <ul class="progressbar border-bottom mx-auto pb-2 mb-3">
       <li class="active">ご入力</li>
       <li>ご確認</li>
       <li>完了</li>
     </ul>
+
     <div class="row border-bottom pb-2 mb-3">
       <div class="col-12">
         <p><i class="far fa-user mr-1"></i> 注文者情報</p>

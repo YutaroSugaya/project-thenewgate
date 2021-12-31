@@ -62,7 +62,7 @@
 
 
 <!-- メイン -->
-<div class="container-fluid">
+<div class="main-section container-fluid">
   <div class="row">
     <div class="col-12 justify-content-center">
       <p class="small m-0 p-2">
@@ -76,7 +76,7 @@
   </div>
 
 
-  <div class="row main-section mx-auto my-4">
+  <div class="row mx-auto my-4">
     <div class="main-left col-3">
       <input type="checkbox" class="openSidebarMenu col-12" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">

@@ -1098,6 +1098,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./resources/sass/buy.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/buy.scss ***!
+  \*********************************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined variable.\n  ╷\n5 │   background-color: $dullpink;\n  │                     ^^^^^^^^^\n  ╵\n  resources/sass/buy.scss 5:21  root stylesheet\n    at processResult (/Users/miyamoto/Desktop/project-thenewgate/node_modules/webpack/lib/NormalModule.js:751:19)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/webpack/lib/NormalModule.js:853:5\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/sass-loader/dist/index.js:54:7\n    at Function.call$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:98993:16)\n    at render_closure1.call$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:84511:12)\n    at _RootZone.runBinary$3$3 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:29540:18)\n    at _FutureListener.handleError$1 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28062:21)\n    at _Future__propagateToListeners_handleError.call$0 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28369:49)\n    at Object._Future__propagateToListeners (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:3901:77)\n    at _Future._completeError$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28215:9)\n    at _AsyncAwaitCompleter.completeError$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:27863:12)\n    at Object._asyncRethrow (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:3704:17)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:19766:20");
+
+/***/ }),
+
 /***/ "./resources/sass/content.scss":
 /*!*************************************!*\
   !*** ./resources/sass/content.scss ***!
@@ -1105,7 +1115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9jb250ZW50LnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvY29udGVudC5zY3NzPzIxMDkiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/content.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9jb250ZW50LnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvY29udGVudC5zY3NzP2NjNTgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/content.scss\n");
 
 /***/ }),
 
@@ -1310,6 +1320,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/js/app.js")))
 /******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
 /******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
