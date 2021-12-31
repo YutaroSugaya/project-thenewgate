@@ -22,11 +22,10 @@ a:link, a:visited, a:hover, a:active {
 }
 //入力欄
 input {
-  &:read-only {
-    background-color:white !important;
-  }
+  background-color:white !important;  
   &:focus {
     border: 1px solid rgb(247, 189, 199) !important;
+    background-color: #fff;
     outline: none !important;
     box-shadow: none !important;
   }
@@ -35,7 +34,13 @@ input {
 .btn {
   background-color: map-get($theme-colors, a68a72);
   color: white;
+  transition: all .3s;
+  &:hover {
+    color: white;
+    background-color: $dullpink ;
+  }
 }
+
 //線
 .border, .border-bottom .border-top {
   border-color: map-get($theme-colors, e4d3c4) !important;

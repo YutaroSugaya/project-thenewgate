@@ -17,7 +17,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sourceMaps()
     .vue()
-    .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/content.scss', 'public/css')
     .autoload({
       "jquery": ['$', 'window.jQuery'],

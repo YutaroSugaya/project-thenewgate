@@ -11,10 +11,6 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
-.main-right {
-  width: 100%;
-}
-
 .main-right h3, .main-right h5, .main-right p {
   color: !important;
 }

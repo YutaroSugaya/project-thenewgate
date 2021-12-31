@@ -15,16 +15,13 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none !important;
 }
 
-input:-moz-read-only {
-  background-color: white !important;
-}
-
-input:read-only {
+input {
   background-color: white !important;
 }
 
 input:focus {
   border: 1px solid #f7bdc7 !important;
+  background-color: #fff;
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -33,6 +30,13 @@ input:focus {
 .btn {
   background-color: #a68a72;
   color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #f7bdc7;
 }
 
 .border, .border-bottom .border-top {

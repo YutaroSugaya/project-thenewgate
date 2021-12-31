@@ -13,8 +13,9 @@ $(function() {
     $('input').prop('readOnly',false);
     let html = 
     `
-    <button type="button" id="cancel" class="btn w-50">キャンセル</button>
-    <button type="button" id="confirm" class="btn w-50" data-toggle="modal" data-target="#exampleModal">確認する</button>
+    <button type="button" id="cancel" class="btn col-5">キャンセル</button>
+    <span class="col-2"></span>
+    <button type="button" id="confirm" class="btn col-5" data-toggle="modal" data-target="#exampleModal">確認する</button>
     `;
     $(this).parent().append(html);
     $(this).hide();   
