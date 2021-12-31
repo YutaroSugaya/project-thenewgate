@@ -52,11 +52,13 @@
                                             {{ old('remember') ? 'checked' : '' }}>
 
                                         <label class="form-check-label" for="remember">
-                                            {{ __('ユーザー IDを保存') }}
+                                            {{ __('メールアドレスを保存') }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
+
+
 
                             <div class="row mb-0">
                                 <div class="col-md-8 offset-md-4">
