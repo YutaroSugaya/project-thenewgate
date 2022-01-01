@@ -18,7 +18,6 @@
     <link href="{{ asset('css/content.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
     <link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
     @stack('css')
     <!-- Scripts -->
@@ -49,9 +48,7 @@
     </header>
 
 
-    <main class style="
-        padding-top: 100px;
-        padding-bottom: 100px;">
+    <main class="" style="">
         @yield('content')
     </main>
 
