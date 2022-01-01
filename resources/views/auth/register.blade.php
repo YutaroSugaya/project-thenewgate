@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">{{ __('新規登録画面') }}</div>
 
@@ -27,6 +27,16 @@
                                     @enderror
                                 </div>
                             </div>
+
+                            <tr>
+                                <th>お名前 <span class="c-label required">[必須]</span></th>
+                                <td>
+                                    <input class="c-inputForm" id="lastName" type="text" name="lastName" data-behavior-id="lastName" value="" placeholder="姓" style="width:220px">
+                                    <input class="c-inputForm u-ml10" id="firstName" type="text" name="firstName" data-behavior-id="firstName" value="" placeholder="名" style="width:220px">
+                                 </td>
+                            </tr>
+
+
 
 
 
