@@ -28,7 +28,6 @@ Route::get('/buy/thanks',[HomeController::class, 'showThanks'])->name('showThank
 Route::get('/privacypolicy',[HomeController::class, 'showPrivacypolicy'])->name('showPrivacypolicy');
 Route::get('/nopage',[HomeController::class, 'nopage404'])->name('nopage');
 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

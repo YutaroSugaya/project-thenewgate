@@ -1,23 +1,26 @@
 @extends('layouts.app')
-
+  @push('css')  
+    <link href="{{ asset('css/buy.css') }}" rel="stylesheet">
+  @endpush
 @section('content')
 
-
-<br>
-<br>
-<div class="wrapper">
+<div class="wrapper main-section mx-auto">
   <div class="container-fluid">
     <div class="row">
       <div class="buy-title mt-3 mb-3">
         <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文情報確認</h5>
       </div>
     </div>
-    <ul class="progressbar border-bottom pb-2 mb-3">
-      <li class="complete">ご入力</li>
-      <li class="active">ご確認</li>
-      <li>完了</li>
-    </ul>
-    <div class="row border-bottom pb-2 mb-3">
+    
+    <div class="row border-bottom mx-5 py-3">
+      <ul class="progressbar mx-auto">
+        <li class="complete">ご入力</li>
+        <li class="active">ご確認</li>
+        <li>完了</li>
+      </ul>
+    </div>
+
+    <div class="row border-bottom mx-5 my-4 pb-3">
       <div class="col-12">
         <p><i class="far fa-user mr-1"></i> 注文者情報</p>
         <div class="user_detail">
@@ -34,7 +37,8 @@
         </div>
       </div>
     </div>
-    <div class="row pb-3">
+
+    <div class="row mx-5 my-4">
       <div class="col-12">
         <p><i class="fas fa-truck mr-1"></i>お届け・お支払い先</p>
         <div class="card product_buy_lists">
@@ -122,10 +126,17 @@
           </div>
         </div>
       </div>
-      <div class="row btn-row">
-        <div class="col col-12">
-          <button type="" onclick="location.href=" class="btn buy-confirm center">キャンセルする</button>
-          <button type="" onclick="location.href='{{ route('showThanks') }}'" class="btn buy-confirm center">この内容で購入する</button>
+      <div class="row mx-5">
+        <div class="col text-right price_detail">
+          <span class="label">◯点の総合計（税込）：</span>
+          <span class="font-weight-bold">DBから総合計（円）</span>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row my-5 mx-5">
+          <button type="" onclick="location.href='{{ route('showBuy') }}'" class="btn col-5">入力に戻る</button>
+          <span class="col-2"></span>
+          <button type="" onclick="location.href='{{ route('showThanks') }}'" class="btn buy-confirm col-5">この内容で購入する</button>
         </div>
       </div>
     </div>

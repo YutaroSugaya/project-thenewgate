@@ -144,7 +144,9 @@
       </div>
       <div class="container-fluid">
         <div class="row my-5 mx-5">
-          <button type="" onclick="location.href='{{ route('showCheck') }}'" class="btn col-12">この内容で確認する</button>
+          <button type="" onclick="location.href='/cart'" class="btn col-5"><i class="fas fa-shopping-cart mr-1"></i>カートへ戻る</button>
+          <span class="col-2"></span>
+          <button type="" onclick="location.href='{{ route('showCheck') }}'" class="btn col-5">この内容で確認する</button>
         </div>
       </div>
 
