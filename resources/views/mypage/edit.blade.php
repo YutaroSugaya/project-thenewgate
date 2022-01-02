@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+  @push('css')
+    <link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
+  @endpush
 @section('content')
 
 <!-- Modal -->

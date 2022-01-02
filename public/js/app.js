@@ -1102,9 +1102,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*!*********************************!*\
   !*** ./resources/sass/buy.scss ***!
   \*********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined variable.\n  ╷\n5 │   background-color: $dullpink;\n  │                     ^^^^^^^^^\n  ╵\n  resources/sass/buy.scss 5:21  root stylesheet\n    at processResult (/Users/miyamoto/Desktop/project-thenewgate/node_modules/webpack/lib/NormalModule.js:751:19)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/webpack/lib/NormalModule.js:853:5\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/miyamoto/Desktop/project-thenewgate/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/sass-loader/dist/index.js:54:7\n    at Function.call$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:98993:16)\n    at render_closure1.call$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:84511:12)\n    at _RootZone.runBinary$3$3 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:29540:18)\n    at _FutureListener.handleError$1 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28062:21)\n    at _Future__propagateToListeners_handleError.call$0 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28369:49)\n    at Object._Future__propagateToListeners (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:3901:77)\n    at _Future._completeError$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:28215:9)\n    at _AsyncAwaitCompleter.completeError$2 (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:27863:12)\n    at Object._asyncRethrow (/Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:3704:17)\n    at /Users/miyamoto/Desktop/project-thenewgate/node_modules/sass/sass.dart.js:19766:20");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9idXkuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9idXkuc2Nzcz82ZDI4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/buy.scss\n");
 
 /***/ }),
 
@@ -1116,6 +1117,17 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9jb250ZW50LnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvY29udGVudC5zY3NzP2NjNTgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/content.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/auth.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/auth.scss ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hdXRoLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvYXV0aC5zY3NzPzMzYzAiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/auth.scss\n");
 
 /***/ }),
 
@@ -1318,10 +1330,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content"], () => (__webpack_require__("./resources/sass/auth.scss")))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
@@ -1440,6 +1453,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// "1" means "loaded", otherwise not loaded yet
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 1,
+/******/ 			"css/auth": 1,
+/******/ 			"css/buy": 1,
 /******/ 			"css/app": 1,
 /******/ 			"css/content": 1
 /******/ 		};
@@ -1480,6 +1495,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	(() => {
 /******/ 		var next = __webpack_require__.x;
 /******/ 		__webpack_require__.x = () => {
+/******/ 			__webpack_require__.e("css/auth");
+/******/ 			__webpack_require__.e("css/buy");
 /******/ 			__webpack_require__.e("css/app");
 /******/ 			__webpack_require__.e("css/content");
 /******/ 			return next();
