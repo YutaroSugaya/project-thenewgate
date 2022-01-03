@@ -38,8 +38,8 @@ Route::get('/cart',function() {
     return view('cart');
 });
 
-Route::get('/favorite',function() {
-    return view('favorite');
+Route::get('/wishlist',function() {
+    return view('wishlist');
 });
 
 Route::get('/product',function() {

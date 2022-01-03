@@ -169,9 +169,3 @@ input[type=checkbox]:checked ~ .box {
   padding: 0px;
   border-radius: 0.3rem;
 }
-
-//bootstrapカードクラス
-.card {
-  border-color: map-get($theme-colors, e4d3c4);
-}
-

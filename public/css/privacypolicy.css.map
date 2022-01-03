@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,iBAAiB,EAAE,cAAc;CAClC",
+    "sources": [
+        "../../resources/sass/privacypolicy.scss"
+    ],
+    "names": [],
+    "file": "privacypolicy.css"
+}

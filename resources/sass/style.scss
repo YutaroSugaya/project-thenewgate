@@ -30,6 +30,13 @@ input {
     box-shadow: none !important;
   }
 }
+
+//セレクトボックスの枠線
+select {
+  border-color: $palegray;
+  outline-color: $dullpink;
+}
+
 //ボタン
 .btn {
   background-color: map-get($theme-colors, a68a72);
@@ -42,8 +49,12 @@ input {
 }
 
 //線
-.border, .border-bottom, .border-top {
+.border, .border-bottom, .border-top, .border-left, .border-right {
   border-color: map-get($theme-colors, e4d3c4) !important;
+}
+//bootstrapカードクラス
+.card {
+  border-color: map-get($theme-colors, e4d3c4);
 }
 
 
@@ -52,7 +63,11 @@ input {
   max-width: 1200px !important;
 }
 
-//フッター
+//404画面
+.nopage-container {
+  min-height: 480px;
+}
+
 
 
 /* * {

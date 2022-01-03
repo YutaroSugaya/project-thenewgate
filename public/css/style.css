@@ -27,6 +27,11 @@ input:focus {
           box-shadow: none !important;
 }
 
+select {
+  border-color: #c7c7c7;
+  outline-color: #f7bdc7;
+}
+
 .btn {
   background-color: #a68a72;
   color: white;
@@ -39,12 +44,20 @@ input:focus {
   background-color: #f7bdc7;
 }
 
-.border, .border-bottom, .border-top {
+.border, .border-bottom, .border-top, .border-left, .border-right {
   border-color: #e4d3c4 !important;
+}
+
+.card {
+  border-color: #e4d3c4;
 }
 
 .main-section {
   max-width: 1200px !important;
+}
+
+.nopage-container {
+  min-height: 480px;
 }
 
 /* * {

@@ -41,7 +41,7 @@
     <div class="row mx-5 my-4">
       <div class="col-12">
         <h5><i class="fas fa-truck mr-1 mb-3"></i>お届け・お支払いの指定</h5>
-        <div class="card product_buy_lists">
+        <div class="card product_buy_lists p-3">
           <!-- DBから繰り返し処理 -->
           <div class="card-body product_buy_list">
             <div class="row border-bottom pb-3">
@@ -82,6 +82,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="row">
                   <div class="col-6 d-flex">
                     <span class="label col-3">配送先</span>
@@ -94,20 +95,18 @@
                     </div>
                   </div>
                   <div class="col-6 shipping d-flex">
-                    <div id="shipping_form" style="display: none;">
-                      <div class="row">
-                        <span class="col-4 label">お名前</span>
-                        <input id="shipping_name" type="text" class="form-control ml-3 mr-3" placeholder="お名前" name="shipping_name" required>
+
+                      <div id="shipping_form" style="display: none;" class="col-12">
+                        <span class="col-12 label">お名前</span>
+                        <input id="shipping_name" type="text" class="form-control col-12" placeholder="お名前" name="shipping_name" required>
+                      
+                        <span class="col-12 label">郵便番号</span>
+                        <input id="shipping_post_code" type="text" class="form-control col-12" placeholder="●◆▲-○□▶︎☆" name="shipping_post_code" required>
+                      
+                        <span class="col-12 label">住所</span>
+                        <input id="shipping_address" type="text" class="form-control col-12" placeholder="◯◯県×x市▶︎◆" name="shipping_address" required>
                       </div>
-                      <div class="row">
-                        <span class="col-4 label">郵便番号</span>
-                        <input id="shipping_post_code" type="text" class="form-control ml-3 mr-3" placeholder="●◆▲-○□▶︎☆" name="shipping_post_code" required>
-                      </div>
-                      <div class="row">
-                        <span class="col-4 label">住所</span>
-                        <input id="shipping_address" type="text" class="form-control ml-3 mr-3" placeholder="◯◯県×x市▶︎◆" name="shipping_address" required>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </form>

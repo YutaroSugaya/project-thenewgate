@@ -41,7 +41,7 @@
     <div class="row mx-5 my-4">
       <div class="col-12">
         <p><i class="fas fa-truck mr-1"></i>お届け・お支払い先</p>
-        <div class="card product_buy_lists">
+        <div class="card product_buy_lists p-3">
           <!-- DBから繰り返し処理 -->
           <div class="card-body product_buy_list">
             <div class="row border-bottom pb-3">
