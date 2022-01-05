@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,iBAAiB,EAAE,cAAc;CAClC",
+    "mappings": "AACA,OAAO,CAAC,qDAAI;AAKZ,AAAA,YAAY,CAAC;EACX,iBAAiB,EAAE,cAAc;EACjC,YAAY,ECmBF,OAAO,CDnB4B,UAAU;CACxD;;AAED,AAAA,UAAU,CAAA;EACR,KAAK,ECeK,OAAO,CDfqB,UAAU;CAKjD;;AAND,AAEE,UAFQ,AAEP,KAAK,EAFR,UAAU,AAEC,QAAQ,EAFnB,UAAU,AAEY,MAAM,EAF5B,UAAU,AAEqB,OAAO,CAAC;EACnC,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,eAAe;CACjC",
     "sources": [
-        "../../resources/sass/privacypolicy.scss"
+        "../../resources/sass/privacypolicy.scss",
+        "../../resources/sass/_variables.scss"
     ],
     "names": [],
     "file": "privacypolicy.css"
