@@ -1,11 +1,11 @@
 @extends('layouts.app')
-
+<link href="{{ asset('css/auth.css') }}" rel="stylesheet">
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="">{{ __('入力して新規会員登録') }}</div>
+                    <div class="card-title">{{ __('入力して新規会員登録') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">

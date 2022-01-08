@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header"><img src="{{ asset('images/common/icon_login.png') }}" alt="" width="25" height="27" style="margin-right: 10px"  >{{ __('ログイン') }}</div>
+                    <div class="card-header">{{ __('ログイン') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">

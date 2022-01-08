@@ -4544,6 +4544,10 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  font-size: x-large;
+  margin-left: 130px;
+  margin-top: 12px;
+
 }
 
 .card-subtitle {
