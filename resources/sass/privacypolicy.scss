@@ -16,3 +16,7 @@
     text-decoration: none !important;
   }
 }
+
+.table td, tr, th, thead, tbody{
+  border: 1px solid map-get($theme-colors, e4d3c4) !important;
+}

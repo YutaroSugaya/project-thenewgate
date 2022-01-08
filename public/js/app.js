@@ -1341,12 +1341,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/sass/buy.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/sass/content.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/sass/auth.scss")))
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/content","css/privacypolicy"], () => (__webpack_require__("./resources/sass/privacypolicy.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/auth.scss")))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/privacypolicy.scss")))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
@@ -1468,8 +1468,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/auth": 1,
 /******/ 			"css/buy": 1,
 /******/ 			"css/app": 1,
-/******/ 			"css/content": 1,
-/******/ 			"css/privacypolicy": 1
+/******/ 			"css/privacypolicy": 1,
+/******/ 			"css/content": 1
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.O.require = (chunkId) => (installedChunks[chunkId]);
@@ -1511,8 +1511,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			__webpack_require__.e("css/auth");
 /******/ 			__webpack_require__.e("css/buy");
 /******/ 			__webpack_require__.e("css/app");
-/******/ 			__webpack_require__.e("css/content");
 /******/ 			__webpack_require__.e("css/privacypolicy");
+/******/ 			__webpack_require__.e("css/content");
 /******/ 			return next();
 /******/ 		};
 /******/ 	})();
