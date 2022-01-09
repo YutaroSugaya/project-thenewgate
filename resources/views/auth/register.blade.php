@@ -30,7 +30,7 @@
                                                 autocomplete="firstName" autofocus>
                                         </div>
                                     </div>
-                                    @error('name')
+                                    @error('lastname')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -72,16 +72,16 @@
 
 
                             <div class="row mb-3">
-                                <label for="email"
+                                <label for="post_code"
                                     class="col-md-4 col-form-label text-md-right">{{ __('郵便番号') }}</label>
 
                                 <div class="col-md-3">
                                     <input id="post_code" type="text" placeholder="ハイフン不要"
-                                        class="form-control @error('email') is-invalid @enderror"
-                                        value="{{ old('email') }}" required autocomplete="email" name="zip01" size="10"
+                                        class="form-control @error('post_code') is-invalid @enderror"
+                                        value="{{ old('post_code') }}" required autocomplete="post_code" name="zip01" size="10"
                                         maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');">
 
-                                    @error('email')
+                                    @error('post_code')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -93,14 +93,14 @@
 
                             <!-- ▼住所入力フィールド(都道府県) -->
                             <div class="row mb-3">
-                                <label for="email"
+                                <label for="address"
                                     class="col-md-4 col-form-label text-md-right">{{ __('都道府県') }}</label>
 
                                 <div class="col-md-2">
-                                    <input type="text" name="pref01" size="20" id="email"class="form-control @error('email') is-invalid @enderror"
-                                        value="{{ old('email') }}" required autocomplete="email">
+                                    <input type="text" name="pref01" size="20" id="address"class="form-control @error('address') is-invalid @enderror"
+                                        value="{{ old('address') }}" required autocomplete="address">
 
-                                    @error('email')
+                                    @error('address')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -110,14 +110,14 @@
 
                             <!-- ▼住所入力フィールド(都道府県以降の住所) -->
                             <div class="row mb-3">
-                                <label for="email"
+                                <label for="address"
                                     class="col-md-4 col-form-label text-md-right">{{ __('以降の住所') }}</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="addr01" size="60" id="email"class="form-control @error('email') is-invalid @enderror"
-                                        value="{{ old('email') }}" required autocomplete="email" placeholder="市区町村、番地、建物名など">
+                                    <input type="text" name="addr01" size="60" id="address"class="form-control @error('address') is-invalid @enderror"
+                                        value="{{ old('address') }}" required autocomplete="address" placeholder="市区町村、番地、建物名など">
 
-                                    @error('email')
+                                    @error('address')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -127,14 +127,14 @@
                             </div>
 
                             <div class="row mb-3">
-                                <label for="email"
+                                <label for="phone_number"
                                     class="col-md-4 col-form-label text-md-right">{{ __('電話番号') }}</label>
 
                                 <div class="col-md-3">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" required autocomplete="email" maxlength="11" placeholder="ハイフン不要">
+                                    <input id="phone_number" type="a" class="form-control @error('phone_number') is-invalid @enderror"
+                                        name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" maxlength="11" placeholder="ハイフン不要">
 
-                                    @error('email')
+                                    @error('phone_number')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
