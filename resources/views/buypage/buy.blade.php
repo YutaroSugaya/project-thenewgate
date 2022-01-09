@@ -2,6 +2,9 @@
   @push('css')
   <link href="{{ asset('css/buy.css') }}" rel="stylesheet">
   @endpush
+  @push('js')
+    <script src="{{ asset('js/buy.js') }}" defer></script>
+  @endpush
 @section('content')
 
 <div class="wrapper main-section mx-auto">

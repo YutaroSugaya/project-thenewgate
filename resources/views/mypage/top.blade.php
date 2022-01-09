@@ -2,6 +2,9 @@
   @push('css')
     <link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
   @endpush
+  @push('js')
+    <script src="{{ asset('js/mypage.js') }}" defer></script>
+  @endpush
 @section('content')
 
 <div class="main-section container-fluid">

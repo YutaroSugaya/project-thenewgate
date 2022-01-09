@@ -2,9 +2,12 @@
   @push('css')
   <link href="{{ asset('css/privacypolicy.css') }}" rel="stylesheet">
   @endpush
+  @push('js')
+    <script src="{{ asset('js/scroll.js') }}" defer></script>
+  @endpush
 @section('content')
 
-<div class="wrapper main-section container-fluid">
+<div id="policy00" class="wrapper main-section container-fluid">
   <div class="row">
     <div class="col-12 justify-content-center">
       <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showPrivacypolicy') }}">プライバシーポリシー</a></span></p>
@@ -23,13 +26,13 @@
       <div class="row mb-5">
         <div class="col-12">
           <h3 class="border-left mb-3">個人情報（特定個人情報）保護理念</h3>
-          <p class="pl-3 col-12">タカハシ商事（以下、「当社」といいます。）は、事業活動を推進するために必要不可欠である個人情報(特定個人情報)の活用において、個人情報(特定個人情報)の適切な保護の重要性と社会的責任を十分に認識し、個人情報(特定個人情報)保護に関する法律、その他関係法令を遵守いたします。また、個人情報(特定個人情報)の適正な取扱いおよび秘密保持を徹底するための社内ルールとして「個人情報(特定個人情報)保護マネジメントシステム」を策定し、<a href="#2" class="js-scroll">個人情報保護方針</a>および<a href="#4" class="js-scroll">特定個人情報保護方針</a>に則り全従業者がこれを遵守いたします。</p>
+          <p class="pl-3 col-12">タカハシ商事（以下、「当社」といいます。）は、事業活動を推進するために必要不可欠である個人情報(特定個人情報)の活用において、個人情報(特定個人情報)の適切な保護の重要性と社会的責任を十分に認識し、個人情報(特定個人情報)保護に関する法律、その他関係法令を遵守いたします。また、個人情報(特定個人情報)の適正な取扱いおよび秘密保持を徹底するための社内ルールとして「個人情報(特定個人情報)保護マネジメントシステム」を策定し、<a href="#policy02" class="js-scroll">個人情報保護方針</a>および<a href="#policy04" class="js-scroll">特定個人情報保護方針</a>に則り全従業者がこれを遵守いたします。</p>
         </div>
       </div>
 
-      <div class="row mb-5" id="2">
+      <div class="row mb-5">
         <div class="col-12">
-          <h3 class="border-left mb-3">個人情報保護方針</h3>
+          <h3 id="policy02" class="border-left mb-3">個人情報保護方針</h3>
           <p class="pl-3 col-12 m-1 text_medium">1．個人情報の取扱い</p>
           <p class="pl-5 col-12 text_normal">個人情報の取扱いにあたり事業の内容および規模を考慮し、適法かつ公正な手段で行います。また、本人に対して利用目的を明らかにし、目的外利用をしません。</p>
           <p class="pl-3 col-12 m-1 text_medium">2．法令・規範の遵守</p>
@@ -164,7 +167,7 @@
       
       <div class="row mb-5">
         <div class="col-12">
-          <h3 class="border-left mb-3" id="4">特定個人情報保護方針</h3>
+          <h3 class="border-left mb-3" id="policy04">特定個人情報保護方針</h3>
           <p class="pl-3 col-12 m-0 text_medium">1．事業者の名称</p>
           <p class="pl-5 col-12 text_normal">当社</p>
           <p class="pl-3 col-12 m-0 text_medium">2．関係法令・ガイドライン等の遵守</p>
@@ -174,7 +177,7 @@
           <p class="pl-3 col-12 m-0 text_medium">4．特定個人情報の適切な管理</p>
           <p class="pl-5 col-12 text_normal">当社は、特定個人情報の責任者を置き定期的な点検を実施し、特定個人情報の適切な管理に努めます。</p>
           <p class="pl-3 col-12 m-0 text_medium">5．苦情及びご相談の窓口</p>
-          <p class="pl-5 col-12 text_normal">当社が取扱う特定個人情報についての苦情・ご意見・ご質問については、合理的な期間、妥当な範囲内で適切かつ迅速に対応いたします。本ページ下部の「<a href="#6" class="js-scroll">個人情報(特定個人情報)に関する苦情・相談等のお問合わせ</a>」よりご連絡ください。</p>
+          <p class="pl-5 col-12 text_normal">当社が取扱う特定個人情報についての苦情・ご意見・ご質問については、合理的な期間、妥当な範囲内で適切かつ迅速に対応いたします。本ページ下部の「<a href="#policy06" class="js-scroll">個人情報(特定個人情報)に関する苦情・相談等のお問合わせ</a>」よりご連絡ください。</p>
           <p class="pl-3 col-12 m-0 text_medium">6．特定個人情報の利用目的</p>
           <p class="pl-5 col-12 text_normal">特定個人情報の保護に関する日本の法令、国が定める指針その他の関連規範(ガイドライン等)で定められた目的の範囲内でのみ利用いたします。</p>
         </div>
@@ -189,7 +192,7 @@
 
       <div class="row mb-5">
         <div class="col-12">
-          <h3 class="border-left mb-3" id="6">個人情報（特定個人情報）に関する苦情・相談等のお問合わせ</h3>
+          <h3 class="border-left mb-3" id="policy06">個人情報（特定個人情報）に関する苦情・相談等のお問合わせ</h3>
           <span class="pl-3 col-12">本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。</span><br>
           <span class="pl-3 col-12">住所：</span><br>
           <span class="pl-3 col-12">社名：</span><br>
@@ -197,6 +200,7 @@
           <span class="pl-3 col-12">Eメールアドレス：</span>
         </div>
       </div>
+      <a href="#policy00" class="text-right" id="page-top"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
     </div>
   </div>
 </div>
