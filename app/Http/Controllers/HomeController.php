@@ -26,7 +26,7 @@ class HomeController extends Controller
   public function showThanks() {
     return view('buypage.thanks');
   }
-  public function showPrivacypolicy() {
+  public function showPolicy() {
     return view('others.privacypolicy');
   }
   public function nopage404() {

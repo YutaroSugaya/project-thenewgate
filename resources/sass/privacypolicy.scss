@@ -4,6 +4,12 @@
 // Variables
 @import 'variables';
 
+
+
+main {
+  
+}
+
 .border-left {
   border-left-width: 5px !important;
   border-color: map-get($theme-colors, d73d3d) !important;
@@ -26,4 +32,47 @@
   bottom: 30px;
   right: 30px;
   color: map-get($theme-colors, a68a72);
+}
+
+//サイドバーナビゲーション
+#sidebarMenu {
+  background-color: white;
+}
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    &:active {
+      border-left: 5px solid map-get($theme-colors, a64444) !important;
+    }
+
+    &:active, &:focus, &:hover {
+      background-color: map-get($theme-colors, a68a72);
+      transition: all  0.3s ease;
+      
+      a {
+        color: white;
+      }
+    }
+  }
+  
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: map-get($theme-colors, e4d3c4);
+}
+.sidebarMenuInner li a{
+    color: map-get($theme-colors, 685647);
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
 }

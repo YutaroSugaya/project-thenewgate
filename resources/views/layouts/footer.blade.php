@@ -23,8 +23,8 @@
           </a>
         </li>
         <li class="py-2">
-          <a href="">
-            <span class="text-white font-weight-bold">ホーム</span>
+          <a href="{{ route('showPolicy') }}">
+            <span class="text-white font-weight-bold">プライバシーポリシー</span>
           </a>
         </li>
       </ul>
