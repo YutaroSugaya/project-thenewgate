@@ -13,13 +13,25 @@
     <div class="d-md-flex pl-md-5">
       <ul class="list-unstyled pl-md-5 my-0">
         <li class="py-2">
-          <a href="">
+          <a href="/home">
             <span class="text-white font-weight-bold">ホーム</span>
           </a>
         </li>
         <li class="py-2">
-          <a href="">
-            <span class="text-white font-weight-bold">ホーム</span>
+          <a href="{{ route('showMypage') }}">
+            <span class="text-white font-weight-bold">マイページ</span>
+          </a>
+        </li>
+        <li class="py-2">
+          <a href="{{ route('showAgreement') }}">
+            <span class="text-white font-weight-bold">利用規約</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-unstyled pl-md-5 my-0">
+        <li class="py-2">
+          <a href="{{ route('showWebuse') }}">
+            <span class="text-white font-weight-bold">利用条件</span>
           </a>
         </li>
         <li class="py-2">
@@ -27,38 +39,26 @@
             <span class="text-white font-weight-bold">プライバシーポリシー</span>
           </a>
         </li>
+        <li class="py-2">
+          <a href="">
+              <span class="text-white font-weight-bold">特定商取引に関する法律に基づく表記</span>
+          </a>
+        </li>
       </ul>
       <ul class="list-unstyled pl-md-5 my-0">
         <li class="py-2">
           <a href="">
-              <span class="text-white font-weight-bold">ホーム</span>
+            <span class="text-white font-weight-bold">情報セキュリティポリシー</span>
           </a>
         </li>
         <li class="py-2">
           <a href="">
-              <span class="text-white font-weight-bold">ホーム</span>
-          </a>
-        </li>
-          <li class="py-2">
-            <a href="">
-                <span class="text-white font-weight-bold">ホーム</span>
-            </a>
-          </li>
-      </ul>
-      <ul class="list-unstyled pl-md-5 my-0">
-        <li class="py-2">
-          <a href="">
-            <span class="text-white font-weight-bold">ホーム</span>
+            <span class="text-white font-weight-bold">リンクポリシー</span>
           </a>
         </li>
         <li class="py-2">
           <a href="">
-            <span class="text-white font-weight-bold">ホーム</span>
-          </a>
-        </li>
-        <li class="py-2">
-          <a href="">
-            <span class="text-white font-weight-bold">ホーム</span>
+            <span class="text-white font-weight-bold">サイトマップ</span>
           </a>
         </li>
       </ul>

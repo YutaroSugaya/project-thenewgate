@@ -32,6 +32,12 @@ class HomeController extends Controller
   public function nopage404() {
     return view('others.nopage');
   }
+  public function agreement() {
+    return view('others.agreement');
+  }
+  public function webUse() {
+    return view('others.webuse');
+  }
 
 
 //   自動ログイン認証が勝手に発動するので、今はコメントアウトにしてますが、そのうち使います
