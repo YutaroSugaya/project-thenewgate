@@ -6,9 +6,7 @@
 
 
 
-main {
-  
-}
+
 
 .border-left {
   border-left-width: 5px !important;
@@ -49,18 +47,18 @@ main {
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 
-    &:active {
-      border-left: 5px solid map-get($theme-colors, a64444) !important;
-    }
-
     &:active, &:focus, &:hover {
       background-color: map-get($theme-colors, a68a72);
-      transition: all  0.3s ease;
+      transition: all  0.3s ease-in;
       
       a {
         color: white;
       }
     }
+  }
+  .active {
+    background-color: map-get($theme-colors, a68a72);
+    color: white;
   }
   
 }

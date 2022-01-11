@@ -38,6 +38,9 @@ class HomeController extends Controller
   public function webUse() {
     return view('others.webuse');
   }
+  public function commerce() {
+    return view('others.commerce');
+  }
 
 
 //   自動ログイン認証が勝手に発動するので、今はコメントアウトにしてますが、そのうち使います

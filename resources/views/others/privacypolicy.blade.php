@@ -1,6 +1,6 @@
 @extends('layouts.app')
   @push('css')
-  <link href="{{ asset('css/privacypolicy.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/policy.css') }}" rel="stylesheet">
   @endpush
   @push('js')
     <script src="{{ asset('js/scroll.js') }}" defer></script>
@@ -17,7 +17,17 @@
 
   <div class="row ">
     <div class="nav col-3 col-lg-2"> 
-      <x-others.policy-nav/>
+      <div id="sidebarMenu" class="mt-3">
+        <ul class="sidebarMenuInner">
+          <li class="nav-list border-top border-bottom"><a href="{{ route('showAgreement') }}">利用規約</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showWebuse') }}">利用条件</a></li>
+          <li class="nav-list border-bottom active"><a href="{{ route('showPolicy') }}">プライバシーポリシー</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showCommerce') }}">特定商取引に関する法律に基づく表記</a></li>
+          <li class="nav-list border-bottom"><a href="#">情報セキュリティポリシー</a></li>
+          <li class="nav-list border-bottom"><a href="#">リンクポリシー</a></li>
+          <li class="nav-list border-bottom"><a href="#">サイトマップ</a></li>
+        </ul>
+      </div>
     </div>  
     
     <div class="col-9 col-lg-10 conainer-fluid p-4">

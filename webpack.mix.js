@@ -19,7 +19,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/buy.scss', 'public/css')
     .sass('resources/sass/content.scss', 'public/css')
     .sass('resources/sass/auth.scss', 'public/css')
-    .sass('resources/sass/privacypolicy.scss', 'public/css')
+    .sass('resources/sass/policy.scss', 'public/css')
     .sourceMaps()
     .vue()
     .autoload({

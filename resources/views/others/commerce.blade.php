@@ -11,7 +11,7 @@
   
   <div class="row">
     <div class="col-12 justify-content-center">
-      <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showWebuse') }}">利用条件</a></span></p>
+      <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showCommerce') }}">特定商取引</a></span></p>
     </div>
   </div>
 
@@ -20,9 +20,9 @@
       <div id="sidebarMenu" class="mt-3">
         <ul class="sidebarMenuInner">
           <li class="nav-list border-top border-bottom"><a href="{{ route('showAgreement') }}">利用規約</a></li>
-          <li class="nav-list border-bottom active"><a href="{{ route('showWebuse') }}">利用条件</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showWebuse') }}">利用条件</a></li>
           <li class="nav-list border-bottom"><a href="{{ route('showPolicy') }}">プライバシーポリシー</a></li>
-          <li class="nav-list border-bottom"><a href="{{ route('showCommerce') }}">特定商取引に関する法律に基づく表記</a></li>
+          <li class="nav-list border-bottom active"><a href="{{ route('showCommerce') }}">特定商取引に関する法律に基づく表記</a></li>
           <li class="nav-list border-bottom"><a href="#">情報セキュリティポリシー</a></li>
           <li class="nav-list border-bottom"><a href="#">リンクポリシー</a></li>
           <li class="nav-list border-bottom"><a href="#">サイトマップ</a></li>
@@ -34,7 +34,7 @@
       <div class="privacy-text">
         <div class="row mb-3">
           <div class="col-12">
-            <h2 class="">利用条件</h2>
+            <h2 class="">特定商取引に関する法律に基づく表記</h2>
           </div>
         </div>
   

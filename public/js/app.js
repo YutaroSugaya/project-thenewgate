@@ -1087,14 +1087,14 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
-/***/ "./resources/sass/privacypolicy.scss":
-/*!*******************************************!*\
-  !*** ./resources/sass/privacypolicy.scss ***!
-  \*******************************************/
+/***/ "./resources/sass/policy.scss":
+/*!************************************!*\
+  !*** ./resources/sass/policy.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wcml2YWN5cG9saWN5LnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvcHJpdmFjeXBvbGljeS5zY3NzPzVmOWQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/privacypolicy.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wb2xpY3kuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9wb2xpY3kuc2Nzcz9mYTUzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/policy.scss\n");
 
 /***/ }),
 
@@ -1341,12 +1341,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
-/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/auth.scss")))
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/privacypolicy","css/content"], () => (__webpack_require__("./resources/sass/privacypolicy.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/sass/buy.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/sass/content.scss")))
+/******/ 		__webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/sass/auth.scss")))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, ["css/auth","css/buy","css/app","css/policy","css/content"], () => (__webpack_require__("./resources/sass/policy.scss")))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
@@ -1468,7 +1468,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/auth": 1,
 /******/ 			"css/buy": 1,
 /******/ 			"css/app": 1,
-/******/ 			"css/privacypolicy": 1,
+/******/ 			"css/policy": 1,
 /******/ 			"css/content": 1
 /******/ 		};
 /******/ 		
@@ -1511,7 +1511,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			__webpack_require__.e("css/auth");
 /******/ 			__webpack_require__.e("css/buy");
 /******/ 			__webpack_require__.e("css/app");
-/******/ 			__webpack_require__.e("css/privacypolicy");
+/******/ 			__webpack_require__.e("css/policy");
 /******/ 			__webpack_require__.e("css/content");
 /******/ 			return next();
 /******/ 		};
