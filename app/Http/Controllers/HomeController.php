@@ -38,8 +38,8 @@ class HomeController extends Controller
   public function webUse() {
     return view('others.webuse');
   }
-  public function commerce() {
-    return view('others.commerce');
+  public function guideline() {
+    return view('others.guideline');
   }
 
 

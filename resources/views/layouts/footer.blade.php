@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="py-2">
-          <a href="{{ route('showCommerce') }}">
+          <a href="{{ route('showGuideline') }}">
               <span class="text-white font-weight-bold">特定商取引に関する法律に基づく表記</span>
           </a>
         </li>

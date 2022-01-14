@@ -22,7 +22,7 @@
           <li class="nav-list border-top border-bottom active"><a href="{{ route('showAgreement') }}">利用規約</a></li>
           <li class="nav-list border-bottom"><a href="{{ route('showWebuse') }}">利用条件</a></li>
           <li class="nav-list border-bottom"><a href="{{ route('showPolicy') }}">プライバシーポリシー</a></li>
-          <li class="nav-list border-bottom"><a href="#">特定商取引に関する法律に基づく表記</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showGuideline') }}">特定商取引に関する法律に基づく表記</a></li>
           <li class="nav-list border-bottom"><a href="#">情報セキュリティポリシー</a></li>
           <li class="nav-list border-bottom"><a href="#">リンクポリシー</a></li>
           <li class="nav-list border-bottom"><a href="#">サイトマップ</a></li>
@@ -32,7 +32,7 @@
     
     <div class="col-9 col-lg-10 conainer-fluid p-4">
       <div class="privacy-text">
-        <div class="row mb-3">
+        <div class="row mb-5">
           <div class="col-12">
             <h2 class="">利用規約</h2>
           </div>
@@ -53,8 +53,6 @@
             <p class="pl-3 col-12 text_normal">取扱い商品やサービス、本サービス上の記載内容、サービス提供者における個人情報の取扱い等については、サービス提供者に直接お問い合わせください。</p>
             <p class="pl-3 col-12 text_normal">当社は、通信回線やコンピュータ等の障害によるシステムの中断・遅滞・中止・データの消失、データへの不正アクセスにより生じた損害、その他本サービスのサービスに関してユーザーのみなさまに生じた損害について、一切責任を負わないものとします。また、当社は、当社のウェブページ、サーバー、ドメイン等から送られるメール、コンテンツ等に、コンピュータ・ウィルス等の有害なものが含まれないことを保証しません。</p>
             <p class="pl-3 col-12 text_normal">当社は、ユーザーのみなさま及びサービス提供者に対し、適宜情報提供やアドバイスを行うことがありますが、それにより責任を負うものではありません。</p>
-            <p class="pl-3 col-12 text_normal"></p>
-            <p class="pl-3 col-12 text_normal"></p>
           </div>
         </div>
         

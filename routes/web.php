@@ -29,7 +29,7 @@ Route::get('/privacypolicy',[HomeController::class, 'showPolicy'])->name('showPo
 Route::get('/nopage',[HomeController::class, 'nopage404'])->name('nopage');
 Route::get('/agreement',[HomeController::class, 'agreement'])->name('showAgreement');
 Route::get('/agreement/webuse',[HomeController::class, 'webUse'])->name('showWebuse');
-Route::get('/agreement/commerce',[HomeController::class, 'commerce'])->name('showCommerce');
+Route::get('/guideline',[HomeController::class, 'guideline'])->name('showGuideline');
 
 
 Auth::routes();

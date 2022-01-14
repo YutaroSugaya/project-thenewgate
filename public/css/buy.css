@@ -1,5 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 .buy-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 300px;
   background-color: #f7bdc7;
@@ -9,9 +11,14 @@
   height: 50px;
   margin: 0 auto;
   margin-bottom: 20px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .buy-title h5 {
   margin: 0px;
 }
@@ -26,9 +33,14 @@
   width: 90%;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .progressbar li {
@@ -46,7 +58,7 @@
   width: 18px;
   height: 18px;
   margin: 7px auto 20px auto;
-  content: "";
+  content: '';
   text-align: center;
   border-radius: 50%;
   background-color: #c7c7c7;
@@ -59,7 +71,7 @@
   left: -46.5%;
   width: 93%;
   height: 2px;
-  content: "";
+  content: '';
   background-color: #c7c7c7;
 }
 
@@ -81,3 +93,4 @@
 .progressbar li.complete:after {
   background-color: #f7bdc7;
 }
+/*# sourceMappingURL=buy.css.map */
