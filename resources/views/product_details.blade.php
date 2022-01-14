@@ -55,17 +55,20 @@
                                         <a class="carousel-control-next" href="#myCarousel" data-slide="next">
                                             <span><i class="fa fa-angle-right"></i></span>
                                         </a>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="img">
+                            <span><img src="https://i.imgur.com/bV1xmG5.jpg"></span>
+                            <span><img src="https://i.imgur.com/vgMi4nw.jpg"></span>
+                            <span><img src="https://i.imgur.com/hRlGe10.jpg"></span>
+                        </div>
 
                         <div class="col-lg-7 col-md-7 col-sm-6">
                             <h4 class="box-title mt-5">商品詳細</h4>
-                            <p>Lorem Ipsum available,but the majority have suffered alteration in some form,by injected
-                                humour,or randomised words which don't look even slightly believable.but the majority have
-                                suffered alteration in some form,by injected humour</p>
+                            <p>test</p>
                             <h2 class="mt-5">
                                 1000円<small class="text-success">(36%off)</small>
                             </h2>
@@ -113,14 +116,6 @@
                                 </div>
                             </div>
 
-
-                            <h3 class="box-title mt-5">Key Highlights</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-check text-success"></i>Sturdy structure</li>
-                                <li><i class="fa fa-check text-success"></i>Designed to foster easy portability</li>
-                                <li><i class="fa fa-check text-success"></i>Perfect furniture to flaunt your wonderful
-                                    collectibles</li>
-                            </ul>
                         </div>
 
                         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -129,7 +124,7 @@
                                 <table class="table table-striped table-product">
                                     <tbody>
                                         <tr>
-                                            <td width="390">Brand</td>
+                                            <td width="350">Brand</td>
                                             <td>Stellar</td>
                                         </tr>
                                         <tr>

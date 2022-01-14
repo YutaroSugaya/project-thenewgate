@@ -35,11 +35,15 @@ body {
 }
 
 .carousel {
+    height: 280px;
+    width: 280px;
     margin: 25px 0 50px;
     background: #fff;
     position: relative;
     padding: 8px;
+    padding-top: 15px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    margin: auto;
 }
 
 .carousel:before,
@@ -151,56 +155,6 @@ body {
     border-color: #20b0b9;
 }
 
-
-/* body {
-    background-color: #5165ff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center
+.img {
+    margin: 50px;
 }
-
-.modal-body {
-    background-color: #fff;
-    border-color: #fff
-}
-
-.close {
-    color: #000;
-    cursor: pointer
-}
-
-.close:hover {
-    color: #000
-}
-
-.theme-color {
-    color: #004cb9
-}
-
-hr.new1 {
-    border-top: 2px dashed #fff;
-    margin: 0.4rem 0
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #004cb9;
-    border-color: #004cb9;
-    padding: 12px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 1px;
-    font-size: 17px
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #004cb9;
-    border-color: #004cb9;
-    padding: 12px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 1px;
-    font-size: 17px
-} */
