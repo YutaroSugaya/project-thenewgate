@@ -41,6 +41,15 @@ class HomeController extends Controller
   public function guideline() {
     return view('others.guideline');
   }
+  public function sitemap() {
+    return view('others.sitemap');
+  }
+  public function security() {
+    return view('others.security');
+  }
+  public function link() {
+    return view('others.link');
+  }
 
 
 //   自動ログイン認証が勝手に発動するので、今はコメントアウトにしてますが、そのうち使います

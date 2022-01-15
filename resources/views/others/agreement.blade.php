@@ -23,9 +23,9 @@
           <li class="nav-list border-bottom"><a href="{{ route('showWebuse') }}">利用条件</a></li>
           <li class="nav-list border-bottom"><a href="{{ route('showPolicy') }}">プライバシーポリシー</a></li>
           <li class="nav-list border-bottom"><a href="{{ route('showGuideline') }}">特定商取引に関する法律に基づく表記</a></li>
-          <li class="nav-list border-bottom"><a href="#">情報セキュリティポリシー</a></li>
-          <li class="nav-list border-bottom"><a href="#">リンクポリシー</a></li>
-          <li class="nav-list border-bottom"><a href="#">サイトマップ</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showSecurity') }}">情報セキュリティポリシー</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showLink') }}">リンクポリシー</a></li>
+          <li class="nav-list border-bottom"><a href="{{ route('showSitemap') }}">サイトマップ</a></li>
         </ul>
       </div>
     </div>  

@@ -69,4 +69,18 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.guideline {
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e4d3c4;
+}
 /*# sourceMappingURL=policy.css.map */

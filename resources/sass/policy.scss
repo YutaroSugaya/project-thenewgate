@@ -5,9 +5,6 @@
 @import 'variables';
 
 
-
-
-
 .border-left {
   border-left-width: 5px !important;
   border-color: map-get($theme-colors, d73d3d) !important;
@@ -73,4 +70,17 @@
     font-weight: bolder;
     cursor: pointer;
     text-decoration: none;
+}
+
+//特定商取引画面
+.guideline {
+  margin: 0;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.content {
+  margin-bottom: 40px;
+  border-bottom: 1px solid map-get($theme-colors, e4d3c4);
 }

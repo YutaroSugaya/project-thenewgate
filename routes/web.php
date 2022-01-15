@@ -30,6 +30,9 @@ Route::get('/nopage',[HomeController::class, 'nopage404'])->name('nopage');
 Route::get('/agreement',[HomeController::class, 'agreement'])->name('showAgreement');
 Route::get('/agreement/webuse',[HomeController::class, 'webUse'])->name('showWebuse');
 Route::get('/guideline',[HomeController::class, 'guideline'])->name('showGuideline');
+Route::get('/link',[HomeController::class, 'link'])->name('showLink');
+Route::get('/sitemap',[HomeController::class, 'sitemap'])->name('showSitemap');
+Route::get('/security',[HomeController::class, 'security'])->name('showSecurity');
 
 
 Auth::routes();
