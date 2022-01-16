@@ -9,7 +9,7 @@
 
 <div id="policy00" class="wrapper main-section container-fluid">
   
-  <div class="row">
+  <div class="row row-title">
     <div class="col-12 justify-content-center">
       <p class="small m-0 p-2">高橋商事：<span><a href="/home">ホーム</a></span><span> > </span><span><a href="{{ route('showGuideline') }}">特定商取引に関する法律に基づく表記</a></span></p>
     </div>

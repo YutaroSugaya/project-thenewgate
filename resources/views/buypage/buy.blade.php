@@ -12,7 +12,7 @@
     
     <div class="row">
       <div class="buy-title mt-3 mb-3">
-        <h5 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文手続き</h5>
+        <h3 class="text-center ml-2 mr-2"><i class="fas fa-shopping-cart mr-1"></i>注文手続き</h3>
       </div>
     </div>
     <div class="row border-bottom mx-5 py-3">
