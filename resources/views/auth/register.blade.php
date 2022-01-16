@@ -4,9 +4,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
+                <h3>入力して新規会員登録</h3>
                 <div class="card">
-                    <div class="card-title">{{ __('入力して新規会員登録') }}</div>
-
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
