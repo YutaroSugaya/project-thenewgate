@@ -21,11 +21,11 @@
     </div>
     
   <div class="row">
-    <div class="card text-center col-8 mx-auto p-5">
+    <div class="content-info text-center col-8 mx-auto p-5">
       <h5>ご注文ありがとうございます</h5>
       <p>注文内容がショップに送信されました。</p>
       <p>お客様のご注文番号は<span>「〇〇△△××□□」</span>です。</p>
-      <img src="https://asbs.jp/mgr/ckfinder/userfiles/images/PR_thankyou.jpg" alt="" class="" style="">
+      <img src="https://asbs.jp/mgr/ckfinder/userfiles/images/PR_thankyou.jpg" alt="" class="img-fluid mx-auto d-block image" style="">
     </div>
   </div>
     <div class="row">

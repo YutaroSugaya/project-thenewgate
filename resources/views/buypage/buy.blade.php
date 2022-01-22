@@ -23,7 +23,7 @@
       </ul>
     </div>
 
-    <div class="row border-bottom mx-5 my-4 pb-3">
+    <div class="row mx-5 my-4 pb-3 content-info">
       <div class="col-12">
         <h5 class=""><i class="far fa-user mr-1 mb-3"></i>注文者情報</h5>
         <div class="user_detail">
@@ -40,41 +40,56 @@
         </div>
       </div>
     </div>
-
+    
     <div class="row mx-5 my-4">
       <div class="col-12">
         <h5><i class="fas fa-truck mr-1 mb-3"></i>お届け・お支払いの指定</h5>
-        <div class="card product_buy_lists p-3">
-          <!-- DBから繰り返し処理 -->
+        <div class="content-info product_buy_lists p-3">
           <div class="card-body product_buy_list">
-            <div class="row border-bottom pb-3">
-              <img src="" class="col-4" alt="DBから商品画像">
-              <div class="col-8">
-                <h4 class="card-title">DBから商品名</h4>
-                <div class="row">
-                  <h6 class="card-subtitle mb-2 text-muted col-12">DBから会社名<span>  </span>DBから商品アピールポイント</h6>
-                  <p class="card-text col-12">¥DBから値段<span>  </span>DBから生産地</p>
-              </div>
-              </div>
-            </div>
-            <div class="row pt-3 pb-3 border-bottom">
-              <form action="" class="col-12">
-                @csrf
-                <div class="row">
-                  <div class="col-6 d-flex">
-                    <span class="label col-3">数量</span>
-                    <!-- 繰り返し処理 -->
-                    <div class="col-9 pt-1 pb-1">
-                      <select name="" id="">
-                        <option value="">DBからカート入力値</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="...">...</option>
-                        <option value="10">10</option>
-                      </select>
+            
+            
+            <!-- DBから繰り返し処理 -->
+            <form action="" class="">
+              @csrf
+            <div class="product pb-3">
+              <div class="row">
+                <div class="col-md-3">
+                  <img class="img-fluid mx-auto d-block image" src="https://i.imgur.com/bV1xmG5.jpg" alt="DBから商品画像">
+                </div>
+                <div class="col-md-9">
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-md-6 product-name">
+                        <div class="product-name">
+                          <a href="#"><h4>DBから商品名</h4></a>
+                          <div class="product-info">
+                            <h6 class="card-subtitle mb-2 text-muted col-12">DBから会社名<span>  </span>DBから商品アピールポイント</h6>
+                            <p class="card-text col-12">DBから生産地</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 quantity">
+                        <label for="quantity">注文数：</label>
+                        <input id="quantity" type="number" value="1" class="form-control quantity-input">
+                      </div>
+                      <div class="col-md-3">
+                        <label for="quantity">小計：</label><br>
+                        <span class="proce">DBから値段＊注文数　円</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6 d-flex">
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="row pt-3 pb-3 border-top border-bottom">
+                <div class="row">
+                  <div class="col-12 d-flex">
                     <span class="label col-4">支払い方法</span>
                     <div class="col-8 pt-1 pb-1">
                       <select name="" id="">
@@ -87,7 +102,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-6 d-flex">
+                  <div class="col-12 d-flex">
                     <span class="label col-3">配送先</span>
                     <!-- 繰り返し処理 -->
                     <div class="col-9 pt-1 pt-1">
@@ -97,7 +112,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-6 shipping d-flex">
+                  <div class="col-12 shipping d-flex py-3">
 
                       <div id="shipping_form" style="display: none;" class="col-12">
                         <span class="col-12 label">お名前</span>
