@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,7 @@ Route::get('/guideline',[HomeController::class, 'guideline'])->name('showGuideli
 Route::get('/link',[HomeController::class, 'link'])->name('showLink');
 Route::get('/sitemap',[HomeController::class, 'sitemap'])->name('showSitemap');
 Route::get('/security',[HomeController::class, 'security'])->name('showSecurity');
+Route::post('/pay',[PaymentController::class, 'pay'])->name('pay');
 
 
 Auth::routes();
