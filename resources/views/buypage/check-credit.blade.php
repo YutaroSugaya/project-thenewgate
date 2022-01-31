@@ -84,7 +84,7 @@
                   <div class="col-12 d-flex">
                     <span class="label col-4">支払い方法</span>
                     <div class="col-8 pt-1 pb-1">
-                        <span value="">フォームの入力値</span>
+                        <span value="">クレジットカード</span>
                     </div>
                   </div>
                 </div>

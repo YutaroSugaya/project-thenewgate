@@ -51,7 +51,7 @@
             <!-- DBから繰り返し処理 -->
             <form action="" class="">
               @csrf
-            <div class="product pb-3">
+            <div class="product pb-3" id="product">
               <div class="row">
                 <div class="col-md-3">
                   <img class="img-fluid mx-auto d-block image" src="https://i.imgur.com/bV1xmG5.jpg" alt="DBから商品画像">
@@ -94,9 +94,9 @@
                     <div class="col-8 pt-1 pb-1">
                       <select name="" id="payment_method">
                         <option value="default" selected >選択して下さい</option>
-                        <option value="http://localhost:8888/check/credit">クレジットカード</option>
-                        <option value="http://localhost:8888/check/paypal">paypal</option>
-                        <option value="http://localhost:8888/check/cash">代金引換</option>
+                        <option value="http://localhost:8888/buy/check/credit">クレジットカード</option>
+                        <option value="http://localhost:8888/buy/check/paypal">paypal</option>
+                        <option value="http://localhost:8888/buy/check/cash">代金引換</option>
                       </select>
                     </div>
                   </div>
@@ -164,7 +164,7 @@
         <div class="row my-5 mx-5">
           <button type="" onclick="location.href='/cart'" class="btn col-5"><i class="fas fa-shopping-cart mr-1"></i>カートへ戻る</button>
           <span class="col-2"></span>
-          <button type="" onclick="location.href=''" class="btn col-5" id="check" disabled>この内容で確認する</button>
+          <button type="" onclick="" class="btn col-5" id="check" disabled>この内容で確認する</button>
         </div>
       </div>
 

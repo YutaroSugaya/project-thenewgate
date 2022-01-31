@@ -13,25 +13,46 @@ $(function() {
     }
   })
 
-  //クレジットカードの場合
+//注文数が0以下の場合
+  $('#quantity').on('change',function() {
+    let quantity = $('#quantity').val();
+    console.log(quantity);
+    if(quantity <= 0) {
+      $('#product').fadeOut('slow');
+      let attention = '<h5>商品を削除しました</h5>'
+      $('#product').append(attention);
+      $('#product').fadeIn('slow');
+
+    }
+
+  })
+  //入力しないと進めないようにする
   $('#payment_method').on('change',function() {
     let payment_method = $('#payment_method').val();
     if(payment_method !== "default") {
+      $('#check').prop('disabled', false);
       console.log(payment_method);
-      $('#check')
+
+      //クレジットカードの場合
+      if(payment_method === "http://localhost:8888/buy/check/credit" ) {
+        $('#check').attr('onclick','location.href="http://localhost:8888/buy/check/credit"');      
+      }
+      //paypalの場合
+      if(payment_method === "http://localhost:8888/buy/check/paypal" ) {
+        $('#check').attr('onclick','location.href="http://localhost:8888/buy/check/paypal"');      
+      }
+      //代金引換の場合
+      if(payment_method === "http://localhost:8888/buy/check/cash" ) {
+        $('#check').attr('onclick','location.href="http://localhost:8888/buy/check/cash"');      
+      }
+
+    }else {
+      console.log(payment_method);
+      $('#check').prop('disabled', true);
     }
   })
   
-  //入力しないと進めないようにする
-  let payment_method = $('#payment_method').val();
-  let quantity = $('#quantity').val();
-  if(quantity > 0) {
-    console.log(quantity);
-    if(payment_method !== "default" ) {
-      console.log(payment_method);
-      console.log("111");
-      $('#check').prop('disabled', false);
-    }
+  if(quantity <= 0) {
   }
   
 })
