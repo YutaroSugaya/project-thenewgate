@@ -18,10 +18,16 @@ $(function() {
     let quantity = $('#quantity').val();
     console.log(quantity);
     if(quantity <= 0) {
-      $('#product').fadeOut('slow');
-      let attention = '<h5>商品を削除しました</h5>'
-      $('#product').append(attention);
-      $('#product').fadeIn('slow');
+      $.when(
+        $('#check').prop('disabled', true),
+        $('#product').fadeOut(1000),
+        ).done(function() {
+          $('#product').empty()
+        let attention = '<h5 class="text-center" style="height: 100px;">商品を削除しました</h5>'
+        $('#product').append(attention);
+        $('#product').fadeIn(1000);
+
+      })
 
     }
 
