@@ -58,7 +58,5 @@ $(function() {
     }
   })
   
-  if(quantity <= 0) {
-  }
   
 })

@@ -156,7 +156,7 @@
     </div>
   </div>
 </div>
-<form action="{{ asset('pay') }}" method="POST">
+<form action="{{ asset('buy/thanks') }}" method="POST">
     {{ csrf_field() }}
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"

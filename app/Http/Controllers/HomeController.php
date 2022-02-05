@@ -26,6 +26,9 @@ class HomeController extends Controller
   public function showCheckCredit() {
     return view('buypage.check-credit');
   }
+  public function showCheckPaypal() {
+    return view('buypage.check-paypal');
+  }
   public function showThanks() {
     return view('buypage.thanks');
   }

@@ -19,7 +19,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @stack('css')
+    @stack('script')
     <!-- Scripts -->
+    @stack('script')
+    
     <script src="{{ asset('js/app.js') }}" defer></script>
     @stack('js')
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

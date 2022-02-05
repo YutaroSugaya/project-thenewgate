@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PaymentController;
 
+use App\Http\Controllers\PayPalController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +28,7 @@ Route::get('/mypage/edit',[HomeController::class, 'showEdit'])->name('showEdit')
 Route::get('/buy',[HomeController::class, 'showBuy'])->name('showBuy');
 Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck');
 Route::get('/buy/check/credit',[HomeController::class, 'showCheckCredit'])->name('showCheckCredit');
+Route::get('/buy/check/paypal',[HomeController::class, 'showCheckPaypal'])->name('showCheckPaypal');
 Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck');
 Route::get('/buy/thanks',[HomeController::class, 'showThanks'])->name('showThanks');
 Route::get('/privacypolicy',[HomeController::class, 'showPolicy'])->name('showPolicy');
@@ -36,7 +39,12 @@ Route::get('/guideline',[HomeController::class, 'guideline'])->name('showGuideli
 Route::get('/link',[HomeController::class, 'link'])->name('showLink');
 Route::get('/sitemap',[HomeController::class, 'sitemap'])->name('showSitemap');
 Route::get('/security',[HomeController::class, 'security'])->name('showSecurity');
-Route::post('/pay',[PaymentController::class, 'pay'])->name('pay');
+Route::post('/pay/credit',[PaymentController::class, 'payCredit'])->name('payCredit');
+//paypal
+Route::get('create-transaction', [PaymentController::class, 'createTransaction'])->name('createTransaction');
+Route::get('process-transaction', [PaymentController::class, 'processTransaction'])->name('processTransaction');
+Route::get('success-transaction', [PaymentController::class, 'successTransaction'])->name('successTransaction');
+Route::get('cancel-transaction', [PaymentController::class, 'cancelTransaction'])->name('cancelTransaction');
 
 
 Auth::routes();
