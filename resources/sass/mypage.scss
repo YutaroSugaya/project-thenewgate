@@ -1,0 +1,171 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.main-right {
+  h3, h5, p {
+    color: map-get($theme-colors, 685647) !important;
+  }
+  
+}
+
+//サイドバーナビゲーション
+#sidebarMenu {
+  height: 100%;
+  left: 0;
+  transform: translateX(-1000px);
+  transition: transform 250ms ease-in-out;
+  background-color: white;
+}
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    &:active, &:focus, &:hover {
+      background-color: map-get($theme-colors, a68a72);
+      transition: all  0.3s ease;
+      a {
+        color: white;
+      }
+    }
+  }
+  .nav-title {
+    background-color: map-get($theme-colors, a64444);
+    color: white;
+    &:active, &:focus, &:hover {
+      background-color: map-get($theme-colors, a64444);
+    }
+    a {
+      color: map-get($theme-colors, 685647) !important;
+    }
+  }
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: map-get($theme-colors, e4d3c4);
+}
+.sidebarMenuInner li a{
+    color: map-get($theme-colors, 685647);
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type=checkbox]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 6px;
+    left: 18px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+div,input[type=checkbox]:checked ~ div {
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+input[type=checkbox]:checked ~ .box {
+  left: 250px;
+}
+
+//商品カルーセル
+#carousel-card {
+  position: abusolute;
+  .carousel-indicators {
+    position: lerative;
+    bottom : -35px;
+  }
+}
+.carousel-indicators li {
+  background-color: map-get($theme-colors, a68a72) !important;
+}
+.carousel-indicators .active {
+  background-color: map-get($theme-colors, a68a72) !important;
+}
+.carousel-control-prev, .carousel-control-next {
+  background-color: map-get($theme-colors, a68a72);
+  width: 30px !important;
+  height: 100%;
+  padding: 0px;
+  border-radius: 0.3rem;
+}

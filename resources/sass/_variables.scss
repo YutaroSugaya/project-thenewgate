@@ -1,0 +1,33 @@
+// Body
+$body-bg: #fff3e8;
+
+// Typography
+$font-family-sans-serif: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$palegray: #c7c7c7;
+$dullpink:rgb(247, 189, 199);
+
+$theme-colors: (
+  "a68a72": #a68a72, // ボタン、セクションタイトルカラー
+  "594838": #594838, // フッター背景
+  "e4d3c4": #e4d3c4, // ボーダーカラー
+  "685647": #685647, // ベース文字色
+  "d73d3d": #d73d3d, // タイムセールヵラー
+  "6f2c2c": #6f2c2c, // ヘッダー新規登録ボタン
+  "a64444": #a64444, // ヘッダーログインボタン
+  "fff3e8": #fff3e8, // メインバックグラウンドカラー
+)
+

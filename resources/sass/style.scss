@@ -1,0 +1,138 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+* {
+  transition-property:width;
+	transition-duration:1s;
+}
+
+//ヘッダー
+.header_bar {
+  border-bottom: 1px solid map-get($theme-colors, e4d3c4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+//文字　リンク　ボタン　装飾
+//文字
+p, a, h1, h2, h3, h4, h5, h6 {
+  color: map-get($theme-colors, 685647) !important;
+}
+//リンク
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none !important;
+}
+//入力欄
+input {
+  background-color:white !important;  
+  &:focus {
+    border: 1px solid rgb(247, 189, 199) !important;
+    background-color: #fff;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+//セレクトボックスの枠線
+select {
+  border-color: $palegray;
+  outline-color: $dullpink;
+}
+
+//ボタン
+.btn {
+  background-color: map-get($theme-colors, a68a72);
+  color: white;
+  transition: all .3s;
+  &:hover {
+    color: white;
+    background-color: $dullpink ;
+  }
+}
+
+//線
+.border, .border-bottom, .border-top, .border-left, .border-right {
+  border-color: map-get($theme-colors, e4d3c4) !important;
+}
+//bootstrapカードクラス
+.card {
+  border-color: map-get($theme-colors, e4d3c4);
+}
+
+
+//メインセクションの幅
+.main-section {
+  max-width: 1200px !important;
+}
+
+//404画面
+.nopage-container {
+  min-height: 480px;
+}
+
+
+
+/* * {
+  list-style: none;
+  color: $base-font-color;
+  box-sizing: content-box;
+  background-color: map-get($theme-colors,fff3e8);
+  footer {
+    background-color:$footer-bgc;
+  }
+}
+
+main {
+  background-color: white;
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    .row {
+      margin: 0 auto;
+    }
+    input {
+      &:read-only {
+        background-color:white;
+      }
+      &:focus {
+        border: 1px solid rgb(247, 189, 199);
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .block {
+    background-color: white;
+    padding: 10px;
+    //border-radius: 1.5rem;
+    margin-bottom: 20px;
+  }
+  a:link, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  .label {
+    margin: 5px;
+  }
+  .btn-row{
+    text-align: center;
+    .btn {
+      background-color: $btn-bgc;
+      color: $btn-font-color;
+      
+    }
+  }
+}
+
+
+//プライバシーポリシー
+.privacy-text {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+ */

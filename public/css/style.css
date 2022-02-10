@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.header_bar {
+  border-bottom: 1px solid #e4d3c4;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  color: !important;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+input {
+  background-color: white !important;
+}
+
+input:focus {
+  border: 1px solid #f7bdc7 !important;
+  background-color: #fff;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+select {
+  border-color: #c7c7c7;
+  outline-color: #f7bdc7;
+}
+
+.btn {
+  background-color: #a68a72;
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #f7bdc7;
+}
+
+.border, .border-bottom, .border-top, .border-left, .border-right {
+  border-color: #e4d3c4 !important;
+}
+
+.card {
+  border-color: #e4d3c4;
+}
+
+.main-section {
+  max-width: 1200px !important;
+}
+
+.nopage-container {
+  min-height: 480px;
+}
+
+/* * {
+  list-style: none;
+  color: $base-font-color;
+  box-sizing: content-box;
+  background-color: map-get($theme-colors,fff3e8);
+  footer {
+    background-color:$footer-bgc;
+  }
+}
+
+main {
+  background-color: white;
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    .row {
+      margin: 0 auto;
+    }
+    input {
+      &:read-only {
+        background-color:white;
+      }
+      &:focus {
+        border: 1px solid rgb(247, 189, 199);
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .block {
+    background-color: white;
+    padding: 10px;
+    //border-radius: 1.5rem;
+    margin-bottom: 20px;
+  }
+  a:link, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  .label {
+    margin: 5px;
+  }
+  .btn-row{
+    text-align: center;
+    .btn {
+      background-color: $btn-bgc;
+      color: $btn-font-color;
+      
+    }
+  }
+}
+
+
+//プライバシーポリシー
+.privacy-text {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+ */
+/*# sourceMappingURL=style.css.map */

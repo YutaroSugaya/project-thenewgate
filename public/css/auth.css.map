@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,qDAAI;AAKZ,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,KAAK;EAClB,cAAc,EAAE,KAAK;CACtB",
+    "sources": [
+        "../../resources/sass/auth.scss",
+        "../../resources/sass/_variables.scss"
+    ],
+    "names": [],
+    "file": "auth.css"
+}
