@@ -26,3 +26,5 @@ class CartController extends Controller
         return view('product_details');
     }
 }
+
+

@@ -13,7 +13,7 @@
     <div class="d-md-flex pl-md-5">
       <ul class="list-unstyled pl-md-5 my-0">
         <li class="py-2">
-          <a href="/home">
+          <a href="{{ route('showHome') }}">
             <span class="text-white font-weight-bold">ホーム</span>
           </a>
         </li>

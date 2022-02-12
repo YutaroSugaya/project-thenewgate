@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Admin;
 
-class AdminTableSeeder extends Seeder
+class AdminsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +14,6 @@ class AdminTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      Admin::factory(5)->create();
     }
 }

@@ -15,7 +15,7 @@ class CreateCategoriesTable extends Migration
     {
       if(!Schema::hasTable('categories')) {
         Schema::create('categories', function (Blueprint $table) {
-            $table->id(); //カテゴリID
+            $table->bigIncrements('id')->unsigned();; //カテゴリID
             $table->string('category_name',255); //カテゴリ名
             $table->timestamps();
         });

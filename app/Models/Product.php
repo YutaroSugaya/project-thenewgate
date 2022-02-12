@@ -19,7 +19,7 @@ class Product extends Model
     'comment',
     'product_price',
     'product_image',
-    'prefetcure',
+    'prefecture',
     'stock',
     'time_sale',
     'time_sale_start',
@@ -28,4 +28,17 @@ class Product extends Model
     'discount',
     'soldout',
   ];
+
+  protected $guarded = [
+  ];
+
+  public function category() {
+    return $this->belongsTo('App\Models\Category');
+  }
+  public function company() {
+    return $this->belongsTo('App\Models\Campany');
+  }
+  public function productDetail() {
+    return $this->belongsTo('App\Models\ProductDetail');
+  }
 }

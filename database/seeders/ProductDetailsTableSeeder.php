@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\ProductDetail;
+
 
 class ProductDetailsTableSeeder extends Seeder
 {
@@ -13,6 +15,6 @@ class ProductDetailsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      ProductDetail::factory(5)->create();
     }
 }

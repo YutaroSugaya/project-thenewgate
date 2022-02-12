@@ -15,12 +15,12 @@ class CreateProductsTable extends Migration
     {
       if (!Schema::hasTable('products')){
         Schema::create('products', function (Blueprint $table) {
-          $table->id(); //プライマリキー
-          $table->bigInteger('category_id')->unsigned(); 
+          $table->bigIncrements('id')->unsigned(); //プライマリキー
+          $table->bigInteger('category_id')->nullable()->unsigned(); 
           $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade'); 
-          $table->bigInteger('company_id')->unsigned(); 
+          $table->bigInteger('company_id')->nullable()->unsigned(); 
           $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade'); 
-          $table->bigInteger('product_detail_id')->unsigned(); 
+          $table->bigInteger('product_detail_id')->nullable()->unsigned(); 
           $table->foreign('product_detail_id')->references('id')->on('product_details')->onDelete('cascade'); 
           $table->string('product_name',255); 
           $table->text('comment'); 
@@ -46,6 +46,8 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        //
+      Schema::dropIfExists('favorites');
+
+      Schema::dropIfExists('products');
     }
 }

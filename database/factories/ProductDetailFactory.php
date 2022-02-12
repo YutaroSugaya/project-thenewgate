@@ -3,8 +3,10 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use App\Models\ProductDetail;
 
-class ProductDetailsFactory extends Factory
+class ProductDetailFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,10 +16,10 @@ class ProductDetailsFactory extends Factory
     public function definition()
     {
       return [
-        'recommendation' => $this->faker->words(),
-        'expiration_date' => $this->faker->dataTime(),
-        'preservation_method' => $this->faker->words(),
-        'allergic_substance' => $this->faker->words(),
+        'recommendation' => $this->faker->words(4,true),
+        'expiration_date' => $this->faker->dateTime(),
+        'preservation_method' => $this->faker->words(4,true),
+        'allergic_substance' => $this->faker->words(4,true),
         'product_size' => $this->faker->numberBetween($min=100,$max=100000),
         'product_weight' => $this->faker->numberBetween($min=100,$max=100000)
         

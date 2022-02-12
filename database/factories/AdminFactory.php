@@ -3,8 +3,10 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use App\Models\Admin;
 
-class AdminsFactory extends Factory
+class AdminFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,7 +16,8 @@ class AdminsFactory extends Factory
     public function definition()
     {
       return [
-        'email' => $this->faker->email()->unique(),
+        'email' => $this->faker->unique()->safeEmail(),
+        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
       ];
     }
 }
