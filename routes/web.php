@@ -60,4 +60,3 @@ Route::get('cancel-transaction', [PaymentController::class, 'cancelTransaction']
 
 Auth::routes();
 
-
