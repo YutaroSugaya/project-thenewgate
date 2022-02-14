@@ -13,16 +13,17 @@ class CreateFavoritesTable extends Migration
      */
     public function up()
     {
-      if(!Schema::hasTable('favorites')) {
+      
         Schema::create('favorites', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->bigInteger('user_id')->nullable()->unsigned(); //ユーザID
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); 
-            $table->bigInteger('product_id')->nullable()->unsigned();  // 商品ID
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade'); 
+            //$table->bigInteger('user_id')->nullable()->unsigned(); //ユーザID
+            $table->foreignId('user_id')->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
+            //$table->bigInteger('product_id')->nullable()->unsigned();  // 商品ID
+            $table->foreignId('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete(); 
+            
             $table->timestamps();
         });
-      }
+      
     }
 
     /**

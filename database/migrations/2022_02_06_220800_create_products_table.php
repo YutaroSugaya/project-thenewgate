@@ -13,15 +13,13 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-      if (!Schema::hasTable('products')){
+      
         Schema::create('products', function (Blueprint $table) {
-          $table->bigIncrements('id')->unsigned(); //プライマリキー
-          $table->bigInteger('category_id')->nullable()->unsigned(); 
-          $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade'); 
-          $table->bigInteger('company_id')->nullable()->unsigned(); 
-          $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade'); 
-          $table->bigInteger('product_detail_id')->nullable()->unsigned(); 
-          $table->foreign('product_detail_id')->references('id')->on('product_details')->onDelete('cascade'); 
+          $table->bigIncrements('id'); //プライマリキー
+          $table->foreignId('category_id')->nullable()->constrained('categories')->cascadeOnUpdate()->cascadeOnDelete();
+          $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnUpdate()->cascadeOnDelete();
+          $table->foreignId('product_detail_id')->nullable()->constrained('product_details')->cascadeOnUpdate()->cascadeOnDelete();
+          
           $table->string('product_name',255); 
           $table->text('comment'); 
           $table->integer('product_price'); 
@@ -36,7 +34,7 @@ class CreateProductsTable extends Migration
           $table->boolean('soldout')->nullable();  
           $table->timestamps();
         });
-      }
+      
     }
 
     /**
@@ -46,7 +44,10 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('favorites');
+
+
+      
+      //Schema::dropIfExists('favorites');
 
       Schema::dropIfExists('products');
     }

@@ -27,6 +27,8 @@ class HomeController extends Controller
     return view('product.product_detail');
   }
 
+  
+
   public function showMypage () { //マイページ
     return view('mypage.top');
   }

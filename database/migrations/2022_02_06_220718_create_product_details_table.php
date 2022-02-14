@@ -32,7 +32,7 @@ class CreateProductDetailsTable                                                 
      */
     public function down()
     {
-      Schema::dropIfExists('products');
+      //Schema::dropIfExists('products');
       Schema::dropIfExists('product_details');
     }
 }

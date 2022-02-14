@@ -138,7 +138,7 @@
                 </a>
             </li>
         </ul>
-        <div class="d-flex justify-content-center">
+      </div>
 </section>
 
 @endsection

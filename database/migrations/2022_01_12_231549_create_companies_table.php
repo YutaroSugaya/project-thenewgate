@@ -13,13 +13,13 @@ class CreateCompaniesTable extends Migration
      */
     public function up()
     {
-      if(!Schema::hasTable('companies')) {
+      
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('company_name',255); //会社名
             $table->timestamps();
         });
-      }
+      
     }
 
 

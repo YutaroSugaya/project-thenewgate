@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ProductDetail extends Model
 {
@@ -22,4 +25,9 @@ class ProductDetail extends Model
     'product_size',
     'product_weight',
   ];
+
+  public function getProductDetails() {
+    $product_details = DB::table('product_details')->get();
+    return $product_details;
+  }
 }

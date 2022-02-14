@@ -13,13 +13,13 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-      if(!Schema::hasTable('categories')) {
+      
         Schema::create('categories', function (Blueprint $table) {
-            $table->bigIncrements('id')->unsigned();; //カテゴリID
+            $table->bigIncrements('id'); //カテゴリID
             $table->string('category_name',255); //カテゴリ名
             $table->timestamps();
         });
-      }
+      
     }
 
     /**
@@ -29,6 +29,8 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+      
+      //Schema::dropIfExists('products');
+      Schema::dropIfExists('categories');
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\PayPalController;
@@ -29,7 +30,10 @@ Route::get('/sale',[HomeController::class, 'showSale'])->name('showSale'); //タ
 
 Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
 Route::get('/wishlist',[HomeController::class, 'showWishlist'])->name('showWishlist'); //お気に入り画面
-Route::get('/product/detail/{id}',[HomeController::class, 'showProductDetail'])->name('showProductDetail'); //商品詳細画面
+Route::get('/product/detail',[HomeController::class, 'showProductDetail'])->name('showProductDetail'); //商品詳細画面
+
+Route::get('/product/detail/{id}',[ProductController::class, 'showDetail'])->name('showDetail'); //商品詳細画面
+Route::get('/product/list',[ProductController::class, 'showList'])->name('showList'); //商品検索一覧表示
 
 
 

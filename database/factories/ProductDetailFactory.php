@@ -13,6 +13,7 @@ class ProductDetailFactory extends Factory
      *
      * @return array
      */
+    protected $model = ProductDetail::class;
     public function definition()
     {
       return [
