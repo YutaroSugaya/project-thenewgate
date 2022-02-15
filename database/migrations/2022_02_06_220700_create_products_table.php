@@ -17,11 +17,9 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
           $table->bigIncrements('id'); //プライマリキー
           $table->foreignId('category_id')->nullable()->constrained('categories')->cascadeOnUpdate()->cascadeOnDelete();
-          $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnUpdate()->cascadeOnDelete();
-          $table->foreignId('product_detail_id')->nullable()->constrained('product_details')->cascadeOnUpdate()->cascadeOnDelete();
-          
+          $table->foreignId('company_id')->nullable()->constrained('companies')->cascadeOnUpdate()->cascadeOnDelete();          
           $table->string('product_name',255); 
-          $table->text('comment'); 
+          $table->text('recommendation'); 
           $table->integer('product_price'); 
           $table->string('product_image'); 
           $table->string('prefecture'); 

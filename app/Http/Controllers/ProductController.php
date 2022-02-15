@@ -23,16 +23,20 @@ class ProductController extends Controller
     return str_replace(['\\','%','_'],['\\\\','\%','\_'],$str);
   } 
 
-  public function showDetail($id) {
-    $model = new ProductDetail();
-    $detail = $model->getProductDetails($id);
-    //dd($detail);
+  public function showDetail($id) { //商品詳細画面表示
+    $model = new product();
+    $test = $model->getProducts();
+
+    dd($test);
+    $detail = $model->getProductDetail($id);
     return view('product.product_detail', [
       'detail' => $detail,
+      'product' => $product,
     ]);
   }
   
-  public function showList(Request $request) {
+  
+  public function showList(Request $request) { //検索結果表示
     $model = new Product();
     $products = $model->getProducts();
     //dd($products);

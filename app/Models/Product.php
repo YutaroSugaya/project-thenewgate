@@ -19,7 +19,7 @@ class Product extends Model
   protected $fillable =
   [
     'product_name',
-    'comment',
+    'recommendation',
     'product_price',
     'product_image',
     'prefecture',

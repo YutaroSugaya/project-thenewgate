@@ -18,7 +18,7 @@ class ProductDetail extends Model
   //可変項目
   protected $fillable =
   [
-    'recommendation',
+    'comment',
     'expiration_date',
     'preservation_method',
     'allergic_substance',

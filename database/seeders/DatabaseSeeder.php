@@ -21,8 +21,8 @@ class DatabaseSeeder extends Seeder
         NewsListsTableSeeder::class,
         UsersTableSeeder::class,
         AdminsTableSeeder::class,
-        ProductDetailsTableSeeder::class,
         ProductsTableSeeder::class,
+        ProductDetailsTableSeeder::class,
       ]);
     }
 }

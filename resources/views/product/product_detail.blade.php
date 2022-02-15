@@ -55,7 +55,7 @@
 
           <div class="col-lg-7 col-md-7 col-sm-6">
             <h4 class="box-title mt-5">商品詳細</h4>
-            <p>test　{{ $detail-> }}</p>
+            <p>test　{{  }}</p>
             <h2 class="mt-5">
               1000円<small class="text-success">(36%off)</small>
             </h2>

@@ -15,7 +15,8 @@ class CreateProductDetailsTable                                                 
     {
         Schema::create('product_details', function (Blueprint $table) {
           $table->bigIncrements('id')->unsigned();
-          $table->text('recommendation');
+          $table->foreignId('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete();
+          $table->text('comment');
           $table->date('expiration_date');
           $table->string('preservation_method',255);
           $table->string('allergic_substance',255);

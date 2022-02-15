@@ -21,9 +21,8 @@ class ProductFactory extends Factory
       return [
         'category_id' => Category::factory(), 
         'company_id' => Company::factory(), 
-        'product_detail_id' => ProductDetail::factory(), 
-        'product_name' => $this->faker->words(4,true),
-        'comment' => $this->faker->text(),
+        'product_name' => $this->faker->word(),
+        'recommendation' => $this->faker->words(3,true),
         'product_price' => $this->faker->numberBetween($min=100,$max=100000),
         'product_image' => $this->faker->word(),
         'prefecture' => $this->faker->city(),

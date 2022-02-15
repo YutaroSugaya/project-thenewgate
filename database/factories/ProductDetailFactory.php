@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Models\ProductDetail;
+use App\Models\Product;
 
 class ProductDetailFactory extends Factory
 {
@@ -17,7 +18,8 @@ class ProductDetailFactory extends Factory
     public function definition()
     {
       return [
-        'recommendation' => $this->faker->words(4,true),
+        'product_id' => Product::factory(),
+        'comment' => $this->faker->words(2,true),
         'expiration_date' => $this->faker->dateTime(),
         'preservation_method' => $this->faker->words(4,true),
         'allergic_substance' => $this->faker->words(4,true),

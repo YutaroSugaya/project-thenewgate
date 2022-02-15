@@ -17,7 +17,7 @@
               <ul class="list-unstyled row">
                 @foreach($products as $product)
                   <li class="col-12 col-sm-6 col-lg-4 py-2 py-md-3">
-                      <a href="">
+                      <a href="/product/detail/{{ $product->id }}">
                           <div class="">
                               <img src="{{ asset('images/home/demo_item.jpg') }}" alt="" width="375" height="281"
                                   class="img-fluid">
