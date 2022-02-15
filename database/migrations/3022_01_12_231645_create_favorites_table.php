@@ -15,10 +15,8 @@ class CreateFavoritesTable extends Migration
     {
       
         Schema::create('favorites', function (Blueprint $table) {
-            $table->bigIncrements('id')->unsigned();
-            //$table->bigInteger('user_id')->nullable()->unsigned(); //ユーザID
+            $table->bigIncrements('id');
             $table->foreignId('user_id')->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
-            //$table->bigInteger('product_id')->nullable()->unsigned();  // 商品ID
             $table->foreignId('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete(); 
             
             $table->timestamps();

@@ -5,11 +5,11 @@
 
 @section('content')
 <body>
-  <div class="container">
+  <div class="container py-3">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">商品名</h3>
-        <h6 class="card-subtitle">サブタイトル？</h6>
+        <h3 class="card-title">{{ $product->product_name }}</h3>
+        <h6 class="card-subtitle">{{ $product->recommendation }}</h6>
         <div class="row">
 
           {{-- カルーセルのスライド --}}
@@ -47,25 +47,18 @@
               </div>
             </div>
           </div>
-          <div class="img">
-            <span><img src="https://i.imgur.com/bV1xmG5.jpg"></span>
-            <span><img src="https://i.imgur.com/vgMi4nw.jpg"></span>
-            <span><img src="https://i.imgur.com/hRlGe10.jpg"></span>
-          </div>
-
-          <div class="col-lg-7 col-md-7 col-sm-6">
-            <h4 class="box-title mt-5">商品詳細</h4>
-            <p>test　{{  }}</p>
+          
+          <div class="col-12">
+            <h4 class="box-title mt-5">{{ $product->comment }}</h4>
+            <p>{{ $product->product_name }}</p>
             <h2 class="mt-5">
-              1000円<small class="text-success">(36%off)</small>
+              {{ $product->product_price }}円<small class="text-success">( {{ $product->discount }} %off)</small>
             </h2>
             <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title=""
                 data-original-title="Add to cart">
                 <i class="fa fa-shopping-cart"></i>
             </button>
             <button class="btn btn-primary btn-rounded">購入する</button>
-
-
             {{-- 送料一覧　モーダル画面 --}}
             <button type="button" class="btn btn-primary launch" data-toggle="modal"
                 data-target="#staticBackdrop"> <i class="fa fa-info"></i> 送料を確認
@@ -111,66 +104,34 @@
               <table class="table table-striped table-product">
                 <tbody>
                   <tr>
-                    <td width="350">Brand　会社名</td>
-                    <td>Stellar</td>
+                    <td class="w-50">会社名</td>
+                    <td>{{ $product->company_name }}</td>
                   </tr>
                   <tr>
-                    <td>Delivery Condition　産地</td>
-                    <td>Knock Down</td>
+                    <td>産地</td>
+                    <td>{{ $product->prefecture }}</td>
                   </tr>
                   <tr>
-                    <td>Seat Lock Included　消費期限</td>
-                    <td>Yes</td>
+                    <td>消費期限</td>
+                    <td>{{ $product->expiration_date }}</td>
                   </tr>
                   <tr>
-                    <td>Type　保存方法</td>
-                    <td>Office Chair</td>
+                    <td>保存方法</td>
+                    <td>{{ $product->preservation_method }}</td>
                   </tr>
                   <tr>
-                    <td>Style　アレルギー物質</td>
-                    <td>Contemporary&amp;Modern</td>
+                    <td>アレルギー物質</td>
+                    <td>{{ $product->allergic_substance }}</td>
                   </tr>
                   <tr>
-                    <td>Wheels Included　大きさ</td>
-                    <td>Yes</td>
+                    <td>大きさ</td>
+                    <td>{{ $product->size }}</td>
                   </tr>
                   <tr>
-                    <td>Upholstery Included　重量</td>
-                    <td>Yes</td>
+                    <td>重量</td>
+                    <td>{{ $product->weight }}</td>
                   </tr>
-                  <tr>
-                    <td>Upholstery Type</td>
-                    <td>Cushion</td>
-                  </tr>
-                  <tr>
-                    <td>Head Support</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Suitable For</td>
-                    <td>Study&amp;Home Office</td>
-                  </tr>
-                  <tr>
-                    <td>Adjustable Height</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>Model Number</td>
-                    <td>F01020701-00HT744A06</td>
-                  </tr>
-                  <tr>
-                    <td>Armrest Included</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>Care Instructions</td>
-                    <td>Handle With Care,Keep In Dry Place,Do Not Apply Any Chemical For Cleaning.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Finish Type</td>
-                    <td>Matte</td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>

@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     {
         
       Schema::create('users', function (Blueprint $table) {
-          $table->bigIncrements('id')->unsigned(); //プライマリキー
+          $table->bigIncrements('id'); //プライマリキー
           $table->string('last_name', 255); // 名前（名）
           $table->string('first_name', 255); //名前(性)
           $table->string('last_name_kana', 255); //フリガナ(名)

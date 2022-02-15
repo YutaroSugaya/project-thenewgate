@@ -23,7 +23,8 @@
                                   class="img-fluid">
                           </div>
                           <div class="pt-2 pt-md-3">
-                              <span class="text_medium font-weight-bold">{{ $product->product_name }}</span>
+                              <span class="text_medium font-weight-bold">{{ $product->product_name }}</span><br>
+                              <span class="text_small">{{ $product->recommendation }}</span>
                           </div>
                           <div class="pt-1 pt-md-2">
                               <span class="text-d73d3d text_large font-weight-bold">{{ $product->product_price }}</span>

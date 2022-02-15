@@ -22,8 +22,8 @@ class ProductDetail extends Model
     'expiration_date',
     'preservation_method',
     'allergic_substance',
-    'product_size',
-    'product_weight',
+    'size',
+    'weight',
   ];
 
   public function getProductDetails() {

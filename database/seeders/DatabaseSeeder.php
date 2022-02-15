@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
       $this->call([
         CategoriesTableSeeder::class,
         CompaniesTableSeeder::class,
-        FavoritesTableSeeder::class,
         NewsListsTableSeeder::class,
         UsersTableSeeder::class,
         AdminsTableSeeder::class,
         ProductsTableSeeder::class,
         ProductDetailsTableSeeder::class,
+        FavoritesTableSeeder::class,
       ]);
     }
 }

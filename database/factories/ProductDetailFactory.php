@@ -17,14 +17,15 @@ class ProductDetailFactory extends Factory
     protected $model = ProductDetail::class;
     public function definition()
     {
+      $productIds = Product::all()->random(1)[0]->id;
       return [
-        'product_id' => Product::factory(),
+        'product_id' => $productIds,
         'comment' => $this->faker->words(2,true),
         'expiration_date' => $this->faker->dateTime(),
         'preservation_method' => $this->faker->words(4,true),
         'allergic_substance' => $this->faker->words(4,true),
-        'product_size' => $this->faker->numberBetween($min=100,$max=100000),
-        'product_weight' => $this->faker->numberBetween($min=100,$max=100000)
+        'size' => $this->faker->numberBetween($min=100,$max=100000),
+        'weight' => $this->faker->numberBetween($min=100,$max=100000)
         
         
         ,

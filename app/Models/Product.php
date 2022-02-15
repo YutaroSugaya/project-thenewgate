@@ -35,18 +35,31 @@ class Product extends Model
   protected $guarded = [
   ];
 
-  public function category() {
+  //エロクアントリレーション　不要かも？
+  /*  public function category() {
     return $this->belongsTo('App\Models\Category');
   }
   public function company() {
     return $this->belongsTo('App\Models\Campany');
   }
   public function productDetail() {
-    return $this->hasOne('App\Models\ProductDetail');
-  }
+    return $this->hasOne('App\Models\ProductDetail','product_id');
+  } */
 
   public function getProducts() {
     $products = DB::table('products')->get();
     return $products;
   }
+  
+  public function getProductDetail($id) { //
+    $product = DB::table('products')
+    ->join('product_details','products.id','=','product_details.product_id')
+    ->join('companies','products.company_id','=','companies.id')
+    ->join('categories','products.category_id','=','categories.id')
+    ->where('products.id','=',$id)
+    ->first();
+    return $product;
+  }
+
 }
+

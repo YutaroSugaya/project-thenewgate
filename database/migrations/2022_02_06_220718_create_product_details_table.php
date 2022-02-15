@@ -20,8 +20,8 @@ class CreateProductDetailsTable                                                 
           $table->date('expiration_date');
           $table->string('preservation_method',255);
           $table->string('allergic_substance',255);
-          $table->string('product_size',255);
-          $table->integer('product_weight');
+          $table->string('size',255);
+          $table->integer('weight');
           $table->timestamps();
         });
     }

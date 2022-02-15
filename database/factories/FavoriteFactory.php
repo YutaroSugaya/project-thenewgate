@@ -19,9 +19,11 @@ class FavoriteFactory extends Factory
 
     public function definition()
     {
+      $userIds = User::all()->random(1)[0]->id;
+      $productIds = Product::all()->random(1)[0]->id;
         return [
-          'user_id' => User::factory(), 
-          'product_id' => Product::factory(), 
+          'user_id' => $userIds, 
+          'product_id' => $productIds, 
         ];
     }
 }

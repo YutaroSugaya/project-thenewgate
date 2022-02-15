@@ -18,9 +18,11 @@ class ProductFactory extends Factory
     protected $model = Product::class;
     public function definition()
     {
+      $categoryIds = Category::all()->random(1)[0]->id;
+      $companyIds = Company::all()->random(1)[0]->id;
       return [
-        'category_id' => Category::factory(), 
-        'company_id' => Company::factory(), 
+        'category_id' => $categoryIds, 
+        'company_id' => $companyIds, 
         'product_name' => $this->faker->word(),
         'recommendation' => $this->faker->words(3,true),
         'product_price' => $this->faker->numberBetween($min=100,$max=100000),

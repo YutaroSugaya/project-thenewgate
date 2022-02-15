@@ -7,13 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Company extends Model
 {
-    use HasFactory;
-    //テーブル名
-    protected $table = 'companies';
+  use HasFactory;
+  //テーブル名
+  protected $table = 'companies';
 
-    //可変項目
-    protected $fillable =
-    [
-      'company_name'
-    ];
+  //可変項目
+  protected $fillable =
+  [
+    'company_name'
+  ];
+
 }
