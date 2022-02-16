@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\NewsListController;
 use App\Http\Controllers\PaymentController;
 
 use App\Http\Controllers\PayPalController;
@@ -18,14 +19,14 @@ use App\Http\Controllers\PayPalController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 //各種表示画面
 Route::get('/home',[HomeController::class, 'showHome'])->name('showHome'); //ホームページ
-Route::get('/notice',[HomeController::class, 'showNotice'])->name('showNotice'); //お知らせ画面
+Route::get('/news',[NewsListController::class, 'showNews'])->name('showNews'); //お知らせ画面
 Route::get('/sale',[HomeController::class, 'showSale'])->name('showSale'); //タイムセール画面
+
+//Route::post('/login',[LoginController::class,'ogin'])->name('login'); //ログイン処理
 
 
 Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面

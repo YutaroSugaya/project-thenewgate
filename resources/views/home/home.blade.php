@@ -13,7 +13,7 @@
     <div class="d-flex justify-content-between align-items-center">
       <h2 class="text-a68a72 font-weight-bold py-6">お知らせ</h2>
       <div>
-        <a href="{{ route('showNotice') }}">
+        <a href="{{ route('showNews') }}">
           <span class="text_medium font-weight-bold">お知らせ一覧</span>
         </a>
       </div>

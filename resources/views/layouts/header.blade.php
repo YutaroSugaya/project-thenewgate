@@ -2,7 +2,7 @@
 <div class="d-flex justify-content-between align-items-center header_bar">
   <div class="d-flex align-items-center text_middle">
       <h1>
-          <a href="/home">
+          <a href="{{ route('showHome') }}">
               <span class="text-594838 font-weight-bold text_middle">タカハシ商事</span>
           </a>
       </h1>
@@ -23,22 +23,54 @@
           </div>
       </div>
   </div>
+
+  
   <div class="d-flex">
+    
+    @guest
       <div class="d-flex justify-content-center align-items-center bg-a64444" style="width: 94px; height: 86px;">
           <a href="{{ route('login') }}">
               <div class="text-center">
-                  <img src="{{ asset('images/common/icon_login.png') }}" alt="" width="21" height="23" class="img-fluid">
+                  <img src="{{ asset('images/common/login_icon.png') }}" alt="" width="30" height="30" class="img-fluid">
                   <span class="d-block text-white font-weight-bold pt-1">ログイン</span>
               </div>
           </a>
       </div>
       <div class="d-flex justify-content-center align-items-center bg-6f2c2c" style="width: 94px; height: 86px;">
-          <div class="text-center">
-              <a href="{{ route('register') }}">
-                  <img src="{{ asset('images/common/icon_register.png') }}" alt="" width="21" height="23" class="img-fluid">
-                  <span class="d-block text-white font-weight-bold pt-1">新規登録</span>
-              </a>
-          </div>
+        <div class="text-center">
+          <a href="{{ route('register') }}">
+          <i class="fa fa-user fa-2x" aria-hidden="true" style="color: white;"></i>
+            <span class="d-block text-white font-weight-bold pt-1">新規登録</span>
+          </a>
+        </div>
       </div>
+    @endguest
+
+    @auth
+      <div class="d-flex justify-content-center align-items-center bg-6f2c2c" style="width: 94px; height: 86px;">
+        <div class="text-center">
+          <a href="{{ route('showMypage') }}">
+            <i class="fa fa-user fa-2x" aria-hidden="true" style="color: white;"></i>
+            <span class="d-block text-white font-weight-bold pt-1">マイページ</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center bg-a64444" style="width: 94px; height: 86px;">
+        <a class="" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+          <div class="text-center">
+            <img src="{{ asset('images/common/logout_icon.png') }}" alt="" width="30" height="30" class="img-fluid">
+            <span class="d-block text-white font-weight-bold pt-1">ログアウト</span>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+            </form>
+          </div>
+        </a>
+      </div>
+    @endauth
+      
   </div>
+  
 </div>

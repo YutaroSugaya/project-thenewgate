@@ -10,9 +10,7 @@ class HomeController extends Controller
   public function showHome() { //ホームページ
     return view('home.home');
   }
-  public function showNotice() { //お知らせ画面
-    return view('home.notice');
-  }
+
   public function showSale() { //タイムセール画面
     return view('home.sale');
   }
