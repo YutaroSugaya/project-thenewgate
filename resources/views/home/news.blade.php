@@ -13,7 +13,7 @@
             <ul class="list-unstyled pt-md-4 pt-3">
               @foreach($news as $news)
                 <li class="border-bottom border-e4d3c4">
-                    <a href="">
+                    <a href="/news/{{ $news->id }}">
                         <dl class="row mt-0 mb-0 pt-1">
                             <dt class="col-lg-2 col-12">
                                 <span class="">{{ $news->news_time }}</span>

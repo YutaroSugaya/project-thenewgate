@@ -14,4 +14,12 @@ class NewsListController extends Controller
       'news' => $news,
     ]);
   }
+
+  public function showNewsDetail($id) {
+    $model = new NewsList();
+    $news_detail = $model->getNewsDetail($id);
+    return view('home.news_detail',[
+      'news_detail' => $news_detail,
+    ]);
+  }
 }

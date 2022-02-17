@@ -1,5 +1,12 @@
 @extends('layouts.app')
 <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
+
+@push('script')
+  {{-- 郵便番号を入力すると自動で入力される --}}
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+@endpush
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -17,15 +24,15 @@
 
                                     <div class="form-row">
                                         <div class="col">
-                                            <input placeholder="性" id="lastName" type="text"
-                                                class="form-control @error('lastName') is-invalid @enderror" name="lastName"
-                                                value="{{ old('lastName') }}" required autocomplete="lastName" autofocus>
+                                            <input placeholder="性" id="last_name" type="text"
+                                                class="form-control @error('last_name') is-invalid @enderror" name="last_name"
+                                                value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
                                         </div>
                                         <div class="col">
-                                            <input placeholder="名" id="firstName" type="text"
-                                                class="form-control  @error('firstName') is-invalid @enderror"
-                                                name="firstName" value="{{ old('firstName') }}" required
-                                                autocomplete="firstName" autofocus>
+                                            <input placeholder="名" id="first_name" type="text"
+                                                class="form-control  @error('first_name') is-invalid @enderror"
+                                                name="first_name" value="{{ old('first_name') }}" required
+                                                autocomplete="first_name" autofocus>
                                         </div>
                                     </div>
                                     @error('lastname')
@@ -43,15 +50,15 @@
 
                                     <div class="form-row">
                                         <div class="col">
-                                            <input placeholder="セイ" id="lastName" type="text"
-                                                class="form-control @error('lastName') is-invalid @enderror" name="lastName"
-                                                value="{{ old('lastName') }}" required autocomplete="lastName" autofocus>
+                                            <input placeholder="セイ" id="last_name_kana" type="text"
+                                                class="form-control @error('last_name_kana') is-invalid @enderror" name="last_name_kana"
+                                                value="{{ old('last_name_kana') }}" required autocomplete="last_name_kana" autofocus>
                                         </div>
                                         <div class="col">
-                                            <input placeholder="メイ" id="firstName" type="text"
-                                                class="form-control  @error('firstName') is-invalid @enderror"
-                                                name="firstName" value="{{ old('firstName') }}" required
-                                                autocomplete="firstName" autofocus>
+                                            <input placeholder="メイ" id="first_name_kana" type="text"
+                                                class="form-control  @error('first_name_kana') is-invalid @enderror"
+                                                name="first_name_kana" value="{{ old('first_name_kana') }}" required
+                                                autocomplete="first_name_kana" autofocus>
                                         </div>
                                     </div>
                                     @error('name')
@@ -64,20 +71,19 @@
 
 
 
-                            {{-- 郵便番号を入力すると自動で入力される --}}
-                            <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+                            
 
 
                             <div class="row mb-3">
                                 <label for="post_code"
                                     class="col-md-4 col-form-label text-md-right">{{ __('郵便番号') }}</label>
 
-                                <div class="col-md-3">
+                                <div class="col-6">
                                     <input id="post_code" type="text" placeholder="ハイフン不要"
                                         class="form-control @error('post_code') is-invalid @enderror"
                                         value="{{ old('post_code') }}" required autocomplete="post_code" pattern="\d*"
-                                        name="zip01" size="10" maxlength="8"
-                                        onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');">
+                                        name="post_code" size="10" maxlength="8"
+                                        onKeyUp="AjaxZip3.zip2addr(this,'','address','address');">
 
                                     @error('post_code')
                                         <span class="invalid-feedback" role="alert">
@@ -88,32 +94,13 @@
                                 </div>
                             </div>
 
-
-                            <!-- ▼住所入力フィールド(都道府県) -->
+                            <!-- ▼住所入力フィールド(住所) -->
                             <div class="row mb-3">
                                 <label for="address"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('都道府県') }}</label>
-
-                                <div class="col-md-2">
-                                    <input type="text" name="pref01" size="20" id="address"
-                                        class="form-control @error('address') is-invalid @enderror"
-                                        value="{{ old('address') }}" required autocomplete="address">
-
-                                    @error('address')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <!-- ▼住所入力フィールド(都道府県以降の住所) -->
-                            <div class="row mb-3">
-                                <label for="address"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('以降の住所') }}</label>
+                                    class="col-md-4 col-form-label text-md-right">{{ __('住所') }}</label>
 
                                 <div class="col-md-6">
-                                    <input type="text" name="addr01" size="60" id="address"
+                                    <input type="text" name="address" size="60" id="address"
                                         class="form-control @error('address') is-invalid @enderror"
                                         value="{{ old('address') }}" required autocomplete="address"
                                         placeholder="市区町村、番地、建物名など">
@@ -131,7 +118,7 @@
                                 <label for="phone_number"
                                     class="col-md-4 col-form-label text-md-right">{{ __('電話番号') }}</label>
 
-                                <div class="col-md-3">
+                                <div class="col-6">
                                     <input id="phone_number" type="a"
                                         class="form-control @error('phone_number') is-invalid @enderror" name="phone_number"
                                         value="{{ old('phone_number') }}" required autocomplete="phone_number"

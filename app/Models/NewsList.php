@@ -26,4 +26,11 @@ class NewsList extends Model
     $news = DB::table('news_lists')->get();
     return $news;
   }
+
+  public function getNewsDetail($id) {
+    $news_detail = DB::table('news_lists')
+    ->where('id','=',$id)
+    ->first();
+    return $news_detail;
+  }
 }

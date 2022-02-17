@@ -24,6 +24,7 @@ use App\Http\Controllers\PayPalController;
 //各種表示画面
 Route::get('/home',[HomeController::class, 'showHome'])->name('showHome'); //ホームページ
 Route::get('/news',[NewsListController::class, 'showNews'])->name('showNews'); //お知らせ画面
+Route::get('/news/{id}',[NewsListController::class, 'showNewsDetail'])->name('showNewsDetail'); //お知らせ画面
 Route::get('/sale',[HomeController::class, 'showSale'])->name('showSale'); //タイムセール画面
 
 //Route::post('/login',[LoginController::class,'ogin'])->name('login'); //ログイン処理

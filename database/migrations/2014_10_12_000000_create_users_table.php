@@ -22,10 +22,10 @@ class CreateUsersTable extends Migration
           $table->string('full_name', 255)->index();  //indexキー、フルネーム
           $table->integer('post_code'); //郵便番号
           $table->string('address', 255); //住所
-          $table->string('phone_number', 255)->unique();//電話番号、ユニークキー
+          $table->string('phone_number', 11)->unique();//電話番号、ユニークキー
           $table->string('email')->unique();//Eメール、ユニークキー
           $table->string('password'); //パスワード
-          $table->boolean('is_deleted')->nullable(); //退会フラグ
+          $table->boolean('is_deleted')->default('0')->nulable(); //退会フラグ　退会者1
           $table->timestamps();
           $table->rememberToken(); //⇦↓のコードは初期のやつで入らなそうなら削除する
           $table->timestamp('email_verified_at')->nullable();
