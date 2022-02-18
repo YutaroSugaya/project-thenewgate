@@ -19,66 +19,20 @@
       </div>
     </div>
     <ul class="list-unstyled pt-md-3 pt-2">
+      @foreach($news_lists as $news_list)
       <li class="border-bottom border-e4d3c4">
-        <a href="">
+        <a href="/news/{{ $news_list->id }}">
           <dl class="row mt-0 mb-0 pt-1">
             <dt class="col-lg-2 col-12">
-              <span class="">2021年12月31日</span>
+              <span class="">{{ $news_list->news_time }}</span>
             </dt>
             <dd class="col-lg-10 col-12 position-relative arrow_685647_16">
-              <span class="font-weight-bold">新商品が入荷いたしました！！</span>
+              <span class="font-weight-bold">{{ $news_list->news_title }}</span>
             </dd>
           </dl>
         </a>
       </li>
-      <li class="border-bottom border-e4d3c4">
-        <a href="">
-          <dl class="row mt-0 mb-0 mt-4">
-            <dt class="col-lg-2 col-12">
-              <span>2021年12月31日</span>
-            </dt>
-            <dd class="col-lg-10 col-12 pr-5 position-relative arrow_685647_16 dot_omit">
-              <span class="font-weight-bold">新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！</span>
-            </dd>
-          </dl>
-        </a>
-      </li>
-      <li class="border-bottom border-e4d3c4">
-        <a href="">
-          <dl class="row mt-0 mb-0 mt-4">
-            <dt class="col-lg-2 col-12">
-                <span>2021年12月31日</span>
-            </dt>
-            <dd class="col-lg-10 col-12 pr-5 position-relative arrow_685647_16 dot_omit">
-              <span class="font-weight-bold">新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！</span>
-            </dd>
-          </dl>
-        </a>
-      </li>
-      <li class="border-bottom border-e4d3c4">
-        <a href="">
-          <dl class="row mt-0 mb-0 mt-4">
-            <dt class="col-lg-2 col-12">
-              <span>2021年12月31日</span>
-            </dt>
-            <dd class="col-lg-10 col-12 pr-5 position-relative arrow_685647_16 dot_omit">
-              <span class="font-weight-bold">新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！</span>
-            </dd>
-          </dl>
-        </a>
-      </li>
-      <li class="border-bottom border-e4d3c4">
-        <a href="">
-          <dl class="row mt-0 mb-0 mt-4">
-            <dt class="col-lg-2 col-12">
-              <span>2021年12月31日</span>
-            </dt>
-            <dd class="col-lg-10 col-12 pr-5 position-relative arrow_685647_16 dot_omit">
-              <span class="font-weight-bold">新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！新商品が入荷いたしました！！</span>
-            </dd>
-          </dl>
-        </a>
-      </li>
+      @endforeach
     </ul>
   </div>
 </section>

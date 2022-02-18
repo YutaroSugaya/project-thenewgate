@@ -3,12 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\NewsList;
+use App\Models\Product;
+
 
 class HomeController extends Controller
 {
   
   public function showHome() { //ホームページ
-    return view('home.home');
+    $news_model = new NewsList();
+    $news_lists = $news_model->get4NewsLists();
+
+    return view('home.home',[
+      'news_lists' => $news_lists,
+    ]);
   }
 
   public function showSale() { //タイムセール画面

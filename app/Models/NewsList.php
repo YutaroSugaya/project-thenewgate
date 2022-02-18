@@ -23,7 +23,12 @@ class NewsList extends Model
   ];
 
   public function getNewsLists() {
-    $news = DB::table('news_lists')->get();
+    $news = DB::table('news_lists')->orderby('id','desc')->get();
+    return $news;
+  }
+
+  public function get4NewsLists() {
+    $news = DB::table('news_lists')->orderby('id','desc')->take(4)->get();
     return $news;
   }
 
