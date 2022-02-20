@@ -8,10 +8,10 @@
       </h1>
       <div class="pl-4">
           <select class="custom-select text-white font-weight-bold bg-a68a72 border border-a68a72">
-          <option selected>商品カテゴリー</option>
-          <option value="1">テスト</option>
-          <option value="2">テスト</option>
-          <option value="3">テスト</option>
+            <option disabled>商品カテゴリー</option>
+          @foreach($categories as $category)
+            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+          @endforeach
           </select>
       </div>
       <div class="pl-4">
