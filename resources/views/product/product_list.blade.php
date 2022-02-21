@@ -9,7 +9,7 @@
     <div class="card">
       <div class="card-body">
         <h3 class="card-title">商品名 キーワード</h3>
-        <h6 class="card-subtitle">サブタイトル 該当数〇〇</h6>
+        <h6 class="card-subtitle">サブタイトル 該当数</h6>
         <div class="row">
           <section class="mw-100 bg-white">
             <div class="container py-4 py-md-5">

@@ -6,22 +6,25 @@
               <span class="text-594838 font-weight-bold text_middle">タカハシ商事</span>
           </a>
       </h1>
-      <div class="pl-4">
-          <select class="custom-select text-white font-weight-bold bg-a68a72 border border-a68a72">
-            <option disabled>商品カテゴリー</option>
+      <form method="GET" action="{{ route('showList') }}">
+        @csrf
+        <div class="pl-4">
+          <select id="search_category" value="search_category" name="search_category" class="custom-select text_small text-white font-weight-bold bg-a68a72 border border-a68a72">
+            <option disabled selected name="商品カテゴリー" value="商品カテゴリー">商品カテゴリー</option>
           @foreach($categories as $category)
             <option value="{{ $category->id }}">{{ $category->category_name }}</option>
           @endforeach
           </select>
-      </div>
-      <div class="pl-4">
-          <div class="input-group">
-              <input type="text" class="form-control font-weight-bold border border-a68a72" placeholder="何をお探しですか？" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <div class="input-group-append">
-                  <button class="btn btn-outline-secondary font-weight-bold bg-a68a72 text-white border border-a68a72" type="button" id="button-addon2">検索</button>
-              </div>
-          </div>
-      </div>
+        </div>
+        <div class="pl-4">
+            <div class="input-group">
+                <input type="text" class="form-control font-weight-bold border border-a68a72" name="search_word" id="search_word" placeholder="何をお探しですか？" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="search_btn" class="btn btn-outline-secondary font-weight-bold bg-a68a72 text-white border border-a68a72" type="submit">検索</button>
+                </div>
+            </div>
+        </div>
+      </form>
   </div>
 
   
