@@ -44,53 +44,28 @@
         <div class="">
             <div class="text-d73d3d font-weight-bold text-center text_medium">＼ 2021年12月31日 23：00まで ／</div>
             <h2 class="text-d73d3d font-weight-bold py-6 text-center">タイムセール開催中</h2>
+            <a class="" href="{{ route('showSale') }}">
+              <p class="text-right text_medium font-weight-bold">タイムセール商品一覧</p>
+            </a>
         </div>
         <ul class="list-unstyled row">
+          @foreach($products as $product)
             <li class="col-12 col-sm-6 col-lg-4 py-2 py-md-3">
-                <a href="">
+                <a href="/product/detail/{{ $product->id }}">
                     <div class="">
                         <img src="{{ asset('images/home/demo_item.jpg') }}" alt="" width="375" height="281"
                             class="img-fluid">
                     </div>
                     <div class="pt-2 pt-md-3">
-                        <span class="text_medium font-weight-bold">商品名が入ります。</span>
+                        <span class="text_medium font-weight-bold">{{ $product->product_name }}</span>
                     </div>
                     <div class="pt-1 pt-md-2">
-                        <span class="text-d73d3d text_large font-weight-bold">2,200円</span>
+                        <span class="text-d73d3d text_large font-weight-bold">{{ $product->product_price }}</span>
                         <span class="text-d73d3d text_medium font-weight-bold">（税込）</span>
                     </div>
                 </a>
             </li>
-            <li class="col-12 col-sm-6 col-lg-4 py-2 py-md-3">
-                <a href="">
-                    <div class="">
-                        <img src="{{ asset('images/home/demo_item.jpg') }}" alt="" width="375" height="281"
-                            class="img-fluid">
-                    </div>
-                    <div class="pt-2 pt-md-3">
-                        <span class="text_medium font-weight-bold">商品名が入ります。</span>
-                    </div>
-                    <div class="pt-1 pt-md-2">
-                        <span class="text-d73d3d text_large font-weight-bold">2,200円</span>
-                        <span class="text-d73d3d text_medium font-weight-bold">（税込）</span>
-                    </div>
-                </a>
-            </li>
-            <li class="col-12 col-sm-6 col-lg-4 py-2 py-md-3">
-                <a href="">
-                    <div class="">
-                        <img src="{{ asset('images/home/demo_item.jpg') }}" alt="" width="375" height="281"
-                            class="img-fluid">
-                    </div>
-                    <div class="pt-2 pt-md-3">
-                        <span class="text_medium font-weight-bold">商品名が入ります。</span>
-                    </div>
-                    <div class="pt-1 pt-md-2">
-                        <span class="text-d73d3d text_large font-weight-bold">2,200円</span>
-                        <span class="text-d73d3d text_medium font-weight-bold">（税込）</span>
-                    </div>
-                </a>
-            </li>
+          @endforeach
         </ul>
       </div>
 </section>

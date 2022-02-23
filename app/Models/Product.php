@@ -55,16 +55,12 @@ class Product extends Model
     return $product;
   }
 
-/*   public function getSearchProducts($search_word) { //検索商品
+  public function getSaleProducts() { //タイムセール商品一覧
     $products = DB::table('products')
-    ->join('product_details','products.id','=','product_details.product_id')
-    ->join('companies','products.company_id','=','companies.id')
-    ->join('categories','products.category_id','=','categories.id')
-    ->where('products.product_name','like','%'.self::escapeLike($search_word).'%')
-    ->orWhere('companies.company_name','like','%'.self::escapeLike($search_word).'%')
+    ->where('products.time_sale','=',1)
     ->get();
     return $products;
-  } */
+  }
 
 }
 

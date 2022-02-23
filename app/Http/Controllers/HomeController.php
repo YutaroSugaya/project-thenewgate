@@ -13,16 +13,16 @@ class HomeController extends Controller
   
   public function showHome() { //ホームページ
     $news_model = new NewsList();
-    $news_lists = $news_model->get4NewsLists();
+    $news_lists = $news_model->getNewsLists()->take(4);
+    $model = new product();
+    $products = $model->getSaleProducts()->take(4);
 
     return view('home.home',[
       'news_lists' => $news_lists,
+      'products' => $products,
     ]);
   }
 
-  public function showSale() { //タイムセール画面
-    return view('home.sale');
-  }
 
   public function showCart() { //カート画面
     return view('product.cart');

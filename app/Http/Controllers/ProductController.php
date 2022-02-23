@@ -70,7 +70,15 @@ class ProductController extends Controller
     ]);
   }
 
-  
+  public function showSale() { //タイムセール画面
+    $model = new product();
+    $products = $model->getSaleProducts();
+    $counts = $products->count();
+    return view('product.sale',[
+      'products' => $products,
+      'counts' => $counts,
+    ]);
+  }
 }
 
 
