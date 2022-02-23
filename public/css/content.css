@@ -3,7 +3,7 @@ a {
 }
 
 .arrow_685647_16::before {
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 8px;
@@ -43,4 +43,3 @@ a {
 .text_small {
   font-size: 0.7rem;
 }
-/*# sourceMappingURL=content.css.map */

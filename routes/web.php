@@ -22,26 +22,26 @@ use App\Http\Controllers\PayPalController;
 
 
 
-//各種表示画面
+//トップ画面関連
 Route::get('/home',[HomeController::class, 'showHome'])->name('showHome'); //ホームページ
 Route::get('/news',[NewsListController::class, 'showNews'])->name('showNews'); //お知らせ画面
 Route::get('/news/{id}',[NewsListController::class, 'showNewsDetail'])->name('showNewsDetail'); //お知らせ画面
 Route::get('/sale',[HomeController::class, 'showSale'])->name('showSale'); //タイムセール画面
 
-//Route::post('/login',[LoginController::class,'ogin'])->name('login'); //ログイン処理
 
-
+//カートお気に入り関連
 Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
 Route::get('/wishlist',[HomeController::class, 'showWishlist'])->name('showWishlist'); //お気に入り画面
-Route::get('/product/detail',[HomeController::class, 'showProductDetail'])->name('showProductDetail'); //商品詳細画面
 
+//商品関連
 Route::get('/product/detail/{id}',[ProductController::class, 'showDetail'])->name('showDetail'); //商品詳細画面
 Route::get('/product/list',[ProductController::class, 'showList'])->name('showList'); //商品検索一覧表示
 
-
-
+//マイページ関連
 Route::get('/mypage',[UserController::class, 'showMypage'])->name('showMypage'); //マイページ
 Route::get('/mypage/edit',[UserController::class, 'showEdit'])->name('showEdit'); //ユーザ情報編集画面
+Route::post('/mypage/edit',[UserController::class, 'edit'])->name('edit'); //ユーザ情報編集処理
+
 Route::get('/buy',[HomeController::class, 'showBuy'])->name('showBuy'); //購入画面
 Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck'); //購入内容確認画面
 Route::get('/buy/check/credit',[HomeController::class, 'showCheckCredit'])->name('showCheckCredit'); //クレジット決済確認

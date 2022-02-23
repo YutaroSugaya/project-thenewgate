@@ -45,10 +45,6 @@
           </div>
           <div class="form-group">
             <label>住所</label>
-            <!-- <select class="form-control">
-              <option value="" selected>都道府県</option>
-              <option value="">北海道</option>
-            </select> -->
             <p id="modal_address" type="text" class="col-12" placeholder="◯◯県×x市▶︎◆"></p>
           </div>
           <div class="form-group">
@@ -59,7 +55,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-dismiss="modal">閉じる</button>
-        <button type="button" class="btn">更新する</button>
+        <button type="button" id="edit_user" class="btn">更新する</button>
       </div>
     </div>
   </div>
@@ -99,35 +95,35 @@
           <form id="user_edit_form" class="col-12">
             <div class="form-group">
               <label id="label_email">メールアドレス（会員ID）</label>
-              <input id="email" type="text" class="form-control col-12" placeholder="mail@sample.com" name="email" readonly required>
+              <input id="email" type="text" value="{{ $user->email }}" class="form-control col-12" placeholder="mail@sample.com" name="email" readonly required>
             </div>
             <div class="form-group">
               <label>お名前</label>
               <div class="form-inline">
-                <input id="last_name" type="text" class="form-control col-4" placeholder="姓" name="last_name" readonly>
+                <input id="last_name" type="text" value="{{ $user->last_name }}" class="form-control col-4" placeholder="姓" name="last_name" readonly>
                 <span class="col-1"></span>
-                <input id="first_name" type="text" class="form-control col-4" placeholder="名" name="first_name" readonly>
+                <input id="first_name" type="text" value="{{ $user->first_name }}" class="form-control col-4" placeholder="名" name="first_name" readonly>
               </div>
             </div>
             <div class="form-group">
               <label>オナマエ（フリガナ）</label>
               <div class="form-inline">
-                <input id="last_name_kana" type="text" class="form-control col-4" placeholder="セイ" name="last_name_kana" readonly>
+                <input id="last_name_kana" type="text" value="{{ $user->last_name_kana }}" class="form-control col-4" placeholder="セイ" name="last_name_kana" readonly>
                 <span class="col-1"></span>
-                <input id="first_name_kana" type="text" class="form-control col-4" placeholder="メイ" name="first_name_kana" readonly>
+                <input id="first_name_kana" type="text" value="{{ $user->first_name_kana }}" class="form-control col-4" placeholder="メイ" name="first_name_kana" readonly>
               </div>
             </div>
             <div class="form-group">
               <label>郵便番号</label>
-              <input id="post_code" type="text" class="form-control col-4" placeholder="" name="post_code" readonly required>
+              <input id="post_code" type="text" value="{{ $user->post_code }}" class="form-control col-4" placeholder="" name="post_code" readonly required>
             </div>
             <div class="form-group">
               <label>住所</label>
-              <input id="address" type="text" class="form-control" placeholder="◯◯県×x市▶︎◆" name="address" readonly>
+              <input id="address" type="text" value="{{ $user->address }}" class="form-control" placeholder="◯◯県×x市▶︎◆" name="address" readonly>
             </div>
             <div class="form-group">
               <label>電話番号</label>
-              <input id="phone_number" type="text" class="form-control col-4" placeholder="XXX-XXXX-XXXX" name="phone_number" readonly>
+              <input id="phone_number" type="text" value="{{ $user->phone_number }}" class="form-control col-4" placeholder="XXX-XXXX-XXXX" name="phone_number" readonly>
             </div>
           </form>  
         </div>

@@ -33,7 +33,6 @@ $(function() {
       let phone_number = $('#phone_number').val();
       let modal = $('#exampleModal');
       //入力値モーダルに表示
-      console.log(last_name);
       modal.find('#modal_email').text(email);
       modal.find('#modal_last_name').text(last_name);
       modal.find('#modal_first_name').text(first_name);
@@ -42,23 +41,41 @@ $(function() {
       modal.find('#modal_post_code').text(post_code);
       modal.find('#modal_address').text(address);
       modal.find('#modal_phone_number').text(phone_number);
-
-    /*  $.ajax({
-        type: '',
-        url: '',
-        dataType: '',
-        data: {
-        },
-        cache: false,
-      })
-      .done(function() {
-
-      })
-      .fail(function(data, xhr, err) {
-        console.log(err);
-        console.log(xhr);
-        console.log(data || 'null');
-      }); */
+      
+      $('#edit_user').on('click', function() {
+        let user = {
+          email: email,
+          last_name: last_name,
+          first_name: first_name,
+          last_name_kana: last_name_kana,
+          first_name_kana: first_name_kana,
+          post_code: post_code,
+          address: address,
+          phone_number: phone_number,
+        }
+        
+        //console.log(user);
+        $.ajax({
+          type: 'POST',
+          url: '/mypage/edit',
+          dataType: 'json',
+          data: user,
+          cache: false,
+          })
+          .done(function(data) {
+            location.reload();
+          })
+          .fail(function(data, xhr, err) {
+            
+          console.log(err);
+          console.log(xhr);
+          console.log(data || 'null');
+          //history.back();
+          })
+          .always(function() {
+            //location.reload();
+          });
+      });
     });
 
     //中止
@@ -67,5 +84,5 @@ $(function() {
     });
   });
 
-  $
+  
 })
