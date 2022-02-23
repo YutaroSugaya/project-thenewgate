@@ -89,7 +89,7 @@
           <div class="spinner horizontal"></div>
           <div class="spinner diagonal part-2"></div>
         </label>
-      <x-mypage.mypage_nav/>
+      @include('mypage.mypage_nav')
     </div>
 
     <div class="main-right col-9 col-xs-12">

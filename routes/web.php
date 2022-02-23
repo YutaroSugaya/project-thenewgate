@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\NewsListController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\PayPalController;
 
@@ -39,8 +40,8 @@ Route::get('/product/list',[ProductController::class, 'showList'])->name('showLi
 
 
 
-Route::get('/mypage',[HomeController::class, 'showMypage'])->name('showMypage'); //マイページ
-Route::get('/mypage/edit',[HomeController::class, 'showEdit'])->name('showEdit'); //ユーザ情報編集画面
+Route::get('/mypage',[UserController::class, 'showMypage'])->name('showMypage'); //マイページ
+Route::get('/mypage/edit',[UserController::class, 'showEdit'])->name('showEdit'); //ユーザ情報編集画面
 Route::get('/buy',[HomeController::class, 'showBuy'])->name('showBuy'); //購入画面
 Route::get('/buy/check',[HomeController::class, 'showCheck'])->name('showCheck'); //購入内容確認画面
 Route::get('/buy/check/credit',[HomeController::class, 'showCheckCredit'])->name('showCheckCredit'); //クレジット決済確認

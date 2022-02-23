@@ -26,7 +26,7 @@ class ProductController extends Controller
   } 
   
   public function showList(Request $request) { //検索結果表示
-    $model = new Product();
+    $p_model = new Product();
     $query = Product::query();
 
     $search_word = $request->search_word;
@@ -49,10 +49,16 @@ class ProductController extends Controller
     }
 
     $products = $query->groupBy('product_name')->get();
+    $counts = $products->count();
     
-//dd($products);
+    $c_model = new Category;
+    $search_category_name = $c_model->getCategoryName($search_category);
+    
     return view('product.product_list', [
       'products' => $products,
+      'counts' => $counts,
+      'search_word' => $search_word,
+      'search_category_name' => $search_category_name
     ]);
   }
   

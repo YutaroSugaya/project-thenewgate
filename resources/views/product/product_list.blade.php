@@ -8,8 +8,8 @@
   <div class="container py-3">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">商品名 キーワード</h3>
-        <h6 class="card-subtitle">サブタイトル 該当数</h6>
+        <h3 class="card-title">検索ワード：{{ $search_word }}</h3>
+        <h6 class="card-subtitle text-right">該当数{{ $counts }}件</h6>
         <div class="row">
           <section class="mw-100 bg-white">
             <div class="container py-4 py-md-5">

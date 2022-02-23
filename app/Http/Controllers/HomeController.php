@@ -36,12 +36,7 @@ class HomeController extends Controller
 
   
 
-  public function showMypage () { //マイページ
-    return view('mypage.top');
-  }
-  public function showEdit() { //ユーザ情報編集画面
-    return view('mypage.edit');
-  }
+  
   public function showBuy() { //購入画面
     return view('buypage.buy');
   }

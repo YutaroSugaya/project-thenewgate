@@ -18,7 +18,7 @@
         </div>
         <div class="pl-4">
             <div class="input-group">
-                <input type="text" class="form-control font-weight-bold border border-a68a72" name="search_word" id="search_word" placeholder="何をお探しですか？" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="form-control font-weight-bold border border-a68a72" name="search_word" id="search_word" placeholder="何をお探しですか？" value="{{ old('search_word') }}" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button id="search_btn" class="btn btn-outline-secondary font-weight-bold bg-a68a72 text-white border border-a68a72" type="submit">検索</button>
                 </div>

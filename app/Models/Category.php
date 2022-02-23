@@ -32,4 +32,12 @@ class Category extends Model
     ->first();
     return $category;
   }
+
+  public function getCategoryName($id) {
+    $category = DB::table('categories')
+    ->select('category_name')
+    ->where('id','=',$id)
+    ->first();
+    return $category;
+  }
 }

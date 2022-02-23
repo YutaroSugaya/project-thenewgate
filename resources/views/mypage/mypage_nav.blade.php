@@ -1,8 +1,7 @@
 
-
   <div id="sidebarMenu" class="">
     <ul class="sidebarMenuInner">
-      <li class="nav-title">〇〇様の<span></span>マイページ</li>
+      <li class="nav-title">{{ $user->last_name }}様の<span></span>マイページ</li>
       <li class="nav-list"><a href="{{ route('showMypage') }}">マイページトップ</a></li>
       <li class="nav-list"><a href="wishlist">お気に入り</a></li>
       <li class="nav-list"><a href="cart">カート</a></li>
@@ -12,3 +11,4 @@
       <li class="nav-list"><a href="#">ログアウト</a></li>
     </ul>
   </div>
+
