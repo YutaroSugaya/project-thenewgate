@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\NewsList;
+use App\Models\ProductImage;
 
-class NewsListsTableSeeder extends Seeder
+class ProductImagesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class NewsListsTableSeeder extends Seeder
      */
     public function run()
     {
-      NewsList::factory(8)->create();
+      ProductImage::factory(10)->create();
     }
 }

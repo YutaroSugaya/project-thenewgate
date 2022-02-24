@@ -14,6 +14,6 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-      Admin::factory(5)->create();
+      Admin::factory(7)->create();
     }
 }

@@ -21,7 +21,6 @@ class CreateProductsTable extends Migration
           $table->string('product_name',255); 
           $table->text('recommendation'); 
           $table->integer('product_price'); 
-          $table->string('product_image'); 
           $table->string('prefecture'); 
           $table->integer('stock'); 
           $table->boolean('time_sale')->nullable(); 
