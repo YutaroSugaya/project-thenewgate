@@ -4,6 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+
 
 class Favorite extends Model
 {
@@ -22,5 +26,17 @@ class Favorite extends Model
     }
     public function product() {
       return $this->belongsTo('App\Models\Product');
+    }
+    public function checkWishList($product_id, $user_id) {
+      $check = DB::table('favorites')
+      ->where('user_id', $user_id)
+      ->where('product_id', $product_id)
+      ->first();
+      return $check;
+    }
+    public function addWishList($data) {
+      $add = DB::table('favorites')
+      ->insert($data);
+      return $add;
     }
 }

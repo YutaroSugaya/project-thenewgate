@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\NewsListController;
 use App\Http\Controllers\PaymentController;
@@ -20,19 +21,12 @@ use App\Http\Controllers\PayPalController;
 |
 */
 
-
 Auth::routes();
 
 //トップ画面関連
 Route::get('/home',[HomeController::class, 'showHome'])->name('showHome'); //ホームページ
 Route::get('/news',[NewsListController::class, 'showNews'])->name('showNews'); //お知らせ画面
 Route::get('/news/{id}',[NewsListController::class, 'showNewsDetail'])->name('showNewsDetail'); //お知らせ画面
-
-
-//カートお気に入り関連
-Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
-Route::get('/wishlist',[HomeController::class, 'showWishlist'])->name('showWishlist'); //お気に入り画面
-
 
 Route::prefix('product')->group(function () { //商品関連
   Route::get('detail/{id}',[ProductController::class, 'showDetail'])->name('showDetail'); //商品詳細画面
@@ -46,6 +40,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('edit',[UserController::class, 'showEdit'])->name('showEdit'); //ユーザ情報編集画面
     Route::post('edit',[UserController::class, 'edit'])->name('edit'); //ユーザ情報編集処理
   });
+
   Route::prefix('buy')->group(function () { //購入ページ関連
     Route::get('/',[HomeController::class, 'showBuy'])->name('showBuy'); //購入画面
     Route::get('check',[HomeController::class, 'showCheck'])->name('showCheck'); //購入内容確認画面
@@ -54,6 +49,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('thanks',[HomeController::class, 'showThanks'])->name('showThanks'); //購入完了画面
   });
   
+  //カートお気に入り関連
+  Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
+  Route::get('/wishlist',[HomeController::class, 'showWishlist'])->name('showWishlist'); //お気に入り画面
+  Route::get('/wishlist/add/{id}',[FavoriteController::class, 'addWishList'])->name('addWishList'); //お気に入り画面
+
   //クレジット決済
   Route::post('/pay/credit',[PaymentController::class, 'payCredit'])->name('payCredit'); 
   //paypal

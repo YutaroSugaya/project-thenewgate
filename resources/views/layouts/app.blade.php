@@ -11,15 +11,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="{{ asset('css/content.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
     @stack('css')
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--  -->
     <script src="{{ asset('js/swiper.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     @stack('script')
@@ -34,18 +39,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    {{-- アイコンスクリプト --}}
+    <script>
+      @if (Session::has('msg_success'))
+        $(function() {
+          toastr.success('{{ session('msg_success') }}');
+        });
+      @endif
+        //失敗時
+      @if (Session::has('msg_error'))
+        $(function() {
+          toastr.error('{{ session('msg_error') }}');
+        });
+      @endif
+    </script>
+
+    <!-- アイコンスクリプト -->
     <script src="https://kit.fontawesome.com/8f09fca690.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header class="bg-fff3e8">
         @include('layouts.header')
     </header>
+    
 
 
     <main class="" style="">

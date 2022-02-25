@@ -50,6 +50,7 @@
           
           <div class="col-12">
             <h4 class="box-title mt-5">{{ $product->comment }}</h4>
+            <a class="" href="/wishlist/add/{{ $product->id }}"><i class="fa fa-solid fa-star"></i></a>
             <p>{{ $product->product_name }}</p>
             <h2 class="mt-5">
               {{ $product->product_price }}円<small class="text-success">( {{ $product->discount }} %off)</small>
