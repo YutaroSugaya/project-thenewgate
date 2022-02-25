@@ -160,3 +160,13 @@ body {
 .img {
   margin: 50px;
 }
+
+.product_link {
+  position: relative;
+  z-index: 0;
+}
+.star {
+  position: absolute;
+  z-index: 100;
+  
+}

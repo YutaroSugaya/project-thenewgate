@@ -51,7 +51,7 @@ Route::middleware(['auth'])->group(function () {
   
   //カートお気に入り関連
   Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
-  Route::get('/wishlist',[HomeController::class, 'showWishlist'])->name('showWishlist'); //お気に入り画面
+  Route::get('/wishlist',[FavoriteController::class, 'showWishList'])->name('showWishList'); //お気に入り画面
   Route::get('/wishlist/add/{id}',[FavoriteController::class, 'addWishList'])->name('addWishList'); //お気に入り画面
 
   //クレジット決済

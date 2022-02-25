@@ -10,7 +10,16 @@ use Carbon\Carbon;
 
 class FavoriteController extends Controller
 {
-  public function addWishList(Request $request) {
+  public function showWishList(Request $request) { //お気に入り画面
+    $user_id = Auth::id();
+    $model = new Favorite();
+    $products = $model->getWishLists($user_id);
+    return view('product.wishlist', [
+      'products' => $products,
+    ]);
+  }
+
+  public function addWishList(Request $request) { //お気に入り登録
     $user_id = Auth::id();
     $model = new Favorite();
     $product_id = $request->id;

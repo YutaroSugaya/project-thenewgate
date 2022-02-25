@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
-
 class Favorite extends Model
 {
     use HasFactory;
@@ -38,5 +37,14 @@ class Favorite extends Model
       $add = DB::table('favorites')
       ->insert($data);
       return $add;
+    }
+    public function getWishLists($user_id) {
+      $products = DB::table('favorites')
+      ->join('products','favorites.product_id','=','products.id')
+   
+      ->join('companies','products.company_id','=','companies.id')
+      ->where('favorites.user_id','=',$user_id)
+      ->get();
+      return $products;
     }
 }

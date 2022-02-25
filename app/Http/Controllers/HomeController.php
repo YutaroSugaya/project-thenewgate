@@ -27,9 +27,7 @@ class HomeController extends Controller
   public function showCart() { //カート画面
     return view('product.cart');
   }
-  public function showWishlist() { //お気に入り画面
-    return view('product.wishlist');
-  }
+
   public function showProductDetail() { //商品詳細画面
     return view('product.product_detail');
   }
