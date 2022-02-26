@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\NewsListController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
 
 use App\Http\Controllers\PayPalController;
 
@@ -34,7 +35,7 @@ Route::prefix('product')->group(function () { //商品関連
   Route::get('sale',[ProductController::class, 'showSale'])->name('showSale'); //タイムセール画面
 });
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function () { //ログイン認証
   Route::prefix('mypage')->group(function () { //マイページ関連
     Route::get('/',[UserController::class, 'showMypage'])->name('showMypage'); //マイページ
     Route::get('edit',[UserController::class, 'showEdit'])->name('showEdit'); //ユーザ情報編集画面
@@ -50,7 +51,8 @@ Route::middleware(['auth'])->group(function () {
   });
   
   //カートお気に入り関連
-  Route::get('/cart',[HomeController::class, 'showCart'])->name('showCart'); //カート画面
+  Route::get('/cart',[CartController::class, 'showCart'])->name('showCart'); //カート画面
+  Route::get('/cart/add/{id}',[CartController::class, 'addCart'])->name('addCart'); //カート画面
   Route::get('/wishlist',[FavoriteController::class, 'showWishList'])->name('showWishList'); //お気に入り画面
   Route::get('/wishlist/add/{id}',[FavoriteController::class, 'addWishList'])->name('addWishList'); //お気に入り画面
 

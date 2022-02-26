@@ -41,7 +41,6 @@ class Favorite extends Model
     public function getWishLists($user_id) {
       $products = DB::table('favorites')
       ->join('products','favorites.product_id','=','products.id')
-   
       ->join('companies','products.company_id','=','companies.id')
       ->where('favorites.user_id','=',$user_id)
       ->get();

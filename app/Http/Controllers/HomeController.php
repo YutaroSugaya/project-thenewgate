@@ -22,18 +22,7 @@ class HomeController extends Controller
       'products' => $products,
     ]);
   }
-
-
-  public function showCart() { //カート画面
-    return view('product.cart');
-  }
-
-  public function showProductDetail() { //商品詳細画面
-    return view('product.product_detail');
-  }
-
   
-
   
   public function showBuy() { //購入画面
     return view('buypage.buy');
@@ -84,13 +73,4 @@ class HomeController extends Controller
     //     $this->middleware('auth');
     // }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
-    {
-        return view('home');
-    }
 }

@@ -55,10 +55,9 @@
             <h2 class="mt-5">
               {{ $product->product_price }}円<small class="text-success">( {{ $product->discount }} %off)</small>
             </h2>
-            <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title=""
-                data-original-title="Add to cart">
-                <i class="fa fa-shopping-cart"></i>
-            </button>
+            <a href="/cart/add/{{ $product->id }}" class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
+              <i class="fa fa-shopping-cart" style="color: white;"></i>
+            </a>
             <button class="btn btn-primary btn-rounded">購入する</button>
             {{-- 送料一覧　モーダル画面 --}}
             <button type="button" class="btn btn-primary launch" data-toggle="modal"

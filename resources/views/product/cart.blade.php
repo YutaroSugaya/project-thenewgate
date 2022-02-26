@@ -1,151 +1,88 @@
 @extends('layouts.app')
-
+@push('css')
+    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
+@endpush
+  @push('js')
+  <script src="{{ asset('js/cart.js') }}" defer></script>
+  @endpush
 @section('content')
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ショッピングカート</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="css/cart.css">
-        <link rel="stylesheet" href="css/style.css">
 
-    </head>
+<section class="shopping-cart dark">
+    <div class="modal js-modal">
+        <div class="modal_background js-modal-close"></div>
+        <div class="modal_content">
+            <p>モーダルウィンドウ</p>
+            <a class="modal-close-btn" href="">閉じる</a>
+        </div>
+    </div>
 
-    <body>
-        <main class="page">
-            <section class="shopping-cart dark">
-                <div class="container">
-                    <div class="block-heading">
-                        <h2>ショッピングカート</h2>
-                        <p>ご注文の商品一覧</p>
-                    </div>
-                    <div class="content">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-8">
-                                <div class="items">
-                                    <div class="product">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid mx-auto d-block image" img
-                                                    src="https://i.imgur.com/bV1xmG5.jpg">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="info">
-                                                    <div class="row">
-                                                        <div class="col-md-5 product-name">
-                                                            <div class="product-name">
-                                                                <a href="#">何かの商品１</a>
-                                                                <div class="product-info">
-                                                                    <div>サイズとか: <span class="value">適当</span></div>
-                                                                    <div>冷蔵とか: <span class="value">常温</span></div>
-                                                                    <div>賞味期限: <span class="value">明日まで</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 quantity">
-                                                            <label for="quantity">注文数:</label>
-                                                            <input id="quantity" type="number" value="1"
-                                                                class="form-control quantity-input">
-                                                        </div>
-                                                        <div class="col-md-3 price">
-                                                            <span>????円</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid mx-auto d-block image" img
-                                                    src="https://i.imgur.com/vgMi4nw.jpg">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="info">
-                                                    <div class="row">
-                                                        <div class="col-md-5 product-name">
-                                                            <div class="product-name">
-                                                                <a href="#">商品</a>
-                                                                <div class="product-info">
-                                                                    <div>テスト: <span class="value">○○○</span></div>
-                                                                    <div>テスト: <span class="value">○○</span></div>
-                                                                    <div>テスト: <span class="value">○○○</span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 quantity">
-                                                            <label for="quantity">注文数:</label>
-                                                            <input id="quantity" type="number" value="1"
-                                                                class="form-control quantity-input">
-                                                        </div>
-                                                        <div class="col-md-3 price">
-                                                            <span>$120</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid mx-auto d-block image" img
-                                                    src="https://i.imgur.com/hRlGe10.jpg">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="info">
-                                                    <div class="row">
-                                                        <div class="col-md-5 product-name">
-                                                            <div class="product-name">
-                                                                <a href="#">商品</a>
-                                                                <div class="product-info">
-                                                                    <div>テスト: <span class="value">○○○</span></div>
-                                                                    <div>テスト: <span class="value">○○○</span></div>
-                                                                    <div>テスト: <span class="value">○○○</span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 quantity">
-                                                            <label for="quantity">注文数:</label>
-                                                            <input id="quantity" type="number" value="1"
-                                                                class="form-control quantity-input">
-                                                        </div>
-                                                        <div class="col-md-3 price">
-                                                            <span>金額</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-lg-4">
-                                <div class="summary">
-                                    <h3>カート合計</h3>
-                                    <div class="summary-item"><span class="text">小計</span><span
-                                            class="price">1000</span></div>
-                                    <div class="summary-item"><span class="text">割引</span><span
-                                            class="price">0</span></div>
-                                    <div class="summary-item"><span class="text">送料</span><span
-                                            class="price">0</span></div>
-                                    <div class="summary-item"><span class="text">合計額</span><span
-                                            class="price">????円</span></div>
-                                    <button type="button" class="btn btn-primary btn-lg btn-block">購入</button>
-                                </div>
-                            </div>
+  <div class="container">
+    <div class="block-heading">
+      <h2>ショッピングカート</h2>
+      <p>ご注文の商品一覧</p>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="items">
+            @foreach($cart_products as $cart_product)
+              <div class="product">
+                <div class="row">
+                  <div class="col-md-9 product_info">
+                    <a class="product_link" href="/product/detail/{{ $cart_product->id }}">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img class="img-fluid mx-auto d-block image" img src="https://i.imgur.com/bV1xmG5.jpg">
                         </div>
+                        <div class="col-md-8">
+                          <div class="info">
+                            <div class="product-name">
+                              <div class="product-name">
+                                <span>{{ $cart_product->product_name }}</span>
+                                  <div class="product-info">
+                                  <div>サイズ: <span class="value">{{$cart_product->size}}</span></div>
+                                  <div>保存方法: <span class="value">{{$cart_product->preservation_method}}</span></div>
+                                  <div>賞味期限: <span class="value">{{$cart_product->expiration_date}}</span></div>
+                                  <div>価格: <span id="product_price" class="value">{{$cart_product->product_price}}</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="row">
+                      <div class="col-md-12 quantity">
+                        <label for="quantity">注文数:</label>
+                        <input id="quantity" type="number" pattern="^[0-9]+$" class="form-control quantity-input">
+                      </div>
+                      <div class="col-md-12 price">
+                        <span id="product_subtotal"></span><span>円</span>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-        </main>
-    </body>
+              </div>
+            @endforeach
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="summary">
+            <h3>カート合計</h3>
+            <div class="summary-item"><span class="text">小計</span><span class="price">1000</span></div>
+            <div class="summary-item"><span class="text">割引</span><span class="price">0</span></div>
+            <div class="summary-item"><span class="text">送料</span><span class="price">0</span></div>
+            <div class="summary-item"><span class="text">合計額</span><span class="price">????円</span></div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">購入</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </html>
+
 @endsection

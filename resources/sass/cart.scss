@@ -1,6 +1,6 @@
 .shopping-cart {
   padding-bottom: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .shopping-cart.dark {
@@ -41,8 +41,8 @@
 }
 
 .product {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left : 20px;
+  padding-right : 20px;
 }
 
 .product_info a {
@@ -50,8 +50,10 @@
 }
 
 .shopping-cart .items .product {
+
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 
 .shopping-cart .items .product .info {
@@ -119,22 +121,20 @@
 
 @media (min-width: 768px) {
   .shopping-cart .items .product .info {
-    padding-top: 25px;
-    text-align: left;
+      padding-top: 25px;
+      text-align: left;
   }
-
   .shopping-cart .items .product .info .price {
-    font-weight: bold;
-    font-size: 22px;
-    top: 17px;
+      font-weight: bold;
+      font-size: 22px;
+      top: 17px;
   }
-
   .shopping-cart .items .product .info .quantity {
-    text-align: center;
+      text-align: center;
   }
-
   .shopping-cart .items .product .info .quantity .quantity-input {
-    padding: 4px 10px;
-    text-align: center;
+      padding: 4px 10px;
+      text-align: center;
   }
 }
+
