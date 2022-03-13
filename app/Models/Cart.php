@@ -44,4 +44,11 @@ class Cart extends Model
     ->insert($data);
     return $add;
   }
+
+  public function deleteCart($id) {
+    $delete = DB::table('carts')
+    ->where('id',$id)
+    ->delete();
+    
+  }
 }

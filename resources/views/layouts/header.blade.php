@@ -50,6 +50,15 @@
     @endguest
 
     @auth
+      <div class="d-flex justify-content-center align-items-center bg-a68a72" style="width: 94px; height: 86px;">
+        <div class="text-center">
+          <a href="{{ route('showCart') }}">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color: white;"></i>
+            <span class="d-block text-white font-weight-bold pt-1">カート</span>
+          </a>
+        </div>
+      </div>
+
       <div class="d-flex justify-content-center align-items-center bg-6f2c2c" style="width: 94px; height: 86px;">
         <div class="text-center">
           <a href="{{ route('showMypage') }}">

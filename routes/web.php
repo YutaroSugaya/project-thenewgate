@@ -53,6 +53,7 @@ Route::middleware(['auth'])->group(function () { //ログイン認証
   //カートお気に入り関連
   Route::get('/cart',[CartController::class, 'showCart'])->name('showCart'); //カート画面
   Route::get('/cart/add/{id}',[CartController::class, 'addCart'])->name('addCart'); //カート画面
+  Route::get('/cart/delete/{id}',[CartController::class, 'deleteCart'])->name('deleteCart'); //カート画面
   Route::get('/wishlist',[FavoriteController::class, 'showWishList'])->name('showWishList'); //お気に入り画面
   Route::get('/wishlist/add/{id}',[FavoriteController::class, 'addWishList'])->name('addWishList'); //お気に入り画面
 

@@ -13,6 +13,7 @@ class CartController extends Controller
     $user_id = Auth::id();
     $model = new Cart();
     $cart_products = $model->getCart($user_id);
+    //dd($cart_products);
     return view('product.cart',[
       'cart_products' => $cart_products,
     ]);
@@ -42,5 +43,16 @@ class CartController extends Controller
       \Session::flash('msg_info', 'ログインしてからお気に入り登録をしてください');
     }
     return redirect()->route('showDetail',$product_id);
+  }
+
+  public function deleteCart($id) { //カート商品の削除
+    try {
+      $model = new Cart();
+      $model->deleteCart($id);
+    } catch (\Throwable $e){
+      abort(500);
+    }
+    exit();
+    
   }
 }
