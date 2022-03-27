@@ -50,6 +50,21 @@ class Product extends Model
     ->join('product_details','products.id','=','product_details.product_id')
     ->join('companies','products.company_id','=','companies.id')
     ->join('categories','products.category_id','=','categories.id')
+    ->select('products.id',
+              'products.product_name',
+              'products.recommendation',
+              'products.product_price',
+              'products.prefecture',
+              'products.sale_price',
+              'products.discount',
+            'product_details.comment',
+            'product_details.expiration_date',
+            'product_details.preservation_method',
+            'product_details.allergic_substance',
+            'product_details.size',
+            'product_details.weight',
+            'companies.company_name',
+            'categories.category_name')
     ->where('products.id','=',$id)
     ->first();
     return $product;

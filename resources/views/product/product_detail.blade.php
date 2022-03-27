@@ -3,6 +3,10 @@
     <link rel="stylesheet" href="{{ asset ('css/product_details.css') }}">
   @endpush
 
+  @push('js')
+  <script src="{{ asset('js/cart.js') }}" defer></script>
+  @endpush
+
 @section('content')
 <body>
   <div class="container py-3">
@@ -50,7 +54,13 @@
           
           <div class="col-12">
             <h4 class="box-title mt-5">{{ $product->comment }}</h4>
-            <a class="" href="/wishlist/add/{{ $product->id }}"><i class="fa fa-solid fa-star"></i></a>
+            <a class="aiu" href="{{ route('addWishList', ['id' => $product->id]) }}">
+              @if($check)
+              <i class="fa fa-solid fa-star isActive"></i>
+              @else
+              <i class="fa fa-solid fa-star"></i>
+              @endif
+            </a>
             <p>{{ $product->product_name }}</p>
             <h2 class="mt-5">
               {{ $product->product_price }}円<small class="text-success">( {{ $product->discount }} %off)</small>

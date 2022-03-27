@@ -29,7 +29,7 @@ $(function() {
     // $('.product_subtotal').text(product_subtotal);
     if(quantity > 0) {
 
-    } else if(quantity <= 0) {
+    } else {
       //カートから消す
       let clickEle = $(this);
       let cart_id = clickEle.attr('value');
@@ -43,7 +43,8 @@ $(function() {
         }
       })
       .done(function() {
-        $(this).closest('tr').empty();
+        clickEle.parents('.product').remove();
+        console.log(clickEle.parents('.product').attr('data'));
         toastr.success('削除しました');
       })
       .fail(function() {
@@ -53,5 +54,9 @@ $(function() {
   
 
   });
+
+  $('.aiu').on('click',function() {
+    $(this).children().toggleClass('isActive');
+  })
   
 })

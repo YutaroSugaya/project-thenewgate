@@ -32,6 +32,9 @@
                     <h3 class="mb-0 font-weight-semibold">{{ $product->product_price }}円</h3>
                     <button type="button"
                         class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i>
+                        お気に入りから外す</button>
+                    <button type="button"
+                        class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i>
                         カートに追加</button>
                 </div>
             </div>

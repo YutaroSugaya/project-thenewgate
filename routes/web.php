@@ -30,8 +30,8 @@ Route::get('/news',[NewsListController::class, 'showNews'])->name('showNews'); /
 Route::get('/news/{id}',[NewsListController::class, 'showNewsDetail'])->name('showNewsDetail'); //お知らせ画面
 
 Route::prefix('product')->group(function () { //商品関連
-  Route::get('detail/{id}',[ProductController::class, 'showDetail'])->name('showDetail'); //商品詳細画面
-  Route::get('list',[ProductController::class, 'showList'])->name('showList'); //商品検索一覧表示
+  Route::get('/detail/{id}',[ProductController::class, 'showDetail'])->name('showDetail'); //商品詳細画面
+  Route::get('/list',[ProductController::class, 'showList'])->name('showList'); //商品検索一覧表示
   Route::get('sale',[ProductController::class, 'showSale'])->name('showSale'); //タイムセール画面
 });
 
@@ -56,6 +56,7 @@ Route::middleware(['auth'])->group(function () { //ログイン認証
   Route::get('/cart/delete/{id}',[CartController::class, 'deleteCart'])->name('deleteCart'); //カート画面
   Route::get('/wishlist',[FavoriteController::class, 'showWishList'])->name('showWishList'); //お気に入り画面
   Route::get('/wishlist/add/{id}',[FavoriteController::class, 'addWishList'])->name('addWishList'); //お気に入り画面
+  Route::get('/wishlist/delete/{id}',[CartController::class, 'deleteWishList'])->name('deleteWishList'); //カート画面
 
   //クレジット決済
   Route::post('/pay/credit',[PaymentController::class, 'payCredit'])->name('payCredit'); 
@@ -78,4 +79,9 @@ Route::get('/security',[HomeController::class, 'security'])->name('showSecurity'
 
 
 
+//管理者画面
 
+Route::prefix('admin')->group(function () { //管理者画面
+  Route::get('/home',[HomeController::class, 'showAdminHome'])->name('showAdminHome'); 
+  
+});

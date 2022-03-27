@@ -10,6 +10,7 @@ use Carbon\Carbon;
 class CartController extends Controller
 {
   public function showCart(Request $request) { //カート画面
+
     $user_id = Auth::id();
     $model = new Cart();
     $cart_products = $model->getCart($user_id);
@@ -20,22 +21,22 @@ class CartController extends Controller
   }
 
   public function addCart(Request $request) { //カート登録
+    ///dd($request);
     $user_id = Auth::id();
     $model = new Cart();
     $product_id = $request->id;
     $check = $model->checkCart($product_id,$user_id);
 
-    $data = array(
-      'user_id' => $user_id,
-      'product_id' => $product_id,
-      'created_at' => Carbon::now(),
-      'updated_at' => Carbon::now(),
-    );
-
     if(Auth::Check()) {
       if($check) {
         \Session::flash('msg_error', 'すでにカートに入っています');
       } else {
+        $data = array(
+          'user_id' => $user_id,
+          'product_id' => $product_id,
+          'created_at' => Carbon::now(),
+          'updated_at' => Carbon::now(),
+        );
         $add = $model->addCart($data);
         \Session::flash('msg_success', 'カートに追加しました');
       }
@@ -46,6 +47,7 @@ class CartController extends Controller
   }
 
   public function deleteCart($id) { //カート商品の削除
+    echo($id);
     try {
       $model = new Cart();
       $model->deleteCart($id);

@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ProductDetail;
 use App\Models\Product;
+use App\Models\Favorite;
 use App\Models\Company;
 use App\Models\Category;
+use Auth;
 
 class ProductController extends Controller
 {
@@ -50,23 +52,39 @@ class ProductController extends Controller
 
     $products = $query->groupBy('product_name')->get();
     $counts = $products->count();
-    
     $c_model = new Category;
     $search_category_name = $c_model->getCategoryName($search_category);
     
+    if(!empty($products)) {
+      $user_id = Auth::id();
+      $f_model = new Favorite();
+      $checks = $f_model->checkWishLists($user_id);
+    }
+
+    //dd($products);
+    $check = $checks->toArray();
+    //dd($check);
     return view('product.product_list', [
       'products' => $products,
       'counts' => $counts,
       'search_word' => $search_word,
-      'search_category_name' => $search_category_name
+      'search_category_name' => $search_category_name,
+      'check' => $check,
+      'checks' => $checks,
     ]);
   }
   
   public function showDetail($id) { //商品詳細画面表示
     $model = new product();
     $product = $model->getProductDetail($id); //該当する商品ピックアップ
+    
+    $user_id = Auth::id();
+    $f_model = new Favorite();
+    $product_id = $id;
+    $check = $f_model->checkWishList($product_id, $user_id);
     return view('product.product_detail', [
       'product' => $product,
+      'check' => $check,
     ]);
   }
 

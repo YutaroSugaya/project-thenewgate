@@ -167,3 +167,7 @@ body {
   position: absolute;
   z-index: 100;
 }
+
+.fa-star.isActive {
+  color: #f7bdc7;
+}

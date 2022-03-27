@@ -31,11 +31,21 @@ class Favorite extends Model
       ->where('user_id', $user_id)
       ->where('product_id', $product_id)
       ->first();
+      //dd($check);
+      return $check;
+    }
+    public function checkWishLists($user_id) {
+      $check = DB::table('favorites')
+      ->select('favorites.product_id')
+      ->where('user_id', $user_id)
+      ->get();
+      //dd($check);
       return $check;
     }
     public function addWishList($data) {
       $add = DB::table('favorites')
       ->insert($data);
+      //dd($data);
       return $add;
     }
     public function getWishLists($user_id) {

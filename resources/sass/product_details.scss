@@ -1,4 +1,4 @@
-
+@import 'variables';
 
 
 body {
@@ -169,4 +169,8 @@ body {
   position: absolute;
   z-index: 100;
   
+}
+
+.fa-star.isActive {
+  color: $dullpink;
 }

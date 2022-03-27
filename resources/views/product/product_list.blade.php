@@ -28,7 +28,27 @@
                           </div>
                           <div class="pt-2 pt-md-3">
                               <span class="text_medium font-weight-bold">{{ $product->product_name }}</span>
-                              <span class="favorite" data-url="/wishlist/add/{{ $product->id }}"><i class="fa fa-solid fa-star"></i></apan><br>
+                              <a class="aiu" href="{{ route('addWishList', ['id' => $product->id]) }}">
+                                
+                  
+                                @php
+                                
+                                foreach($checks as $check) {
+                                  dd($checks[0]);
+                                  if($check === $product->id) {
+                                    dd($product_id);
+                                  }else {
+                                    dd('no');
+                                  }
+                                }
+                                @endphp
+                                @if($check === $product->id )
+                                <i class="fa fa-solid fa-star isActive"></i>
+                                @else
+                                <i class="fa fa-solid fa-star"></i>
+                                @endif
+                             
+                              </a><br>
                               <span class="text_small">{{ $product->recommendation }}</span>
                           </div>
                           <div class="pt-1 pt-md-2">

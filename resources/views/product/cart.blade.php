@@ -21,7 +21,7 @@
         <div class="col-md-12 col-lg-8">
           <div class="items">
             @foreach($cart_products as $cart_product)
-              <div class="product">
+              <div data="{{ $cart_product->id }}" class="product">
                 <div class="row product-row">
                   <div class="col-md-9">
                     <a class="product_link" href="/product/detail/{{ $cart_product->product_id }}">
