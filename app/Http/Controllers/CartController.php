@@ -15,7 +15,7 @@ class CartController extends Controller
     $model = new Cart();
     $cart_products = $model->getCart($user_id);
     //dd($cart_products);
-    return view('product.cart',[
+    return view('user.product.cart',[
       'cart_products' => $cart_products,
     ]);
   }

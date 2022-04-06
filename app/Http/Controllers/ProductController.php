@@ -64,7 +64,7 @@ class ProductController extends Controller
     //dd($products);
     $check = $checks->toArray();
     //dd($check);
-    return view('product.product_list', [
+    return view('user.product.product_list', [
       'products' => $products,
       'counts' => $counts,
       'search_word' => $search_word,
@@ -82,7 +82,7 @@ class ProductController extends Controller
     $f_model = new Favorite();
     $product_id = $id;
     $check = $f_model->checkWishList($product_id, $user_id);
-    return view('product.product_detail', [
+    return view('user.product.product_detail', [
       'product' => $product,
       'check' => $check,
     ]);
@@ -92,7 +92,7 @@ class ProductController extends Controller
     $model = new product();
     $products = $model->getSaleProducts();
     $counts = $products->count();
-    return view('product.sale',[
+    return view('user.product.sale',[
       'products' => $products,
       'counts' => $counts,
     ]);

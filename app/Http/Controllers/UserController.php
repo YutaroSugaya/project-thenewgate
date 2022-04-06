@@ -13,13 +13,13 @@ class UserController extends Controller
 {
   public function showMypage () { //マイページ
     $user = Auth::user();
-    return view('mypage.top',[
+    return view('user.mypage.top',[
       'user' => $user,
     ]);
   }
   public function showEdit() { //ユーザ情報編集画面
     $user = Auth::user();
-    return view('mypage.edit',[
+    return view('user.mypage.edit',[
       'user' => $user,
     ]);
   }

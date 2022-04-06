@@ -15,7 +15,7 @@ class FavoriteController extends Controller
     $user_id = Auth::id();
     $model = new Favorite();
     $products = $model->getWishLists($user_id);
-    return view('product.wishlist', [
+    return view('user.product.wishlist', [
       'products' => $products,
     ]);
   }

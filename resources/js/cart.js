@@ -58,5 +58,7 @@ $(function() {
   $('.aiu').on('click',function() {
     $(this).children().toggleClass('isActive');
   })
-  
-})
+
+  jQuery('#sorttable').tablesorter();
+});
+

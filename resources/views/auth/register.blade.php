@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user.app')
 <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
 
 @push('script')

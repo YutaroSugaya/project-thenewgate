@@ -17,7 +17,7 @@ class HomeController extends Controller
     $model = new product();
     $products = $model->getSaleProducts()->take(4);
 
-    return view('home.home',[
+    return view('user.home.home',[
       'news_lists' => $news_lists,
       'products' => $products,
     ]);
@@ -25,43 +25,43 @@ class HomeController extends Controller
   
   
   public function showBuy() { //購入画面
-    return view('buypage.buy');
+    return view('user.buypage.buy');
   }
   public function showCheck() { //購入内容確認画面
-    return view('buypage.check');
+    return view('user.buypage.check');
   }
   public function showCheckCredit() { //クレジット決済確認
-    return view('buypage.check-credit');
+    return view('user.buypage.check-credit');
   }
   public function showCheckPaypal() { //paypal決済確認
-    return view('buypage.check-paypal');
+    return view('user.buypage.check-paypal');
   }
   public function showThanks() { //購入完了画面
-    return view('buypage.thanks');
+    return view('user.buypage.thanks');
   }
   public function showPolicy() { //プライバシーぽシリー
-    return view('others.privacypolicy');
+    return view('user.others.privacypolicy');
   }
   public function nopage404() { //404
-    return view('others.nopage');
+    return view('user.others.nopage');
   }
   public function agreement() { //利用規約
-    return view('others.agreement');
+    return view('user.others.agreement');
   }
   public function webUse() { //利用条件
-    return view('others.webuse');
+    return view('user.others.webuse');
   }
   public function guideline() { //ガイドライン
-    return view('others.guideline');
+    return view('user.others.guideline');
   }
   public function sitemap() { //サイトマップ 
-    return view('others.sitemap');
+    return view('user.others.sitemap');
   }
   public function security() { //セキュリティ
-    return view('others.security');
+    return view('user.others.security');
   }
   public function link() { //リンクポリシー
-    return view('others.link');
+    return view('user.others.link');
   }
 
   
@@ -73,4 +73,7 @@ class HomeController extends Controller
     //     $this->middleware('auth');
     // }
 
+  public function showAdminHome() {
+    return view('admin.home');
+  }
 }

@@ -83,5 +83,14 @@ Route::get('/security',[HomeController::class, 'security'])->name('showSecurity'
 
 Route::prefix('admin')->group(function () { //管理者画面
   Route::get('/home',[HomeController::class, 'showAdminHome'])->name('showAdminHome'); 
+
+  Route::prefix('news')->group(function () {
+    Route::get('/ctrl',[NewsListController::class, 'showNewsCtrl'])->name('showNewsCtrl'); 
+    Route::get('/edit/{id}',[NewsListController::class, 'showEditNews'])->name('showEditNews'); 
+    Route::post('/edit/{id}',[NewsListController::class, 'updateNews'])->name('updateNews'); 
+    Route::get('/create',[NewsListController::class, 'showCreateNews'])->name('showCreateNews'); 
+    Route::post('/create',[NewsListController::class, 'createNews'])->name('createNews'); 
+    Route::delete('/{id}',[NewsListController::class, 'deleteNews'])->name('deleteNews'); 
+  });
   
 });
