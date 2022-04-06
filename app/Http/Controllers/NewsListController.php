@@ -63,7 +63,7 @@ class NewsListController extends Controller
   public function deleteNews($id) {
     \DB::beginTransaction();
     try {
-      $model = new Product;
+      $model = new NewsList();
       $model->deleteNews($id);
       \DB::commit();
       \Session::flash('msg_success', 'お知らせを削除しました');

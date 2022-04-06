@@ -49,7 +49,7 @@ class NewsList extends Model
 
   public function deleteNews($id) {
     $news = DB::table('news_lists')
-    ->where('id','=',$request->id)
+    ->where('id','=',$id)
     ->delete();
     return;
   }

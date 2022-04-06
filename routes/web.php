@@ -90,7 +90,7 @@ Route::prefix('admin')->group(function () { //管理者画面
     Route::post('/edit/{id}',[NewsListController::class, 'updateNews'])->name('updateNews'); 
     Route::get('/create',[NewsListController::class, 'showCreateNews'])->name('showCreateNews'); 
     Route::post('/create',[NewsListController::class, 'createNews'])->name('createNews'); 
-    Route::delete('/{id}',[NewsListController::class, 'deleteNews'])->name('deleteNews'); 
+    Route::get('/delete/{id}',[NewsListController::class, 'deleteNews'])->name('deleteNews'); 
   });
   
 });
